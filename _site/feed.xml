@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Society of Software Engineers</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2014-02-17T17:57:04-05:00</updated>
+<id>/</id>
+<author>
+  <name>Society of Software Engineers</name>
+  <uri>/</uri>
+  <email>hmfaysal@alum.mit.edu</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Sample Status Post]]></title>
+  <link>/sample-posts/a-status</link>
+  <id>/sample-posts/a-status</id>
+  <published>2014-01-11T00:00:00-05:00</published>
+  <updated>2014-01-11T00:00:00-05:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Oh Hello. This is a status post. Click here to learn about it more :-)&lt;/p&gt;
+
+&lt;p&gt;Don&amp;#39;t worry, you can enter additional details about your status update. Only the first paragraph &lt;code&gt;[p:first-child]&lt;/code&gt; will be shown in the home page :-)&lt;/p&gt;
+
+&lt;p&gt;To start a status post, simply run &lt;code&gt;rake newstatus[&amp;#39;Some Status Title&amp;#39;]&lt;/code&gt; in the command line. Or if you want to create the post by yourself, make sure your post contains the following contents in your post&amp;#39;s Front Matter YAML:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;---
+layout: post
+type: status
+title: &amp;quot;Sample Status Title&amp;quot;
+description: 
+headline: 
+modified: YYYY-MM-DD
+category: status
+image: 
+  feature: 
+comments: true
+mathjax: 
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;p&gt;&lt;a href=&quot;/sample-posts/a-status&quot;&gt;Sample Status Post&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on January 11, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Theme Elements]]></title>
+  <link>/theme-setup/theme-elements</link>
+  <id>/theme-setup/theme-elements</id>
+  <published>2014-01-10T00:00:00-05:00</published>
+  <updated>2014-01-10T00:00:00-05:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;I&amp;#39;ve put together a little post to introduce you to the HMFAYSAL OMEGA theme and get you started with Markdown. Go ahead and edit this post to get going and learn how it all works!&lt;/p&gt;
+
+&lt;p&gt;&lt;section&gt;
+  &lt;header&gt;
+    &lt;h1 &gt;Elements&lt;/h1&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot; markdown=&quot;1&quot;&gt;
+*  Auto generated table of contents
+{:toc}
+&lt;/div&gt;
+&lt;/section&gt;&lt;/p&gt;
+
+&lt;h1&gt;ELEMENTS&lt;/h1&gt;
+
+&lt;p&gt;Writing in markdown is really easy. In any editor like notepad, you simply write as you normally would. Where appropriate, you can use formatting shortcuts to style your content. &lt;/p&gt;
+
+&lt;h2&gt;LISTS&lt;/h2&gt;
+
+&lt;p&gt;For example, a list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item number one&lt;/li&gt;
+&lt;li&gt;Item number two
+
+&lt;ul&gt;
+&lt;li&gt;A nested item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;A final item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;or with numbers!&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Remember to buy some milk&lt;/li&gt;
+&lt;li&gt;Drink the milk&lt;/li&gt;
+&lt;li&gt;Tweet that I remembered to buy the milk, and drank it&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;LINKS&lt;/h2&gt;
+
+&lt;p&gt;Want to link to a source? No problem. If you put the url in this format, like &lt;code&gt;[http://alum.mit.edu/www/hmfaysal](http://alum.mit.edu/www/hmfaysal)&lt;/code&gt; - it&amp;#39;ll automatically be linked up like &lt;a href=&quot;http://alum.mit.edu/www/hmfaysal&quot;&gt;http://alum.mit.edu/www/hmfaysal&lt;/a&gt;. But if you want to customize your anchor text, you can do that too! Here&amp;#39;s a link to the &lt;a href=&quot;http://alum.mit.edu/www/hmfaysal&quot; title=&quot;HMFAYSAL&amp;#39;s Blog&quot;&gt;my website&lt;/a&gt;. Neat.&lt;/p&gt;
+
+&lt;h2&gt;WHAT ABOUT IMAGES?&lt;/h2&gt;
+
+&lt;p&gt;Images work too! And they are responsive! Already know the URL of the image you want to include in your article? Images are responsive and uses lightbox. &lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;a href=&quot;/images/gallery1/photo (16).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (16).jpg&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+    &lt;a href=&quot;/images/gallery1/photo (14).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (13).jpg&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;/images/gallery1/photo (20).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (19).jpg&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Check out &lt;a href=&quot;/articles/sample-post-images/&quot;&gt;this post&lt;/a&gt; to learn about including images in your post.&lt;/p&gt;
+
+&lt;h2&gt;AND VIDEOS?&lt;/h2&gt;
+
+&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;EQUATIONS&lt;/h2&gt;
+
+&lt;p&gt;Are you an engineer? Or a mathematician? Want to post some equations in your Jekyll blog for the world to see? No problem. HMFAYSAL OMEGA has MathJax built in to beautifully render your equations in the browser. To use MathJax simply turn on the MathJax feature by declaring in the Front YAML Matter like &lt;code&gt;mathjax: true&lt;/code&gt;, then wrapping your equation between &lt;code&gt;$$...$$&lt;/code&gt; will produce something like this:&lt;/p&gt;
+
+&lt;math display=&quot;block&quot;&gt;
+  &lt;mstyle&gt;
+    &lt;mi&gt;f&lt;/mi&gt;
+    &lt;mrow&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;a&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+    &lt;/mrow&gt;
+    &lt;mo&gt;=&lt;/mo&gt;
+ &lt;mfrac&gt;
+        &lt;mn&gt;1&lt;/mn&gt;
+        &lt;mrow&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+          &lt;mi&gt;π&lt;!-- π --&gt;&lt;/mi&gt;
+          &lt;mi&gt;i&lt;/mi&gt;
+        &lt;/mrow&gt;
+      &lt;/mfrac&gt;
+    &lt;msub&gt;
+      &lt;mo&gt;∮&lt;/mo&gt;
+      &lt;mrow&gt;
+        &lt;mi&gt;γ&lt;/mi&gt;
+      &lt;/mrow&gt;
+    &lt;/msub&gt;
+    &lt;mfrac&gt;
+      &lt;mrow&gt;
+        &lt;mi&gt;f&lt;/mi&gt;
+        &lt;mo&gt;(&lt;/mo&gt;
+        &lt;mi&gt;z&lt;/mi&gt;
+        &lt;mo&gt;)&lt;/mo&gt;
+      &lt;/mrow&gt;
+      &lt;mrow&gt;
+        &lt;mi&gt;z&lt;/mi&gt;
+        &lt;mo&gt;−&lt;/mo&gt;
+        &lt;mi&gt;a&lt;/mi&gt;
+      &lt;/mrow&gt;
+    &lt;/mfrac&gt;
+    &lt;mi&gt;d&lt;/mi&gt;
+    &lt;mi&gt;z&lt;/mi&gt;
+  &lt;/mstyle&gt;
+&lt;/math&gt;
+
+&lt;h2&gt;THE LOGO&lt;/h2&gt;
+
+&lt;p&gt;Not sure which image you want to use yet? That&amp;#39;s ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and change the image in the _config.yml.&lt;/p&gt;
+
+&lt;h2&gt;ICONS&lt;/h2&gt;
+
+&lt;p&gt;This theme includes over 360 fontawesome icons. To use an icon go to &lt;a href=&quot;http://fontawesome.io/3.2.1/icons/&quot;&gt;Fontawesome&lt;/a&gt; website and click on the desired icon to find the appropriate tag.&lt;/p&gt;
+
+&lt;div class=&quot;text-center&quot;&gt;
+&lt;i class=&quot;icon-cogs&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-youtube-sign&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-thumbs-up&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-coffee&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-cloud-upload&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-camera&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-comments-alt&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-eye-open&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-heart&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-globe&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;QUOTING&lt;/h2&gt;
+
+&lt;p&gt;Sometimes a link isn&amp;#39;t enough, you want to quote someone on what they&amp;#39;ve said. It was probably very wisdomous. Is wisdomous a word? Find out in a future release when I introduce spellcheck! For now - it&amp;#39;s definitely a word.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Wisdomous - it&amp;#39;s definitely a word.
+&lt;small&gt;&lt;cite title=&quot;Hossain Mohd Faysal&quot;&gt;Hossain Mohd Faysal&lt;/cite&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;WORKING WITH CODE&lt;/h2&gt;
+
+&lt;p&gt;Got a streak of geek? We&amp;#39;ve got you covered there, too. You can write inline &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; blocks really easily with back ticks. Want to show off something more comprehensive? 4 spaces of indentation gets you there.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.awesome-thing&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+Learn more about syntax highlighting [in this post](/articles/code-highlighting-post/).
+
+## READY FOR A BREAK? ##
+
+Throw 4 or more dashes down on any new line and you&#39;ve got yourself a fancy new divider. Aw yeah.
+
+----
+
+## FANCY SOME COLUMNS?
+
+
+&lt;div class=&quot;col-md-6&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;  
+
+&lt;div class=&quot;col-md-6&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt; 
+
+&lt;p&gt;&lt;br&gt;  &lt;/p&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;  
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;  
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt; 
+
+&lt;p&gt;&lt;br&gt;  &lt;/p&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;  
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;  
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;  
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;  
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;For more column combinations, visit &lt;a href=&quot;/personal/fancy-columns/&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;BUTTONS&lt;/h2&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-danger btn-large&quot;&gt;Some danger button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-info btn-large&quot;&gt;Some info button&lt;/a&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-warning btn-large&quot;&gt;Some warning button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-success btn-large&quot;&gt;Some success button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-primary btn-large&quot;&gt;Some primary button&lt;/a&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h2&gt;ADVANCED USAGE&lt;/h2&gt;
+
+&lt;p&gt;There&amp;#39;s one fantastic secret about Markdown. If you want, you can write plain old HTML and it&amp;#39;ll still work! Very flexible.&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;text&quot; placeholder=&quot;I&#39;m an input field!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That should be enough to get you started. Have fun - and let me know what you think &lt;a href=&quot;https://twitter.com/hmfaysal&quot;&gt;@hmfaysal&lt;/a&gt; or at &lt;a href=&quot;mailto:hmfaysal@alum.mit.edu&quot;&gt;hmfaysal@alum.mit.edu&lt;/a&gt; :)&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/theme-setup/theme-elements&quot;&gt;Theme Elements&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on January 10, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sample Gallery Post]]></title>
+  <link>/photos/sample-gallery-post</link>
+  <id>/photos/sample-gallery-post</id>
+  <published>2014-01-09T00:00:00-05:00</published>
+  <updated>2014-01-09T00:00:00-05:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Here is an example of what a post with a gallery might look like. If you want to display two or three images next to each other responsively use &lt;code&gt;figure&lt;/code&gt; with the appropriate &lt;code&gt;class&lt;/code&gt;. Each instance of &lt;code&gt;figure&lt;/code&gt; is auto-numbered and displayed in the caption.&lt;/p&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+    &lt;a href=&quot;/images/gallery1/photo (4).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (3).jpg&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;/images/gallery1/photo (18).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (17).jpg&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;/images/gallery1/photo (10).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (9).jpg&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+    &lt;a href=&quot;/images/gallery1/photo (6).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (5).jpg&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;/images/gallery1/photo (12).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (11).jpg&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;a href=&quot;/images/gallery1/photo (16).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (16).jpg&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+    &lt;a href=&quot;/images/gallery1/photo (14).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (13).jpg&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;/images/gallery1/photo (20).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (19).jpg&quot;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+    &lt;a href=&quot;/images/gallery1/photo (22).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (21).jpg&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;/images/gallery1/photo (24).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (23).jpg&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;/images/gallery1/photo (74).jpg&quot;&gt;&lt;img src=&quot;/images/gallery1/photo (73).jpg&quot;&gt;&lt;/a&gt;
+    &lt;figcaption&gt;Photos from my Japan trip.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/photos/sample-gallery-post&quot;&gt;Sample Gallery Post&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on January 09, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sample Quotation Post]]></title>
+  <link>/sample-posts/a-quotation</link>
+  <id>/sample-posts/a-quotation</id>
+  <published>2014-01-08T00:00:00-05:00</published>
+  <updated>2014-01-08T00:00:00-05:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius - and a lot of courage - to move in the opposite direction.&amp;quot;
+&lt;small&gt;&lt;cite title=&quot;Albert Einstein&quot;&gt;Albert Einstein&lt;/cite&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;HMFAYSAL OMEGA theme now supports Quotation posting, made famous by some premium WordPress themes. To make a quotation post, specify the post type as quote in the Front Matter YAML. So the Front Matter YAML should look like something like the following:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;---
+layout: post
+type: quote
+title: &amp;quot;Sample Quotation Post&amp;quot;
+description: 
+headline: 
+modified: YYYY-MM-DD
+category: quote
+image: 
+  feature: 
+comments: true
+mathjax: 
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or you can simply run the rake task command &lt;code&gt;rake newquote[&amp;quot;Some Quotation Title&amp;quot;]&lt;/code&gt; to generate a skeleton quotation post. Include the intended quotation in Markdown format in your post. A sample quotation in markdown looks like the following:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; &amp;quot;The Quotation Goes here&amp;quot;
+&amp;gt; &amp;lt;small&amp;gt;&amp;lt;cite title=&amp;quot;Name of the Person&amp;quot;&amp;gt;Person&amp;lt;/cite&amp;gt;&amp;lt;/small&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can add additional details about the quotation in the post. Just make sure the posted quotation goes first in the post, meaning it is the first paragraph of the post. Additional paragraphs can only be seen in the post page. You can also assign a featured image for the post page in the post&amp;#39;s Front Matter YAML.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Albert Einstein was born at Ulm, in Württemberg, Germany, on March 14, 1879. Six weeks later the family moved to Munich, where he later on began his schooling at the Luitpold Gymnasium. Later, they moved to Italy and Albert continued his education at Aarau, Switzerland and in 1896 he entered the Swiss Federal Polytechnic School in Zurich to be trained as a teacher in physics and mathematics. In 1901, the year he gained his diploma, he acquired Swiss citizenship and, as he was unable to find a teaching post, he accepted a position as technical assistant in the Swiss Patent Office. In 1905 he obtained his doctor&amp;#39;s degree.&lt;/p&gt;
+
+&lt;p&gt;During his stay at the Patent Office, and in his spare time, he produced much of his remarkable work and in 1908 he was appointed Privatdozent in Berne. In 1909 he became Professor Extraordinary at Zurich, in 1911 Professor of Theoretical Physics at Prague, returning to Zurich in the following year to fill a similar post. In 1914 he was appointed Director of the Kaiser Wilhelm Physical Institute and Professor in the University of Berlin. He became a German citizen in 1914 and remained in Berlin until 1933 when he renounced his citizenship for political reasons and emigrated to America to take the position of Professor of Theoretical Physics at Princeton*. He became a United States citizen in 1940 and retired from his post in 1945.&lt;/p&gt;
+
+&lt;p&gt;After World War II, Einstein was a leading figure in the World Government Movement, he was offered the Presidency of the State of Israel, which he declined, and he collaborated with Dr. Chaim Weizmann in establishing the Hebrew University of Jerusalem.&lt;/p&gt;
+
+&lt;p&gt;Einstein always appeared to have a clear view of the problems of physics and the determination to solve them. He had a strategy of his own and was able to visualize the main stages on the way to his goal. He regarded his major achievements as mere stepping-stones for the next advance.&lt;/p&gt;
+
+&lt;p&gt;At the start of his scientific work, Einstein realized the inadequacies of Newtonian mechanics and his special theory of relativity stemmed from an attempt to reconcile the laws of mechanics with the laws of the electromagnetic field. He dealt with classical problems of statistical mechanics and problems in which they were merged with quantum theory: this led to an explanation of the Brownian movement of molecules. He investigated the thermal properties of light with a low radiation density and his observations laid the foundation of the photon theory of light.&lt;/p&gt;
+
+&lt;p&gt;In his early days in Berlin, Einstein postulated that the correct interpretation of the special theory of relativity must also furnish a theory of gravitation and in 1916 he published his paper on the general theory of relativity. During this time he also contributed to the problems of the theory of radiation and statistical mechanics.&lt;/p&gt;
+
+&lt;p&gt;In the 1920&amp;#39;s, Einstein embarked on the construction of unified field theories, although he continued to work on the probabilistic interpretation of quantum theory, and he persevered with this work in America. He contributed to statistical mechanics by his development of the quantum theory of a monatomic gas and he has also accomplished valuable work in connection with atomic transition probabilities and relativistic cosmology.&lt;/p&gt;
+
+&lt;p&gt;After his retirement he continued to work towards the unification of the basic concepts of physics, taking the opposite approach, geometrisation, to the majority of physicists.&lt;/p&gt;
+
+&lt;p&gt;Einstein&amp;#39;s researches are, of course, well chronicled and his more important works include Special Theory of Relativity (1905), Relativity (English translations, 1920 and 1950), General Theory of Relativity (1916), Investigations on Theory of Brownian Movement (1926), and The Evolution of Physics (1938). Among his non-scientific works, About Zionism (1930), Why War? (1933), My Philosophy (1934), and Out of My Later Years (1950) are perhaps the most important.&lt;/p&gt;
+
+&lt;p&gt;Albert Einstein received honorary doctorate degrees in science, medicine and philosophy from many European and American universities. During the 1920&amp;#39;s he lectured in Europe, America and the Far East, and he was awarded Fellowships or Memberships of all the leading scientific academies throughout the world. He gained numerous awards in recognition of his work, including the Copley Medal of the Royal Society of London in 1925, and the Franklin Medal of the Franklin Institute in 1935.&lt;/p&gt;
+
+&lt;p&gt;Einstein&amp;#39;s gifts inevitably resulted in his dwelling much in intellectual solitude and, for relaxation, music played an important part in his life. He married Mileva Maric in 1903 and they had a daughter and two sons; their marriage was dissolved in 1919 and in the same year he married his cousin, Elsa Löwenthal, who died in 1936. He died on April 18, 1955 at Princeton, New Jersey.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/sample-posts/a-quotation&quot;&gt;Sample Quotation Post&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on January 08, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[A Post with a Video]]></title>
+  <link>/videos/video-post</link>
+  <id>/videos/video-post</id>
+  <published>2014-01-07T00:00:00-05:00</published>
+  <updated>2014-01-07T00:00:00-05:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;iframe width=&quot;940&quot; height=&quot;529&quot; src=&quot;//www.youtube.com/embed/CQJByFp7H38?theme=light&amp;amp;color=white&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Not sure if this only effects Kramdown or if it&amp;#39;s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; tags and remove &lt;code&gt;allowfullscreen&lt;/code&gt;. Example below:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;940&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;529&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//www.youtube.com/embed/CQJByFp7H38?theme=light&amp;amp;amp;color=white&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/videos/video-post&quot;&gt;A Post with a Video&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on January 07, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Syntax Highlighting Post]]></title>
+  <link>/sample-posts/code-highlighting-post</link>
+  <id>/sample-posts/code-highlighting-post</id>
+  <published>2014-01-04T00:00:00-05:00</published>
+  <updated>2014-01-04T00:00:00-05:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;a href=&quot;http://en.wikipedia.org/wiki/Syntax_highlighting&quot;&gt;^1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Pygments Code Blocks&lt;/h3&gt;
+
+&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/assets/less/pygments.less&lt;/code&gt; and compile &lt;code&gt;main.less&lt;/code&gt; with your favorite preprocessor. Or edit &lt;code&gt;main.css&lt;/code&gt; if that&amp;#39;s your thing, the classes you want to modify all begin with &lt;code&gt;.highlight&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% if page.previous %}
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ site.url }}{{ page.previous.url }}&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.previous.title }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    {% endif %}
+    {% if page.next %}
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ site.url }}{{ page.next.url }}&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.next.title }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    {% endif %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Jekyll&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TagIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Page&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_yaml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_layouts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;tag_index.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag_title_prefix&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Tagged: &amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;tag_title_suffix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag_title_suffix&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;amp;#8211;&amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;title&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;description&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;An archive of posts tagged &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Standard Code Block&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;nav class=&amp;quot;pagination&amp;quot; role=&amp;quot;navigation&amp;quot;&amp;gt;
+    {% if page.previous %}
+        &amp;lt;a href=&amp;quot;{{ site.url }}{{ page.previous.url }}&amp;quot; class=&amp;quot;btn&amp;quot; title=&amp;quot;{{ page.previous.title }}&amp;quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
+    {% endif %}
+    {% if page.next %}
+        &amp;lt;a href=&amp;quot;{{ site.url }}{{ page.next.url }}&amp;quot; class=&amp;quot;btn&amp;quot; title=&amp;quot;{{ page.next.title }}&amp;quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
+    {% endif %}
+&amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Fenced Code Blocks&lt;/h3&gt;
+
+&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/assets/less/coderay.less&lt;/code&gt; and compile &lt;code&gt;main.less&lt;/code&gt; with your favorite preprocessor. Or edit &lt;code&gt;main.css&lt;/code&gt; if that&amp;#39;s your thing, the classes you want to modify all begin with &lt;code&gt;.coderay&lt;/code&gt;. Line numbers and a few other things can be modified in &lt;code&gt;_config.yml&lt;/code&gt; under &lt;code&gt;coderay&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% if page.previous %}
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ site.url }}{{ page.previous.url }}&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.previous.title }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    {% endif %}
+    {% if page.next %}
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ site.url }}{{ page.next.url }}&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.next.title }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    {% endif %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Jekyll&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TagIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Page&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_yaml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_layouts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;tag_index.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag_title_prefix&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Tagged: &amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;tag_title_suffix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;tag_title_suffix&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;amp;#8211;&amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;title&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;description&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;An archive of posts tagged &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;p&gt;&lt;a href=&quot;/sample-posts/code-highlighting-post&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on January 04, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Bandwidth Woes]]></title>
+  <link>/personal/bandwidth-woes</link>
+  <id>/personal/bandwidth-woes</id>
+  <published>2013-11-04T00:00:00-05:00</published>
+  <updated>2013-11-04T00:00:00-05:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;em&gt;&amp;quot;Lets buy a cheap &lt;a href=&quot;http://www.blackberry.com/&quot;&gt;Blackberry&lt;/a&gt;&amp;#174;&amp;quot;&lt;/em&gt;-I said to my mom in &lt;a href=&quot;http://www.dohaairport.com/&quot;&gt;Doha International Airport&lt;/a&gt;&amp;#39;s departure lounge while leaving for Bangladesh on 5th of April, 2013. I was so naive back then, so naive and juvenile and stupid. My logic was I would at least stay connected to my mail servers while I am acquiring an internet subscription which can take some time to get in Bangladesh. I used the &lt;a href=&quot;http://www.ooredoo.qa/en/SP_BLACKBERRY&quot;&gt;Blackberry&amp;#174; Internet Services&lt;/a&gt;[^1] for as long as I can remember, and while you might squint at this, let me iterate that Blackberry devices along with BIS in particular is highly popular in the Middle-East. Considering the social environment and the whole rainy season deal, a cheap Blackberry handset looked like a viable option. So I got myself a &lt;a href=&quot;http://uk.blackberry.com/smartphones/blackberry-curve-8520.html&quot;&gt;Blackberry&amp;#174; 8520&lt;/a&gt;, which is not a great phone in anyways, but it handled my email requirements like a breeze as all the Blackberry devices are made to do. I stayed connected to my email account during the whole flight, even during takeoff, while the in-flight email services cost $1 per email viewing/sending, the Blackberry service is absolutely free of cost in-flight[^2] and a delight to use.  &lt;/p&gt;
+
+&lt;p&gt;The problem started as soon as we entered Bangladeshi airspace and the pilots got ready for landing. The pilots turned off the &lt;a href=&quot;http://www.qatarairways.com/ae/en/inflight-mobile-services.page&quot;&gt;in-flight mobile network&lt;/a&gt; and my device went on a frantic search for a network to join in. The moment our plane touched down on the hard-gravel of the airstrip, my device joined a network named &lt;a href=&quot;http://www.robi.com.bd/&quot;&gt;Robi&lt;/a&gt;&amp;#174;, and suddenly my email services stopped. I tried to register the Host Routing Tables while still the plane moved slowly towards the airport building to disembark the passengers. At first, I thought maybe its a network glitch that my Blackberry services are not working and a device reboot would fix that. Anyways, we disembarked and was on our merry way to my uncle&amp;#39;s apartment in Tongi before I could even know that there are ABSOLUTELY NO BIS in Bangladesh.&lt;/p&gt;
+
+&lt;p&gt;On the night of our arrival, I was talking to my cousin about a small project of his, and he said he will send some of the files to me through email. It was about an hour later after he had gone home, I rebooted my phone as planned and it looked like I was getting an EDGE network variant signal on my device. The registration message was getting queued when I tried to register my HRTs. It dawned upon me that maybe BIS isn&amp;#39;t provided in the Robi network. I switched to &lt;a href=&quot;http://www.grameenphone.com/&quot;&gt;Grameenphone&lt;/a&gt;&amp;#174;&amp;#39;s network with a manual network search, and it stayed the same. Several reboots later I called my cousin and he could not confirm me about this, he only made it worse saying that he saw some of his colleagues using Blackberry Email Services.  &lt;/p&gt;
+
+&lt;p&gt;Confused and tired, I let it go and asked my cousin to get me the most reliable internet package as soon as possible. He gave me two choices based on WIMAX technology as I would be moving around a lot-&lt;a href=&quot;http://www.qubee.com.bd/&quot;&gt;Qubee&lt;/a&gt;&amp;#174; and &lt;a href=&quot;http://www.banglalionwimax.com/&quot;&gt;Banglalion&lt;/a&gt;&amp;#174;. I chose Banglalion&amp;#174; because it does not impose a download limit cap whilst Qubee&amp;#174; imposes some sort of limit which deemed a little too low for my taste. With my mobile internet privileges  stripped down, I was quite anxious to get my hands on a new WIMAX dongle. While Bangladeshi telecommunications providers fail to provide basic connectivity even at barebone 3G standards (I honestly do not recall when I last saw the 3G sign up on my mobile screen, it was such a long time ago), they tend to excel in providing new connections at an astonishing pace. Although, the law requires one to register a connection by providing one&amp;#39;s National ID card/Passport, the general practice to acquire a connection usually requires a simple cash transaction. So by the next morning of my arrival, I was sifting through the bulks of emails I received the previous day with my new Banglalion&amp;#174; WIMAX dongle with a guarantee to provide up to 2 MBPS down/512 MBPS up speed. This was the highest any provider offers to a non-corporate/home user. This was not much, but it was enough to barely get by. I thought I would cut down in collaborative computing, sent notifications to &lt;a href=&quot;http://stats.kwsn.net/team.php?proj=sah&amp;amp;teamid=134289&amp;amp;sort_order=expavg_credit&amp;amp;sort_direction=DESC&quot;&gt;SETI@Qatar&lt;/a&gt; that my personal computing resources will not be available for a few months, notified my colleagues to dial down the video streaming quality for the conference calls and decided that I would not be streaming any movies as much as I used to do.  &lt;/p&gt;
+
+&lt;p&gt;I did not notice it at first, I thought the stuttering speed of my connection could be attributed to the Received Signal Strength and Carrier to Interference + Noise Reduction ratios. The interference could get really high and the bandwidth quality can decrease. Or at least that was my theory. Soon another of my cousin wanted to use my dongle. He figured out that my ISP was not delivering as promised. This cousin of mine was born and brought up in Bangladesh and he had all the tricks up his sleeves to squeeze the bandwidth from the ISPs. We ran a Bandwidth test at &lt;a href=&quot;http://www.speedtest.net/&quot;&gt;speedtest.net&lt;/a&gt;&amp;#169; and this is the result we got, my previous connection speed is put side by side for quick comparison:  &lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+    &lt;a href=&quot;http://www.speedtest.net/my-result/2805612296&quot;&gt;&lt;img src=&quot;http://www.speedtest.net/result/2805612296.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.speedtest.net/my-result/2166879057&quot;&gt;&lt;img src=&quot;http://www.speedtest.net/result/2166879057.png&quot;&gt;&lt;/a&gt;
+    &lt;figcaption&gt;Banglalion and TAMU Connection Speed. Courtesy of speedtest.net.&lt;/figcaption&gt;
+&lt;/figure&gt;
+  
+
+&lt;p&gt;This is the highest I ever got, 1.76 MBPS down, with the maximum upload speed reaching upto 0.33 MBPS. Now thats not even close to advertised speed. The numbers may look close enough, but when the upper limit of your numerical universe is bounded at 2, 1.76 is really bad and translates to a 88% delivery rate. When someone buys a 2 MBPS connection, he expects a stable 2 MBPS connection, period. Even with the false expectations of this connection, I was still considering cutting down on many areas. Now that I realized the horror, I had to figure something out, and figure that out quickly. I make a living through staying in touch with people and this was unacceptable. On a quick phone call with the Banglalion&amp;#174; Customer Care, I quickly learned that their 2 MBPS connection is merely a bloated 1 MBPS connection. In Lehman&amp;#39;s terms, the antenna in the device pretends itself as a double antenna and receives two concurrent 1 MBPS signals, which sometimes can cause interference with each other, and hence create a bottleneck in the bandwidth stream. In good signal reception areas, this is not a problem, but inside buildings in a moderate signal strength area might cause this auto-interference to generate and deliver a sluggishly performance. The solution: to get an 1 MBPS connection which will be alright on its own, and maybe add in more 1 MBPS connections, place each of these at appropriate distances and combine  all the bandwidth with a load balancing system. On that phone call with the customer care representative, I changed my connection to 1 MBPS and started digging. I knew I had to devise a plan if I had to have a decent online experience. I generated a Time (m) vs Downloaded data (MB) scatter plot containing the first 10 sets of data. From that data, I could generate the linear regression and the equation of the line. The interactive plot is given below:&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js&quot;&gt; {&quot;dataSourceUrl&quot;:&quot;//docs.google.com/spreadsheet/tq?key=0Astf0wkqJrIddDNYYkk2XzFpQVU4bFlxV1ZHUXRRdHc&amp;transpose=0&amp;headers=1&amp;range=A1%3AB12&amp;gid=0&amp;pub=1&quot;,&quot;options&quot;:{&quot;titleTextStyle&quot;:{&quot;bold&quot;:true,&quot;color&quot;:&quot;#000&quot;,&quot;fontSize&quot;:16},&quot;series&quot;:{&quot;0&quot;:{&quot;color&quot;:&quot;#ff0000&quot;}},&quot;animation&quot;:{&quot;duration&quot;:0},&quot;pointSize&quot;:7,&quot;width&quot;:897,&quot;lineWidth&quot;:0,&quot;hAxis&quot;:{&quot;useFormatFromData&quot;:false,&quot;title&quot;:&quot;Time in minutes&quot;,&quot;formatOptions&quot;:{&quot;source&quot;:&quot;inline&quot;,&quot;suffix&quot;:&quot; m&quot;},&quot;slantedTextAngle&quot;:60,&quot;slantedText&quot;:true,&quot;minValue&quot;:0,&quot;viewWindowMode&quot;:&quot;pretty&quot;,&quot;format&quot;:&quot;0.##&#39; m&#39;&quot;,&quot;viewWindow&quot;:{&quot;min&quot;:0,&quot;max&quot;:null},&quot;maxValue&quot;:null},&quot;vAxes&quot;:[{&quot;title&quot;:&quot;Downloaded Data in MegaBytes&quot;,&quot;useFormatFromData&quot;:false,&quot;formatOptions&quot;:{&quot;source&quot;:&quot;inline&quot;,&quot;suffix&quot;:&quot; MB&quot;},&quot;minValue&quot;:null,&quot;format&quot;:&quot;0.##&#39; MB&#39;&quot;,&quot;viewWindow&quot;:{&quot;min&quot;:null,&quot;max&quot;:null},&quot;logScale&quot;:false,&quot;maxValue&quot;:null},{&quot;useFormatFromData&quot;:true,&quot;minValue&quot;:null,&quot;viewWindow&quot;:{&quot;min&quot;:null,&quot;max&quot;:null},&quot;logScale&quot;:false,&quot;maxValue&quot;:null}],&quot;title&quot;:&quot;Time (m) vs Bandwidth (MB)&quot;,&quot;booleanRole&quot;:&quot;certainty&quot;,&quot;height&quot;:481,&quot;legend&quot;:&quot;in&quot;,&quot;focusTarget&quot;:&quot;series&quot;,&quot;useFirstColumnAsDomain&quot;:false,&quot;tooltip&quot;:{}},&quot;state&quot;:{},&quot;view&quot;:{},&quot;isDefaultVisualization&quot;:false,&quot;chartType&quot;:&quot;ScatterChart&quot;,&quot;chartName&quot;:&quot;Chart 1&quot;} &lt;/script&gt;
+
+&lt;p&gt;Now for a days work, I need roughly 8 GB of data download and 1 GB of upload, I calculated. This will barely get me by. Now to do that efficiently, I figured out the line equation from the linear equation which is $y=\frac{72883\, x}{10000} - \frac{311}{10000}$ with $R^2=1$, its a perfect fit, where x is the amount of time in minutes and y is the amount of Downloaded Data in MB. I ran the experiment with this for a few days and found out that to consume 8 GB of data takes me around 23+ hours in an 1 MBPS connection, Now thats acceptable, considering that I will be working with the previous days downloaded data on the next day, and while working I will be downloading for the day after. But on somedays the required download would exceed 8 GBs, that means, it would create a backlog until someday the download requirements decrease. I did not mind running one of my PCs to run 24/7 to do this job for me, but the backlog issue made me consider the multiple connection combination again.  &lt;/p&gt;
+
+&lt;p&gt;Now a days, I use &lt;a href=&quot;http://www.connectify.me/dispatch/&quot;&gt;Connectify Dispatch&lt;/a&gt;&amp;#174; to combine multiple connections, this works for torrent downloads pretty nicely, most of the HTTP downloads I usually do supports multiple socket concurrent downloading. For FTP downloads, I get a steady 1 MBPS down stream, I find it acceptable considering I do not require that much of FTP downloading.  &lt;/p&gt;
+
+&lt;p&gt;For the time being, it looks like most of my internet requirements are met by some minimum standards, but somehow my bandwidth woes remain. How can one ever go back from the high bandwidth era to the 90s?&lt;/p&gt;
+
+&lt;p&gt;[^1]: I am a longtime subscriber of &lt;a href=&quot;http://www.ooredoo.qa/&quot;&gt;Ooredoo&lt;/a&gt;&amp;#174;
+[^2]: &lt;a href=&quot;http://www.qatarairways.com/&quot;&gt;Qatar Airways&lt;/a&gt;&amp;#174; provides &lt;a href=&quot;http://www.onair.aero/&quot;&gt;OnAir&lt;/a&gt;&amp;#174; mobile services in-flight, which include GSM telephony, Blackberry Services and High Speed Wifi Connectivity.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/personal/bandwidth-woes&quot;&gt;Bandwidth Woes&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on November 04, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Deploying this site: Github and FTPloy]]></title>
+  <link>/personal/deploying-this-site</link>
+  <id>/personal/deploying-this-site</id>
+  <published>2013-11-03T00:00:00-04:00</published>
+  <updated>2013-11-03T00:00:00-04:00</updated>
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;When it comes to manage any coding project, &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt; is second to none for version control manager. I love Git. Its simple, easy and its awesome branching capabilities give tremendous push when developing something, whether its a big project or small. &lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt; simply adds in to the experience as it opens up the door for collaboration. Now there is service called the &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; which has a Jekyll parser built right into it. It means, you have to upload your textile and markdown files, your layout folder and any other folder you would want to use if you&amp;#39;d have in case you wanted to generate the site locally- to a Github repository. From there its as simple as to create a new branch called &lt;em&gt;gh-pages&lt;/em&gt; and the site gets generated and becomes live. Then all a user has to write a new post/page and save the file as markdown and commit/push the changes to the repo and the changes are shown instantly on the website.&lt;/p&gt;
+
+&lt;p&gt;While I like the automated Jekyll parsing feature of the Github pages, I do not like their server uptime and the lack of support for custom Jekyll plugins. Instead I went towards a free hosting service, and like all other free hosting services out there, it comes with a cPanel look-alike control center and does not include SSH terminal. This means I cannot install &lt;a href=&quot;http://dropbox.com&quot;&gt;Dropbox&lt;/a&gt; or Git in it to make a pull request everytime I post or change something. My options were limited to age-old File Transfer Protocol (FTP), I say this in this way not to belittle the FTP. FTP itself is a robust transfer protocol and used by millions all over the world. I say this because its not pragmatic to use it with Jekyll. Jekyll generates the site in a specified destination folder and everytime the site is updated, only some files gets changed. I could&amp;#39;ve used &lt;code&gt;git diff&lt;/code&gt; command to look for the changed files and upload them one by one through FTP. If you think about it, this seriously hurts the workflow and takes the concentration away from the main motif of this project -WRITING. So there was no way I would use FTP even with Git. I had to figure something out for my Git repo to do it for me.&lt;/p&gt;
+
+&lt;p&gt;I soon figured out &lt;a href=&quot;https://github.com/dmathieu/glynn%E2%80%8E&quot;&gt;Glynn&lt;/a&gt;, a command line Ruby utility to push the changed/updated files to a specified server. But that idea was short-lived when I found out it was made specifically for MAC OS and does not work on Windows Platform. I decided to use the web based services that offer Github to FTP services.&lt;/p&gt;
+
+&lt;p&gt;Then, I figured out &lt;a href=&quot;http://deployhq.com&quot;&gt;DeployHQ&lt;/a&gt;. Its a web based service that allows you to deploy a provided git to a server using the FTP protocol. The free plan gives a user the ability to have one project with 10 deployments per day. I would note that DeployHQ does not support automatic deployment, once you&amp;#39;ve added/changed something in your project and committed the changes, you have to press the green &amp;quot;Deploy Now&amp;quot; button in your account page to push the files through FTP. It was a breeze until I found that sometimes during busy times of the day, the service is not that reliable. And changing the repository to a different repo with the exact same files freezes the whole deployment process. Again, I started looking for a reliable deployment tool that would help me deploy from my Github Repository to my web server via FTP and I found  &lt;a href=&quot;http://www.ftploy.com&quot;&gt;FTPloy&lt;/a&gt;. The best thing about FTPloy&amp;#39;s service is that they offer automated deployments to your server upon committing and pushing the changes in Github, it takes away all the useless clicks I had to perform to deploy the site with DeployHQ. This greatly streamlines the process of writing and blogging. After writing a blog post, I simply run the following five commands from the command line in my local workspace:  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;destination&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;destionation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;destination&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;Commit Message&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remote&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reponame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;master&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  
+
+&lt;p&gt;These commands generate the site locally and push the copy of the site to Github, which then gets pulled by FTPloy and it pushes the files to my web-server via FTP. Most of the time the changes can be seen instantaneously and really adds in to the experience.&lt;/p&gt;
+
+&lt;p&gt;FTPloy&amp;#39;s free plan includes the ability to have one project with no limit on the deployment one could make in a single day. FTPloy also offers a simple sign-up and getting started with the deployment process is like eating a pie.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/personal/deploying-this-site&quot;&gt;Deploying this site: Github and FTPloy&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on November 03, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Let's Fire up the engines!]]></title>
+  <link>/personal/Lets-fire-up-the-engines</link>
+  <id>/personal/Lets-fire-up-the-engines</id>
+  <updated>2014-01-04T00:00:00-00:00</updated>
+  <published>2013-11-01T00:00:00-04:00</published>
+  
+  <author>
+    <name>Society of Software Engineers</name>
+    <uri></uri>
+    <email>hmfaysal@alum.mit.edu</email>
+  </author>
+  <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;The beginning is the most important part of the work.&amp;quot;
+--&lt;cite&gt;Plato&lt;/cite&gt; &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have been away from the blogging scene for quite a while now, suddenly today it dawned upon me that I need to start writing/posting again. My writing is a little bit rusty now, and I need to brush on that. Anyways, the moment I thought about blogging, &lt;a href=&quot;http://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt; flashed in my mind. Well, I used Wordpress[^1] in the past and it worked well for a while, then I had to face issues like high-traffic and high CPU load and unexpected spikes in my server. Well, those weren&amp;#39;t too much trouble, I would avoid fixing those bugs if I was busy, and sometimes I would leave the system untouched for 2 days straight and let the server admins frown and try to mitigate the outage (I had a pretty straight forward deal with my hosting provider, that no matter what, they can&amp;#39;t shut down my website). The PHP runtime errors weren&amp;#39;t a big deal, the hundreds of thousands of SQL database queries weren&amp;#39;t a trouble, sometimes the site would run a tad bit slower than average, but it was OK overall for me. A sample of the emails I would receive from my hosting provider is given below:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;tickets@hostgator.com
+10/11/10
+
+to hmfaysal 
+Hello, 
+
+
+I apologize, but I was forced to suspend the script &amp;quot;/home/hmfaysal/public_html/hmfaysal.com/index.php&amp;quot; as it was causing a high load on the server, and due to it affecting all of the other accounts on the system, I was forced to take immediate action for the health of the server.g 
+
+I did notice that this was a Wordpress installation, and would recommend that you enable caching for it.
+
+Please note that if you already have caching enabled, you will need to take more action such as looking into any high use modules or plugins, and seeing if there are any updates, or possibly any that you can disable to reduce the load that your site causes. 
+
+If you reply back to this with your IP address (http://www.hostgator.com/ip.shtml) we will be more than happy to go ahead enable HTTP access for you, so that you can safely work on the script without it causing further issues. Please let me know how you would like to proceed. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But the game was changed when my site got hacked. Wordpress is notorious in getting hacked. The PHP code libraries are huge, and while &lt;a href=&quot;http://automattic.com/&quot;&gt;Automattic&lt;/a&gt; tries to keep it relatively clean and bug free, bugs do persist among the thousands of lines of codes and every once in a while a bug gets discovered by the code breakers. If the bug can be exploited in some way to gain access of the site, the code breakers tend to do some serious damage. While I wasn&amp;#39;t been exclusively targeted by such individuals, I was part of a victimized group who used the same version of Wordpress, and all of our sites got defaced by some mass defacing software. Although it didn&amp;#39;t do serious damage, as I have daily off-site backup, I became dubious about the Wordpress platform.&lt;/p&gt;
+
+&lt;p&gt;So, this time around, while I was still brainstorming for ideas and theme designs and what not, I decided to go back to &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, or you may say, rather old school. Why not use plain static HTML files with some CSS styling and JS animations? Static sites are impossible to hack, as there are no codes needed to be run on the server. The only way a static site can be compromised if the code breakers have access to your FTP account. I have used Jekyll in the past during my college years. I was working as a Teaching Assistant in the &lt;a href=&quot;http://math.mit.edu/index.php&quot;&gt;Mathematics Dept&lt;/a&gt;, and I was supposed to post weekly course materials on the course website. The trouble was my &lt;a href=&quot;http://ist.mit.edu/&quot;&gt;alma maters IT dept&lt;/a&gt; didn&amp;#39;t allow dynamic sites to run on the nodes, and I wasn&amp;#39;t going download the HTML files, edit them with Sublime text, and push them back onto the server everyweek. So I used Jekyll and &lt;a href=&quot;http://git-scm.com/&quot;&gt;GIT Version Control&lt;/a&gt; to do that for me. And it was so efficient that I would post materials daily instead of weekly. It was like love on first use. But Wordpress had lots of theme choices and for my personal site I decided to use Wordpress anyways disregarding the simpleness and speed static sites provided. After the takeover of my Wordpress powered blog happened, I turned to self written PHP sites and static sites completely. I have built a &lt;a href=&quot;http://faysalsden.tk&quot;&gt;social network&lt;/a&gt; based on PHP for my peer group which is highly secure but when it comes down to speed it lags behind. So I built this site using Jekyll, a blog aware static site generator. I hope this site will perform as envisioned.&lt;/p&gt;
+
+&lt;p&gt;[^1]: This domain previously hosted a Wordpress blog.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/personal/Lets-fire-up-the-engines&quot;&gt;Let's Fire up the engines!&lt;/a&gt; was originally published by Society of Software Engineers at &lt;a href=&quot;&quot;&gt;Society of Software Engineers&lt;/a&gt; on November 01, 2013.&lt;/p&gt;</content>
+</entry>
+
+</feed>

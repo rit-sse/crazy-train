@@ -1,0 +1,59 @@
+title:            Society of Software Engineers
+description:      2014
+logo:             SSE-Logo-on-Blue.png
+disqus_shortname: SSE
+default_bg:       cover.jpg
+#Change url to your domain. Leave localhost:4000 server or blank when working locally.
+
+# Owner/author information
+owner:
+  name:           Society of Software Engineers
+  avatar:         hmfaysal.jpg
+  email:          hmfaysal@alum.mit.edu
+  description:    Test
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        sse
+  facebook:       sse
+  github:         sse
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/u/0/102602916593522619858
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: About
+    url: /about
+  - title: Categories
+    url: /categories
+  - title: Tags
+    url: /tags
+  - title: Technical
+    url: /technical-details
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+pygments:    true
+markdown:    redcarpet
+paginate:    4
+paginate_path: "page:num"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

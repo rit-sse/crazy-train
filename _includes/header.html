@@ -1,0 +1,32 @@
+{% if page.image.feature %}
+<header class="blog-header header-white header-overlay align-center align-middle" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})" itemscope itemtype="http://schema.org/Organization">
+{% else %} 
+<header class="blog-header header-white header-overlay align-center align-middle" style="background-image: url({{ site.url }}/images/{{ site.default_bg }})" itemscope itemtype="http://schema.org/Organization">
+{% endif %}
+{% if page.headline %}
+<div class="header-inner">
+    <div class="container">
+        <a class="brand light" href="{{ site.url }}" role="banner" itemprop="url">
+                <img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" style="width:200px">
+        <h1 class="blog-title light" itemprop="name">
+            {{ site.title }}
+        </h1>
+        </a>
+        <h2 class="blog-description light bordered bordered-top" itemprop="description">
+            {{ page.headline }}
+        </h2>
+    </div>
+</div>
+{% else %}
+<div class="header-inner">
+    <div class="container">
+        <a class="brand light" href="{{ site.url }}" role="banner" itemprop="url">
+                <img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo">
+        <h2 class="blog-title light" itemprop="name">
+            {{ site.title }}
+        </h2>
+        </a>
+    </div>
+</div>
+{% endif %}
+</header>

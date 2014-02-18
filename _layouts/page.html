@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body class="page-template" itemscope itemtype="http://schema.org/WebPage">
+{% include header.html %}
+<div id="main" class="content" role="main" itemprop="mainContentOfPage">
+    <div class="container">
+        <article class="post" itemscope>
+            <div class="row">
+                {% if page.link %}
+                    <h1 class="post-title text-center hyper lighter" itemprop="name"><a href="{{ page.link }}">{{ page.title }} <span class="link-arrow">&rarr;</span></a></h1>
+                {% else %}
+                    <h1 class="post-title text-center hyper lighter" itemprop="name">{{ page.title }}</h1>
+                {% endif %}
+                <div class="page-body col-md-10 col-md-offset-1" itemprop="description">
+                    {{ content }}
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+{% include footer.html %}
+    {% include scripts.html %}  
+</body>
+</html>

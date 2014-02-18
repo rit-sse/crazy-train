@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Let's Fire up the engines! &#8211; Society of Software Engineers</title>
+<meta name="description" content="Crank up the music, because the world is going to take a hit!">
+<meta name="keywords" content="first post, introduction, helloworld">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/rocket-launch.jpg">
+
+<meta name="twitter:title" content="Let's Fire up the engines!">
+<meta name="twitter:description" content="Crank up the music, because the world is going to take a hit!">
+<meta name="twitter:creator" content="@sse">
+
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Society of Software Engineers Feed">
+
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
+
+<header class="blog-header header-white header-overlay align-center align-middle" style="background-image: url(/images/rocket-launch.jpg)" itemscope itemtype="http://schema.org/Organization">
+
+
+<div class="header-inner">
+    <div class="container">
+        <a class="brand light" href="" role="banner" itemprop="url">
+                <img itemprop="logo" src="/images/SSE-Logo-on-Blue.png" alt="Blog Logo">
+        <h2 class="blog-title light" itemprop="name">
+            Society of Software Engineers
+        </h2>
+        </a>
+    </div>
+</div>
+
+</header>
+<div id="main" class="content" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+    <div class="container">
+        <article class="post hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="row">
+            
+            
+            
+            
+            
+             
+             
+                
+                    <h1 class="post-title text-center hyper lighter entry-title" itemprop="headline">Let's Fire up the engines!</h1>
+                
+                <div class="post-info text-center bordered-top col-md-2">
+                    <span class="entry-date date published"><time datetime="2013-11-01T00:00:00-04:00" class="post-time" itemprop="datePublished">01 Nov 2013</time><span>Last modified on <span class="entry-date date updated"><time datetime="2014-01-04" itemprop="dateModified">04 Jan 2014</time></span>
+                    in <span class="post-tags"><a href="/categories/index.html#personal" data-toggle="tooltip" title="Other posts from the Personal category" rel="tag">Personal</a></span>
+                    <span class="post-tags">
+                        <i class="icon-time"></i>&nbsp;4 minutes read
+                    </span>
+                </div>
+                <div class="post-body bordered-bottom col-md-8 entry-content" itemprop="description">
+                    
+                    <blockquote>
+<p>&quot;The beginning is the most important part of the work.&quot;
+--<cite>Plato</cite> </p>
+</blockquote>
+
+<p>I have been away from the blogging scene for quite a while now, suddenly today it dawned upon me that I need to start writing/posting again. My writing is a little bit rusty now, and I need to brush on that. Anyways, the moment I thought about blogging, <a href="http://wordpress.org/">Wordpress</a> flashed in my mind. Well, I used Wordpress[^1] in the past and it worked well for a while, then I had to face issues like high-traffic and high CPU load and unexpected spikes in my server. Well, those weren&#39;t too much trouble, I would avoid fixing those bugs if I was busy, and sometimes I would leave the system untouched for 2 days straight and let the server admins frown and try to mitigate the outage (I had a pretty straight forward deal with my hosting provider, that no matter what, they can&#39;t shut down my website). The PHP runtime errors weren&#39;t a big deal, the hundreds of thousands of SQL database queries weren&#39;t a trouble, sometimes the site would run a tad bit slower than average, but it was OK overall for me. A sample of the emails I would receive from my hosting provider is given below:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">tickets@hostgator.com
+10/11/10
+
+to hmfaysal 
+Hello, 
+
+
+I apologize, but I was forced to suspend the script &quot;/home/hmfaysal/public_html/hmfaysal.com/index.php&quot; as it was causing a high load on the server, and due to it affecting all of the other accounts on the system, I was forced to take immediate action for the health of the server.g 
+
+I did notice that this was a Wordpress installation, and would recommend that you enable caching for it.
+
+Please note that if you already have caching enabled, you will need to take more action such as looking into any high use modules or plugins, and seeing if there are any updates, or possibly any that you can disable to reduce the load that your site causes. 
+
+If you reply back to this with your IP address (http://www.hostgator.com/ip.shtml) we will be more than happy to go ahead enable HTTP access for you, so that you can safely work on the script without it causing further issues. Please let me know how you would like to proceed. 
+</code></pre></div>
+<p>But the game was changed when my site got hacked. Wordpress is notorious in getting hacked. The PHP code libraries are huge, and while <a href="http://automattic.com/">Automattic</a> tries to keep it relatively clean and bug free, bugs do persist among the thousands of lines of codes and every once in a while a bug gets discovered by the code breakers. If the bug can be exploited in some way to gain access of the site, the code breakers tend to do some serious damage. While I wasn&#39;t been exclusively targeted by such individuals, I was part of a victimized group who used the same version of Wordpress, and all of our sites got defaced by some mass defacing software. Although it didn&#39;t do serious damage, as I have daily off-site backup, I became dubious about the Wordpress platform.</p>
+
+<p>So, this time around, while I was still brainstorming for ideas and theme designs and what not, I decided to go back to <a href="http://jekyllrb.com">Jekyll</a>, or you may say, rather old school. Why not use plain static HTML files with some CSS styling and JS animations? Static sites are impossible to hack, as there are no codes needed to be run on the server. The only way a static site can be compromised if the code breakers have access to your FTP account. I have used Jekyll in the past during my college years. I was working as a Teaching Assistant in the <a href="http://math.mit.edu/index.php">Mathematics Dept</a>, and I was supposed to post weekly course materials on the course website. The trouble was my <a href="http://ist.mit.edu/">alma maters IT dept</a> didn&#39;t allow dynamic sites to run on the nodes, and I wasn&#39;t going download the HTML files, edit them with Sublime text, and push them back onto the server everyweek. So I used Jekyll and <a href="http://git-scm.com/">GIT Version Control</a> to do that for me. And it was so efficient that I would post materials daily instead of weekly. It was like love on first use. But Wordpress had lots of theme choices and for my personal site I decided to use Wordpress anyways disregarding the simpleness and speed static sites provided. After the takeover of my Wordpress powered blog happened, I turned to self written PHP sites and static sites completely. I have built a <a href="http://faysalsden.tk">social network</a> based on PHP for my peer group which is highly secure but when it comes down to speed it lags behind. So I built this site using Jekyll, a blog aware static site generator. I hope this site will perform as envisioned.</p>
+
+<p>[^1]: This domain previously hosted a Wordpress blog.</p>
+
+                    <br>
+                    <span class="entry-tags">
+                    <p>
+                        <i class="icon-tags"></i>&nbsp;Tagged with <a href="/tags/index.html#first post" data-toggle="tooltip" title="Posts tagged with first post" rel="tag">first post</a>&nbsp;&bull;&nbsp;<a href="/tags/index.html#introduction" data-toggle="tooltip" title="Posts tagged with introduction" rel="tag">introduction</a>&nbsp;&bull;&nbsp;<a href="/tags/index.html#helloworld" data-toggle="tooltip" title="Posts tagged with helloworld" rel="tag">helloworld</a>
+                    </p>
+                    </span>
+                </div>
+            </div>
+            <footer class="post-footer entry-meta">
+                <div class="row">
+    <div class="post-share text-center bordered bordered-bottom col-md-8 col-md-offset-2">
+        <p class="light">
+            Share this post
+        </p>
+        <ul class="social-mini">
+            <li>
+                <a href="https://twitter.com/intent/tweet?text=&quot;Let's Fire up the engines!&quot;%20/personal/Lets-fire-up-the-engines%20via%20&#64;sse"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-toggle="tooltip" title="Share on Twitter" itemprop="Twitter">
+                    <i class="icon-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a  href="https://www.facebook.com/sharer/sharer.php?u=/personal/Lets-fire-up-the-engines"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" data-toggle="tooltip" title="Share on Facebook" itemprop="Facebook">
+                    <i class="icon-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/share?url=/personal/Lets-fire-up-the-engines"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" data-toggle="tooltip" title="Share on Google plus" itemprop="GooglePlus">
+                    <i class="icon-google-plus"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+                <div class="post-author row">
+    <div class="col-md-2 text-center">
+        <img src="/images/hmfaysal.jpg" alt="Society of Software Engineers's photo" class="post-avatar img-circle img-responsive" itemprop="image">
+    </div>
+    <div class="col-md-10">
+        <h4 class="small-screen-center author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">By <span itemprop="name" class="fn"><a href="/about" title="About Society of Software Engineers" itemprop="url">Society of Software Engineers</a></span></h4>
+        <p class="lead">Test</p>
+    </div>
+    
+</div> 
+            </footer>          
+        </article>
+    </div>
+</div>
+
+<footer id="footer" class="text-center" style="background-image: url(/images/rocket-launch.jpg)">
+
+    <div class="container">
+        <ul class="social-icons">
+            
+            <li>
+                <a href="http://twitter.com/sse" data-toggle="tooltip" title="Society of Software Engineers on Twitter" target="_blank">
+                    <i class="icon-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://facebook.com/sse" data-toggle="tooltip" title="Society of Software Engineers on Facebook" target="_blank">
+                    <i class="icon-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/u/0/102602916593522619858" data-toggle="tooltip" title="Society of Software Engineers on Google+" target="_blank">
+                    <i class="icon-google-plus"></i>
+                </a>
+            </li>
+        	
+            
+            
+            <li>
+                <a href="http://github.com/sse" data-toggle="tooltip" title="Society of Software Engineers on Github" target="_blank">
+                    <i class="icon-github"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="copy-text">
+        	<a href="/about/">Society of Software Engineers</a> &copy; 2014 &bull; All rights reserved.
+        </p>
+        <ul class="menu-items" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            
+			<li>
+				
+					<a href="/"><i class="icon-home"></i></a>&nbsp;&bull;
+				 
+			</li>
+	        
+			<li>
+				
+					<a href="/about">About</a>&nbsp;&bull;
+				 
+			</li>
+	        
+			<li>
+				
+					<a href="/categories">Categories</a>&nbsp;&bull;
+				 
+			</li>
+	        
+			<li>
+				
+					<a href="/tags">Tags</a>&nbsp;&bull;
+				 
+			</li>
+	        
+			<li>
+				
+					<a href="/technical-details">Technical</a>&nbsp;&bull;
+				 
+			</li>
+	        
+	        <li><a href="/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script type="text/javascript" src="/assets/js/script.js"></script>
+
+ 
+</body>
+</html>
