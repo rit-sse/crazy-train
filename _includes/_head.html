@@ -1,8 +1,6 @@
 <meta charset="utf-8" />
 
-<title>
-{{ site.title }}
-</title>
+<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 
 <link href="/assets/css/main.css" media="screen" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.js"></script>

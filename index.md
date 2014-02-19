@@ -1,12 +1,11 @@
 ---
 layout: home
-title: SSE
 ---
 # Welcome!
 
 ### What we&#39;re all about
 
-The Society of Software Engineers (SSE) is a student organization at RIT composed of software engineers, computer scientists, and other students. We have over fifty active members that participate in mentoring, software projects, intramural sports, and social events. We work closely with companies in the software industry to bring companies and students together.ååå
+The Society of Software Engineers (SSE) is a student organization at RIT composed of software engineers, computer scientists, and other students. We have over fifty active members that participate in mentoring, software projects, intramural sports, and social events. We work closely with companies in the software industry to bring companies and students together.
 
 [More...](/about)
 
