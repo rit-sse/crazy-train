@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include _head.html %}
+<body>
+  {% include _header.html %}
+    <div id="content_wrapper">
+      <div id="content_left">
+        {{ content }}  
+      </div>
+      <!-- EVENTS -->
+      <div id="content_right">
+        <h3>Upcoming Events</h3>
+          <div id="eventshighlight">
+            <a href="/events/257" title="Society of Software Engineers Weekly Meeting">SSE Meeting</a>
+            <p>2/21  5 -  6 pm</p>
+            <a href="/events/284" title="Ins and Outs of Metaprogramming in Ruby">Tech Talk: Metaprogramming in Ruby</a>
+            <p>2/21  5:45 -  6:30 pm</p>
+            <a href="/events/261" title="Practice your technical interviewing skills in a comfortable, friendly environment">Mock Interview Day</a>
+            <p>2/22 12 -  5 pm</p>
+            <a href="/events/276" title="">CS 2 Exam 1 Review Session</a>
+            <p>2/23  2 -  4 pm</p>
+            <a href="/events/258" title="">Intuit Visit</a>
+            <p>2/24  6:30 -  7:30 pm</p>
+          </div>
+        </div>
+      <div class="clear"></div>
+    </div>
+    <!-- END EVENTS -->
+    <div id="footer">
+
+      All content is Copyright &copy; 2014 Society of Software Engineers.
+
+    </div>
+  </div>
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28899218-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+</html>
