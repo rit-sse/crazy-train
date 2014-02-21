@@ -1,0 +1,7 @@
+<h3>Navigation</h3>
+<div id="eventshighlight">
+  {% for link in page.nav_links %}
+    <a href={{link.path}}>{{link.name}}</a>
+    <br>
+  {% endfor %}
+</div>

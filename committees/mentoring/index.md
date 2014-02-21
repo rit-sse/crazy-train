@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Mentoring
-permalink: /mentoring/
 ---
 Mentoring Lab
 -------------

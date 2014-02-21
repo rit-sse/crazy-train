@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Fundraising
-permalink: /fundraising/
 ---
 If you're interested in getting your hands on some SSE-brand apparel, the
 Fundraising committee is who you will want to talk to.
