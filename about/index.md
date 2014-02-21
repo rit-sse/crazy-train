@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: About The SSE
 ---
 ### What we're all about

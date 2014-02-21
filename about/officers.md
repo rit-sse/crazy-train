@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Officers
 permalink: /officers/
 ---
@@ -8,39 +8,39 @@ Minutes from weekly Officers meetings are
 
 ### Principal Officers
 
-Derek Erdmann, President  
+Derek Erdmann, President
 president@sse.se.rit.edu
 
-Becca Dudley, Vice President  
+Becca Dudley, Vice President
 vp@sse.se.rit.edu
 
-Andy Lyne, Treasurer  
+Andy Lyne, Treasurer
 treasurer@sse.se.rit.edu
 
-Wesley Wigham, Secretary  
+Wesley Wigham, Secretary
 secretary@sse.se.rit.edu
 
 ### Committee Heads ###
-Benjin Dubishar, Mentoring  
+Benjin Dubishar, Mentoring
 mentoring@sse.se.rit.edu
 
-Michael Timbrook, Projects  
+Michael Timbrook, Projects
 projects@sse.se.rit.edu
 
-John Renner, Events  
+John Renner, Events
 events@sse.se.rit.edu
 
-Shayde Nofziger, Fundraising  
+Shayde Nofziger, Fundraising
 fundraising@sse.se.rit.edu
 
-Daniel Wallach, Technology  
+Daniel Wallach, Technology
 technology@sse.se.rit.edu
 
-Ben Kantor, ViSE  
-vise@sse.se.rit.edu
+Kristen Mills, Talks
+talks@sse.se.rit.edu
 
-Steve Brunwasser, Lab Upkeep  
+Steve Brunwasser, Lab Upkeep
 upkeep@sse.se.rit.edu
 
-Corban Mailloux, Public Relations  
+Kocsen Chung, Public Relations
 pr@sse.se.rit.edu

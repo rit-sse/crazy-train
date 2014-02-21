@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: default
+show_header: true
 ---
 # Welcome!
 

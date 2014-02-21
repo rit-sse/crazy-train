@@ -2,10 +2,15 @@
 <html lang="en">
 {% include _head.html %}
 <body>
-  {% include _header.html %}
+  <div id="outer_container">
+    {% include _nav.html %}
+    {% if page.show_header %}
+      {% include _header.html %}
+    {% endif %}
+  </div>
     <div id="content_wrapper">
       <div id="content_left">
-        {{ content }}  
+        {{ content }}
       </div>
       <!-- EVENTS -->
       <div id="content_right">
