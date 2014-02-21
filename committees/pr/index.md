@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Public Relations
-permalink: /pr/
 ---
 The Public Relations Committee is the public face of the Society of Software
 Engineers at RIT. The committee is responsible for:
