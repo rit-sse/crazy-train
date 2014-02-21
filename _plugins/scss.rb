@@ -1,6 +1,4 @@
 require 'sass'
-require 'compass'
-require 'bootstrap-sass'
 
 class SassGenerator < Jekyll::Generator
 
@@ -13,7 +11,7 @@ class SassGenerator < Jekyll::Generator
       end
     end
     site.static_files << SassCssFile.new(site, site.source, 'assets/css', 'application.scss')
-    site.static_files << SassCssFile.new(site, site.source, 'assets/css/gtv', 'gtv.scss')
+    site.static_files << SassCssFile.new(site, site.source, 'assets/css', 'gtv.scss')
   end
 
 end
