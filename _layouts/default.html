@@ -9,17 +9,16 @@
     {% endif %}
   </div>
     <div id="content_wrapper">
-      <div id="content_left">
+      {% if page.sidebar %}
+        <div id="content_left">
+          {{ content }}
+        </div>
+        <div id="content_right">
+          {% include {{page.sidebar}} %}
+        </div>
+      {% else %}
         {{ content }}
-      </div>
-      <!-- EVENTS -->
-      <div id="content_right">
-        {% if page.with_nav %}
-          {% include _secondary_nav.html %}
-        {% else %}
-          {% include _events.html %}
-        {% endif %}
-      </div>
+      {% endif %}
       <div class="clear"></div>
     </div>
     <!-- END EVENTS -->
@@ -29,7 +28,7 @@
 
     </div>
   </div>
-    <script type="text/javascript">
+  <script type="text/javascript">
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-28899218-2']);

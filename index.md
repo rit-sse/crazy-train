@@ -1,6 +1,7 @@
 ---
 layout: default
 show_header: true
+sidebar: _events.html
 ---
 # Welcome!
 
