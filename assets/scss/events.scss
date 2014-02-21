@@ -1,0 +1,133 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.event-preview-wrapper
+{
+  margin-bottom: 20px;
+}
+
+.event-preview
+{
+  padding-left: 10px;
+  background: #fff;
+}
+
+h3 a
+{
+  color: black;
+}
+
+.event-info
+{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.gradient-test
+{
+  padding-left: 10px;
+  background: #1e5799;
+}
+
+.title
+{
+  margin-bottom: 20px;
+}
+
+.event-description
+{
+
+}
+
+.display-wrapper 
+{
+	vertical-align: top;
+	font-size: 14px;
+}
+
+/*Includes what filters exist.*/
+.filter 
+{
+	padding-left: 10px;
+	float: left;
+}
+
+/*Includes a list of different ways to view events*/
+.view 
+{
+	padding-right: 10px;
+	float: right;
+}
+
+/*An inactive entry on the filter nav bar*/
+.inactive-entry 
+{
+	padding-right: 5px;
+}
+
+.inactive-entry a
+{
+    color:black;
+}
+
+/*An active entry on the filter nav bar*/
+.active-entry
+{
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+.active-entry a
+{
+  color: black;
+}
+
+.public_show_entry
+{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.public_show_event_options
+{
+  padding-top: 20px;
+}
+
+div.location
+{
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.other-events-event
+{
+  padding-bottom:15px;
+}
+
+.featured-events.thumbnails {
+    margin-left: 0;
+}
+
+.chars-remaining {
+    width: 400px;
+}
+
+.featured-events .teaser {
+    height: 180px;
+    width: 290px;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.featured-events img {
+    max-height: 180px;
+    max-width: 290px;
+    display: inline;
+    margin: 0 auto;
+}
+
+.featured-events .thumbnail a {
+    display: block;
+}

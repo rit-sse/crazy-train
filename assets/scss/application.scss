@@ -1,0 +1,25 @@
+@import 'events';
+@import 'styles';
+@import 'orbit-1.2.3';
+@import 'social';
+
+.floatleft {
+    width: 55%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    padding-top: 16px;
+
+    img {
+      box-shadow: 0 0 5px #444;
+    }
+}
+
+.floatright {
+    width: 45%;
+    float: right;
+
+    img {
+      box-shadow: 0 0 5px #444;
+    }
+}
