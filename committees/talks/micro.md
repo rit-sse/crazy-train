@@ -1,0 +1,70 @@
+---
+layout: page
+title: Recorded Micro Talks
+with_nav: true
+nav_links:
+  - name: Talk Guidelines
+    path: guidelines.html
+  - name: Recorded Tech Talks
+    path: tech.html
+  - name: Recorded Micro Talks
+    path: micro.html
+  - name: Recorded Rand Talks
+    path: rand.html
+  - name: Recorded Alum Talks
+    path: alum.html
+---
+
+### Night of MicroTalks: Friday, January 25, 2013
+
+#### MicroTalk on Native Americans with Katerina Luft
+
+{% youtube {width: 480, height: 360, url: "-hb3oR_fq1U"} %}
+
+#### MicroTalk on RESTful Architecture with Eric Lee
+
+{% youtube {width: 480, height: 360, url: "yZTK3rvG3yc"} %}
+
+#### MicroTalk on Swag with Katherine Whitlock
+
+{% youtube {width: 480, height: 360, url: "NBShgR1K8vY"} %}
+
+#### MicroTalk on Dada with Stephen Yingling
+
+{% youtube {width: 480, height: 360, url: "RSRcFT6dig0"} %}
+
+### Night of MicroTalks: Monday, December 17, 2012
+
+#### MicroTalk on Rock Climbing with Dan Wallach
+
+{% youtube {width: 480, height: 360, url: "CD6VTqFW8O4"} %}
+
+#### MicroTalk on Castle with Katherine Whitlock
+
+{% youtube {width: 480, height: 360, url: "1BzIVQKuwmQ"} %}
+
+### Night of MicroTalks: Friday, October 12, 2012
+
+#### MicroTalk on Sporks with Jesse Jurman
+
+{% youtube {width: 480, height: 360, url: "7t7aimMxIFo"} %}
+
+#### MicroTalk on The Raspberry Pi with Wesley Wigham
+
+{% youtube {width: 480, height: 360, url: "WZL23EnH3_k"} %}
+
+#### MicroTalk on GMOs with Becca Dudley
+
+{% youtube {width: 480, height: 360, url: "o_mcypgoW3E"} %}
+
+#### MicroTalk on Blendr with Ethan Jurman
+
+{% youtube {width: 480, height: 360, url: "C9OrULgm_Qg"} %}
+
+#### MicroTalk on AppFog with John Renner
+
+{% youtube {width: 480, height: 360, url: "DK07D55eOA0"} %}
+
+#### MicroTalk on The Uncanny Valley with Jesse Jurman
+
+{% youtube {width: 480, height: 360, url: "SRdxMUzn3UM"} %}
