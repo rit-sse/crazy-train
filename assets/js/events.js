@@ -1,3 +1,10 @@
+function param(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 function loadEvents() {
   $.getJSON('https://sse.se.rit.edu/events.json', function(data){
     var source   = $("#event-template").html();
@@ -8,6 +15,14 @@ function loadEvents() {
       var html = template(obj);
       events.append(html);
     }
+  });
+}
+
+function loadEvent(id) {
+  $.getJSON('https://sse.se.rit.edu/events/'+ id + '.json', function(data){
+    var source   = $("#event-template").html();
+    var template = Handlebars.compile(source);
+    $('#event').append(template(data));
   });
 }
 
@@ -26,6 +41,13 @@ Handlebars.registerHelper("formatDateRange", function(startTime, endTime) {
     dateString += ' - ' + moment(endTime).format(time);
   }
   return dateString;
+});
+
+Handlebars.registerHelper("checkEmpty", function(string, alternate){
+  if(string === ''){
+    return alternate;
+  }
+  return string;
 });
 
 function filter(committee){

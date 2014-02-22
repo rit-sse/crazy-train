@@ -1,0 +1,37 @@
+---
+layout: page
+permalink: event/
+---
+<div id="event"></div>
+<div class="public_show_event_options">
+  <a href="/events">Back</a>
+</div>
+
+
+<script id="event-template" type="text/x-handlebar-template">
+  {% raw %}
+    <h1>{{name}}</h1>
+    <div class="public_show_entry">
+      <h3>What?</h3>
+      {{ checkEmpty description "There is no description at this time."}}
+    </div>
+
+    <div class="public_show_entry">
+      <h3>When?</h3>
+      {{formatDateRange start_date end_date}}
+    </div>
+
+    <div class="public_show_entry">
+      <h3>Where?</h3>
+      {{checkEmpty location "The location for this event was not entered"}}
+    </div>
+  {% endraw %}
+</script>
+
+<script>
+  $(document).ready(function(){
+    var id = param('id');
+    loadEvent(id);
+  });
+</script>
+
