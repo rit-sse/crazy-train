@@ -3,6 +3,7 @@ layout: page
 title: Events
 permalink: events/
 ---
+
 <div class="display-wrapper">
   <div class="filter">
     <span class="inactive-entry">Filter by:</span>
@@ -12,20 +13,22 @@ permalink: events/
     <span class="inactive-entry"><a href="#pr">PR</a></span>
     <span class="inactive-entry"><a href="#mentoring">Mentoring</a></span>
     <span class="inactive-entry"><a href="#general">General</a></span>
-    <span class="inactive-entry"><a href="#intramurals">Intramurala</a></span>
+    <span class="inactive-entry"><a href="#intramurals">Intramurals</a></span>
     <span class="inactive-entry"><a href="#talks">Talks</a></span>
     <span class="inactive-entry"><a href="#ViSE">ViSE</a></span>
   </div>
 </div>
+<br>
 <div id="events"></div>
 
 <script id="event-template" type="text/x-handlebar-template">
-  <div class="event-preview-wrapper">
+  {% raw %}
+  <div class="event-preview-wrapper {{committee_id}}">
     <div class="gradient-test">
       <div class="event-preview">
         <h3><a href="/event?id={{id}}">{{name}}</a></h3>
         <div class="event-info">
-          {{start_date}} - {{end_date}}
+          {{formatDateRange start_date end_date }}
         </div>
         <div class="event-description">
           {{description}}
@@ -33,4 +36,11 @@ permalink: events/
       </div>
     </div>
   </div>
+  {% endraw %}
+</script>
+
+<script>
+  $(document).ready(function(){
+    loadEvents();
+  });
 </script>
