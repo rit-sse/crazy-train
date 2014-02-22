@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sponsors
-permalink: /sponsors/
+permalink: sponsors/
 ---
 The SSE is supported by many outstanding organizations and companies, whether by feeding our members at meetings, sending us gifts to raffle at events, or through donations that help keep us running. Some of the companies we've worked with include:
 

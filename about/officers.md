@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Officers
-permalink: /officers/
+permalink: officers/
 ---
 Minutes from weekly Officers meetings are
 [available here](/about/officers/minutes).
