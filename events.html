@@ -7,15 +7,15 @@ permalink: events/
 <div class="display-wrapper">
   <div class="filter">
     <span class="inactive-entry">Filter by:</span>
-    <span class="inactive-entry"><a href="#all">All</a></span>
-    <span class="inactive-entry"><a href="#events">Events</a></span>
-    <span class="inactive-entry"><a href="#projects">Projects</a></span>
-    <span class="inactive-entry"><a href="#pr">PR</a></span>
-    <span class="inactive-entry"><a href="#mentoring">Mentoring</a></span>
-    <span class="inactive-entry"><a href="#general">General</a></span>
-    <span class="inactive-entry"><a href="#intramurals">Intramurals</a></span>
-    <span class="inactive-entry"><a href="#talks">Talks</a></span>
-    <span class="inactive-entry"><a href="#ViSE">ViSE</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(0);">All</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(1);">Events</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(2);">Projects</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(3);">PR</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(4);">Mentoring</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(5);">General</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(6);">Intramurals</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(7);">Talks</a></span>
+    <span class="inactive-entry"><a href="#" onclick="filter(8);">ViSE</a></span>
   </div>
 </div>
 <br>
@@ -23,19 +23,19 @@ permalink: events/
 
 <script id="event-template" type="text/x-handlebar-template">
   {% raw %}
-  <div class="event-preview-wrapper {{committee_id}}">
-    <div class="gradient-test">
-      <div class="event-preview">
-        <h3><a href="/event?id={{id}}">{{name}}</a></h3>
-        <div class="event-info">
-          {{formatDateRange start_date end_date }}
-        </div>
-        <div class="event-description">
-          {{description}}
+    <div class="event-preview-wrapper {{committee_id}}">
+      <div class="gradient-test">
+        <div class="event-preview">
+          <h3><a href="/event?id={{id}}">{{name}}</a></h3>
+          <div class="event-info">
+            {{formatDateRange start_date end_date }}
+          </div>
+          <div class="event-description">
+            {{description}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
   {% endraw %}
 </script>
 

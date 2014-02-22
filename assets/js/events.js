@@ -28,3 +28,19 @@ Handlebars.registerHelper("formatDateRange", function(startTime, endTime) {
   return dateString;
 });
 
+function filter(committee){
+  if(committee === 0 ){
+    $('.event-preview-wrapper').each(function(index, element){
+      element.style.display = 'block';
+    })
+  } else {
+    $('.event-preview-wrapper').each(function(index, element){
+      if($(element).hasClass(committee)){
+        element.style.display='block';
+      }else{
+        element.style.display='none';
+      }
+    });
+  }
+}
+
