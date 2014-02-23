@@ -20,9 +20,9 @@ Mentors
 -------
 
 SSE mentors are all volunteers, students who have finished important
-courses in the software engineering curriculum and want to help their peers 
-succeed. Mentors are usually on duty during two 2-hour blocks during the week, 
-where they're available to answer questions and assist students who need help 
+courses in the software engineering curriculum and want to help their peers
+succeed. Mentors are usually on duty during two 2-hour blocks during the week,
+where they're available to answer questions and assist students who need help
 with coursework, projects, or software engineering in general.
 
 All mentors have, at a minimum, completed the introductory CS sequence and
@@ -47,11 +47,11 @@ Crash Courses
 -------------
 
 While [Tech Talks][1] are designed to give students who have learned
-something a chance to share it, [Crash Courses][2] are given when a member wants to 
+something a chance to share it, [Crash Courses][2] are given when a member wants to
 learn a new technology or technique and we have people who can teach them. Crash
 courses are usually scheduled by request, although we do work with the
 [Projects Committee][3] to prepare for Rapid Development Weekend.
 
-[1]: /tech-talks
-[2]: /crash-courses
-[3]: /projects
+[1]: /committees/talks
+[2]: crash-courses
+[3]: /committees/projects

@@ -15,7 +15,7 @@ nav_links:
     path: alum.html
 ---
 
-#### AlumTalk on Time in Computing with Sean Madden
+#### Alum Talk on Time in Computing with Sean Madden
 
 {% youtube {width: 480, height:360, url: 'bisFnj8YqW4'} %}
 

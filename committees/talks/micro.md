@@ -15,56 +15,56 @@ nav_links:
     path: alum.html
 ---
 
-### Night of MicroTalks: Friday, January 25, 2013
+### Night of Micro Talks: Friday, January 25, 2013
 
-#### MicroTalk on Native Americans with Katerina Luft
+#### Micro Talk on Native Americans with Katerina Luft
 
 {% youtube {width: 480, height: 360, url: "-hb3oR_fq1U"} %}
 
-#### MicroTalk on RESTful Architecture with Eric Lee
+#### Micro Talk on RESTful Architecture with Eric Lee
 
 {% youtube {width: 480, height: 360, url: "yZTK3rvG3yc"} %}
 
-#### MicroTalk on Swag with Katherine Whitlock
+#### Micro Talk on Swag with Katherine Whitlock
 
 {% youtube {width: 480, height: 360, url: "NBShgR1K8vY"} %}
 
-#### MicroTalk on Dada with Stephen Yingling
+#### Micro Talk on Dada with Stephen Yingling
 
 {% youtube {width: 480, height: 360, url: "RSRcFT6dig0"} %}
 
-### Night of MicroTalks: Monday, December 17, 2012
+### Night of Micro Talks: Monday, December 17, 2012
 
-#### MicroTalk on Rock Climbing with Dan Wallach
+#### Micro Talk on Rock Climbing with Dan Wallach
 
 {% youtube {width: 480, height: 360, url: "CD6VTqFW8O4"} %}
 
-#### MicroTalk on Castle with Katherine Whitlock
+#### Micro Talk on Castle with Katherine Whitlock
 
 {% youtube {width: 480, height: 360, url: "1BzIVQKuwmQ"} %}
 
-### Night of MicroTalks: Friday, October 12, 2012
+### Night of Micro Talks: Friday, October 12, 2012
 
-#### MicroTalk on Sporks with Jesse Jurman
+#### Micro Talk on Sporks with Jesse Jurman
 
 {% youtube {width: 480, height: 360, url: "7t7aimMxIFo"} %}
 
-#### MicroTalk on The Raspberry Pi with Wesley Wigham
+#### Micro Talk on The Raspberry Pi with Wesley Wigham
 
 {% youtube {width: 480, height: 360, url: "WZL23EnH3_k"} %}
 
-#### MicroTalk on GMOs with Becca Dudley
+#### Micro Talk on GMOs with Becca Dudley
 
 {% youtube {width: 480, height: 360, url: "o_mcypgoW3E"} %}
 
-#### MicroTalk on Blendr with Ethan Jurman
+#### Micro Talk on Blendr with Ethan Jurman
 
 {% youtube {width: 480, height: 360, url: "C9OrULgm_Qg"} %}
 
-#### MicroTalk on AppFog with John Renner
+#### Micro Talk on AppFog with John Renner
 
 {% youtube {width: 480, height: 360, url: "DK07D55eOA0"} %}
 
-#### MicroTalk on The Uncanny Valley with Jesse Jurman
+#### Micro Talk on The Uncanny Valley with Jesse Jurman
 
 {% youtube {width: 480, height: 360, url: "SRdxMUzn3UM"} %}

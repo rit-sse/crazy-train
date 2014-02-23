@@ -2,12 +2,12 @@
 layout: page
 title: Projects
 ---
-The essence of Projects Committee is simple: some people want to work on things, 
+The essence of Projects Committee is simple: some people want to work on things,
 and others want to do things, we make it happen.
 
-Got a project?     <a href="https://sse.se.rit.edu/go/project_ideas">sse.se.rit.edu/go/project_ideas</a>
-Want to work?      projects@sse.se.rit.edu
-Questions?       projects@sse.se.rit.edu
+Got a project?     [sse.se.rit.edu/go/project_ideas][1]<br>
+Want to work?      <projects@sse.se.rit.edu><br>
+Questions?       <projects@sse.se.rit.edu><br>
 
 ## Active Projects
 
@@ -31,3 +31,5 @@ Hate using the bus system? Want to help make it easier? BetterBusses is the solu
 TigerLaundry is a way to make doing laundry less of a lottery. Using cloud sourced data figure out when the best available time to do laundry is and when not. This web and mobile application makes it easy to know when machines are in use in the campus laundry rooms.
 
 ##### Projects are a great way to earn SSE membership!
+
+[1]: "https://sse.se.rit.edu/go/project_ideas"
