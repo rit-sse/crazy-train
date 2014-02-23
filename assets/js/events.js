@@ -18,6 +18,23 @@ function loadEvents() {
   });
 }
 
+function loadUpcomingEvents() {
+  $.getJSON('https://sse.se.rit.edu/events.json', function(data){
+    var source   = $("#event-template").html();
+    var template = Handlebars.compile(source);
+    var events = $('#eventshighlight');
+    var max = 5;
+    if(data.length < max){
+      max = data.length;
+    }
+    for(var i = 0; i < max; i++){
+      var obj = data[i];
+      var html = template(obj);
+      events.append(html);
+    }
+  });
+}
+
 function loadEvent(id) {
   $.getJSON('https://sse.se.rit.edu/events/'+ id + '.json', function(data){
     var source   = $("#event-template").html();
