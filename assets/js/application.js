@@ -7,7 +7,3 @@ String.prototype.format = String.prototype.f = function() {
     }
     return s;
 };
-
-$(document).ready(function(){
-	$('#new_header').carousel('next');
-});
