@@ -7,7 +7,8 @@ task :new_post, :title do |t, args|
   else
     title = get_stdin("Enter a title for your post: ")
   end
-  filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
+  time = Time.now
+  filename = "_posts/#{time.strftime('%Y-%m-%d')}-#{title.to_url}.md"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -16,7 +17,7 @@ task :new_post, :title do |t, args|
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-    post.puts "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+    post.puts "date: #{time.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "---"
   end
 end
