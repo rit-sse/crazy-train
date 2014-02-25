@@ -6,6 +6,12 @@ function param(name) {
 }
 
 function loadEvents() {
+  var committee = param('committee');
+  if('committee' === ''){
+    committee = 0;
+  }
+  var text = $("#" + committee + " a").text();
+  document.title = text + " Events - Society of Software Engineers";
   $.getJSON('https://sse.se.rit.edu/events.json', function(data){
     var source   = $("#event-template").html();
     var template = Handlebars.compile(source);
@@ -15,6 +21,7 @@ function loadEvents() {
       var html = template(obj);
       events.append(html);
     }
+    filter(parseInt(committee));
   });
 }
 
@@ -67,12 +74,21 @@ Handlebars.registerHelper("checkEmpty", function(string, alternate){
   return string;
 });
 
+function filterAndUpdateState(committee){
+  filter(committee);
+  var text = $("#" + committee + " a").text();
+  History.pushState({state:committee}, text + " Events - Society of Software Engineers", "?committee=" + committee);
+}
+
 function filter(committee){
-  if(committee === 0 ){
+  $('.active-entry').toggleClass('active-entry inactive-entry');
+  if(committee === 0 || isNaN(committee) ){
+    $('#0').toggleClass('active-entry inactive-entry');
     $('.event-preview-wrapper').each(function(index, element){
       element.style.display = 'block';
-    })
+    });
   } else {
+    $('#' + committee).toggleClass('active-entry inactive-entry');
     $('.event-preview-wrapper').each(function(index, element){
       if($(element).hasClass(committee)){
         element.style.display='block';
