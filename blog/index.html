@@ -1,0 +1,36 @@
+---
+layout: default
+sidebar: _events.html
+---
+
+{% for post in paginator.posts %}
+  <h2 class="muted">{{ post.date | date: "%B %d, %Y" }}</h2>
+  <h1>{{ post.title }}</h1>
+  {{ post.content | split:'<!--more-->' | first }}
+   {% if post.content contains '<!--more-->' %}
+      <div class="pull-right"><a href="{{ post.url }}">Read more</a></div>
+   {% endif %}
+   <br>
+   <hr>
+{% endfor %}
+
+<ul class="pager">
+  {% if paginator.previous_page %}
+    <li class="previous">
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older</a>
+    </li>
+  {% else %}
+    <li class="previous disabled">
+      <a href="#">&larr; Older</a>
+    </li>
+  {% endif %}
+  {% if paginator.next_page %}
+    <li class="next">
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&rarr; Newer</a>
+    </li>
+  {% else %}
+    <li class="next disabled">
+      <a href="#">&rarr; Newer</a>
+    </li>
+  {% endif %}
+</ul>
