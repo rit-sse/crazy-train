@@ -9,7 +9,7 @@
         <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);">{{month}} <i class="fa fa-angle-right"></i></a>
           <div class="collapse" id="{{year}}-{{month}}">
             <ul class="list-style-none">
-              <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+              <li><a href="{{post.url}}">{{post.title}}</a></li>
   {% else %}
     {% capture month %}{{ post.date | date: '%m' }}{% endcapture %}
     {% capture nmonth %}{{ post.next.date | date: '%m' }}{% endcapture %}
@@ -24,7 +24,7 @@
         <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);">{{month}} <i class="fa fa-angle-right"></i></a>
           <div class="collapse" id="{{year}}-{{month}}">
             <ul class="list-style-none">
-              <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+              <li><a href="{{post.url}}">{{post.title}}</a></li>
     {% elsif year != nyear %}
       </ul>
       </div>
@@ -37,9 +37,9 @@
           <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);">{{month}} <i class="fa fa-angle-right"></i></a>
             <div class="collapse" id="{{year}}-{{month}}">
               <ul class="list-style-none">
-                <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+                <li><a href="{{post.url}}">{{post.title}}</a></li>
     {% else %}
-      <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+      <li><a href="{{post.url}}">{{post.title}}</a></li>
     {% endif %}
   {% endunless %}
 {% endfor %}
