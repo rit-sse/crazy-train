@@ -11,8 +11,17 @@ GEM
       execjs
     eco-source (1.1.0.rc.1)
     execjs (2.0.2)
+    handlebars (0.6.0)
+      handlebars-source (~> 1.3.0)
+      therubyracer (~> 0.12.0)
+    handlebars-source (1.3.0)
+    libv8 (3.16.14.3)
+    ref (1.0.5)
     sass (3.2.14)
     stringex (2.2.0)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
 
 PLATFORMS
   ruby
@@ -20,5 +29,6 @@ PLATFORMS
 DEPENDENCIES
   coffee-script
   eco
+  handlebars
   sass
   stringex

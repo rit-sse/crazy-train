@@ -31,7 +31,7 @@ class EcoFile < Jekyll::StaticFile
         f.write(js)
       end
     rescue => e
-       STDERR.puts "ECO Exception: #{e.message}"
+       STDERR.puts "Eco Exception: #{e.message}"
     end
 
     true

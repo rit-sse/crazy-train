@@ -13,8 +13,7 @@ function loadEvents() {
   var committee = $( "span a:contains('"+ committeeName + "')" ).parent().attr('id');
   document.title = committeeName + " Events - Society of Software Engineers";
   $.getJSON('https://sse.se.rit.edu/events.json', function(data){
-    var source   = $("#event-template").html();
-    var template = Handlebars.compile(source);
+    var template = Handlebars.templates.events;
     var events = $('#events');
     for(var i = 0; i < data.length; i++){
       var obj = data[i];
@@ -27,8 +26,7 @@ function loadEvents() {
 
 function loadUpcomingEvents() {
   $.getJSON('https://sse.se.rit.edu/events.json', function(data){
-    var source   = $("#event-template").html();
-    var template = Handlebars.compile(source);
+    var template = Handlebars.templates.upcoming;
     var events = $('#eventshighlight');
     var max = 5;
     if(data.length < max){
@@ -45,7 +43,7 @@ function loadUpcomingEvents() {
 function loadEvent(id) {
   $.getJSON('https://sse.se.rit.edu/events/'+ id + '.json', function(data){
     var source   = $("#event-template").html();
-    var template = Handlebars.compile(source);
+    var template = Handlebars.templates.event;
     $('#event').append(template(data));
   });
 }
