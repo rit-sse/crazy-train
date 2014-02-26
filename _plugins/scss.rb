@@ -4,7 +4,6 @@ class SassGenerator < Jekyll::Generator
 
   def generate(site)
 
-    Dir.mkdir('assets/css/') unless Dir.exists?('assets/css')
     site.static_files.clone.each do |sf|
       if sf.kind_of?(Jekyll::StaticFile) && sf.path =~ /scss\//
         site.static_files.delete(sf)
@@ -35,7 +34,7 @@ class SassCssFile < Jekyll::StaticFile
 
     FileUtils.mkdir_p(File.dirname(dest_path))
     begin
-      engine = Sass::Engine.for_file('assets/scss/application.scss', options)
+      engine = Sass::Engine.for_file("assets/scss/#{@name}", options)
       css = engine.render
       File.open(dest_path, 'w') do |f|
         f.write(css)
