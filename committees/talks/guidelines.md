@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Talk Guidelines
-sidebar: _secondary_nav.html
+sidebars: 
+  - _secondary_nav.html
 nav_links:
   - name: Talk Guidelines
     path: guidelines.html

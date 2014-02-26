@@ -9,12 +9,14 @@
     {% endif %}
   </div>
     <div id="content_wrapper">
-      {% if page.sidebar %}
+      {% if page.sidebars %}
         <div id="content_left">
           {{ content }}
         </div>
         <div id="content_right">
-          {% include {{page.sidebar}} %}
+          {% for sidebar in page.sidebars %}
+            {% include {{sidebar}} %}
+          {% endfor %}
         </div>
       {% else %}
         {{ content }}

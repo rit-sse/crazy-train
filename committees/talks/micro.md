@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Recorded Micro Talks
-sidebar: _secondary_nav.html
+sidebars:
+  - _secondary_nav.html
 nav_links:
   - name: Talk Guidelines
     path: guidelines.html
