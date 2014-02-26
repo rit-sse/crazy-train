@@ -7,3 +7,7 @@ String.prototype.format = String.prototype.f = function() {
     }
     return s;
 };
+
+function toggle(element){
+  $(element).find('i').toggleClass('fa-angle-left fa-angle-down');
+}

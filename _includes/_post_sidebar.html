@@ -1,0 +1,52 @@
+<h3>Posts</h3>
+{% for post in site.posts %}
+  {% unless post.next %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture month %}{{ post.date | date: '%m' }}{% endcapture %}
+    <a data-toggle="collapse" href="#{{year}}" onclick="toggle(this);">{{year}} <i class="fa fa-angle-right"></i></a>
+    <div class="collapse" id="{{year}}">
+      <ul class="list-style-none">
+        <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);">{{month}} <i class="fa fa-angle-right"></i></a>
+          <div class="collapse" id="{{year}}-{{month}}">
+            <ul class="list-style-none">
+              <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+  {% else %}
+    {% capture month %}{{ post.date | date: '%m' }}{% endcapture %}
+    {% capture nmonth %}{{ post.next.date | date: '%m' }}{% endcapture %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+    {% if month != nmonth and year == nyear %}
+      </ul>
+      </div>
+      </li>
+      </ul>
+      <ul class="list-style-none">
+        <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);">{{month}} <i class="fa fa-angle-right"></i></a>
+          <div class="collapse" id="{{year}}-{{month}}">
+            <ul class="list-style-none">
+              <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+    {% elsif year != nyear %}
+      </ul>
+      </div>
+      </li>
+      </ul>
+      </div>
+      <a data-toggle="collapse" href="#{{year}}" onclick="toggle(this);">{{year}} <i class="fa fa-angle-right"></i></a>
+      <div class="collapse" id="{{year}}">
+        <ul class="list-style-none">
+          <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);">{{month}} <i class="fa fa-angle-right"></i></a>
+            <div class="collapse" id="{{year}}-{{month}}">
+              <ul class="list-style-none">
+                <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+    {% else %}
+      <li><a data-toggle="collapse" href="{{post.url}}">{{post.title}}</a></li>
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+{% if site.posts.size > 0 %}
+  </ul>
+  </div>
+  </li>
+  </ul>
+  </div>
+{% endif %}
