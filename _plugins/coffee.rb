@@ -2,7 +2,7 @@ require 'coffee-script'
 class CoffeeScriptGenerator < Jekyll::Generator
   def generate(site)
 
-    Fileutils.mkdir_p('assets/js/') unless Dir.exists?('assets/js')
+    FileUtils.mkdir_p('assets/js/') unless Dir.exists?('assets/js')
     site.static_files.clone.each do |sf|
       if sf.kind_of?(Jekyll::StaticFile) && sf.path =~ /coffee/
         site.static_files.delete(sf)
