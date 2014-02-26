@@ -8,9 +8,10 @@ class CoffeeScriptGenerator < Jekyll::Generator
         site.static_files.delete(sf)
       end
     end
-    site.static_files << CoffeeFile.new(site, site.source, 'assets/javascripts', 'gtv_runner.coffee')
-    site.static_files << CoffeeFile.new(site, site.source, 'assets/javascripts', 'ftv_runner.coffee')
-    site.static_files << CoffeeFile.new(site, site.source, 'assets/javascripts', 'tv_runner.coffee')
+    Dir.open('assets/js/').each do |x|
+      next if not x =~ /.coffee$/
+      site.static_files << CoffeeFile.new(site, site.source, 'assets/javascripts', x)
+    end
   end
 
 end
