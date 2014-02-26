@@ -1,6 +1,6 @@
 <% for event in @events: %>
 <div class="other-events-event"><p>
-	<a href="<%= 'http://' + window.location.host  + '/events/' + event.id%>" target="about:blank">
+	<a href="<%= 'https://sse.se.rit.edu/events/' + event.id%>" target="about:blank">
 		<h4><%= event.short_name %></h4>
 	</a>
 	<% format = "yyyy-MM-ddTHH:mm:ss"%>
