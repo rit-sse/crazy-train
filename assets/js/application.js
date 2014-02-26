@@ -9,5 +9,5 @@ String.prototype.format = String.prototype.f = function() {
 };
 
 function toggle(element){
-  $(element).find('i').toggleClass('fa-angle-left fa-angle-down');
+  $(element).find('i').toggleClass('fa-angle-right fa-angle-down');
 }
