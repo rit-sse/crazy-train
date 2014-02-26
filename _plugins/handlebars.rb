@@ -23,14 +23,14 @@ class HandlebarsFile < Jekyll::StaticFile
     dest_path = destination(dest)
 
     FileUtils.mkdir_p(File.dirname(dest_path))
-    begin
+    #begin
       template = `handlebars assets/js/handlebars/#{@name}`
       File.open(dest_path, 'w') do |f|
         f.write(template)
       end
-    rescue => e
-       STDERR.puts "Handlebars Exception: #{e.message}"
-    end
+    #rescue => e
+       #STDERR.puts "Handlebars Exception: #{e.message}"
+    #end
 
     true
   end
