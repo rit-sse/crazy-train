@@ -11,10 +11,12 @@ Questions?       <projects@sse.se.rit.edu><br>
 
 ## Active Projects
 
-Here are the SSE's latest projects
-
 ### Voxel Display Research
 Jesse Jurman is heading off research - with the help of the Imaging Science department - to create a voxel display. Running with the momentum of last year’s Volumetric Display, we are continuing to explore 3D technologies from both a hardware and software perspective. If you’d like to help design the prototype, contact Jesse Jurman or projects for more information!
+
+
+### Crazy-Train
+A rebuild of the SSE webpage built with jekyll and staticly served for optimal performance.
 
 ### Alexandria
 
