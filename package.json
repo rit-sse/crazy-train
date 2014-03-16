@@ -1,8 +1,7 @@
 {
   "name": "crazy-train",
   "version": "0.0.0",
-  "description": "Crazy Train =========== *We're going off the rails on a crazy train*",
-  "main": "index.js",
+  "description": "We're going off the rails on a crazy train*",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
