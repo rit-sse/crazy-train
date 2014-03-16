@@ -1,4 +1,4 @@
-require "stringex"
+require 'stringex'
 
 desc "Create a new post"
 task :new_post, :title do |t, args|
