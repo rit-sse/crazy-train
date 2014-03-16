@@ -18,6 +18,7 @@ After last week’s meeting we had an excellent presentation from Shayde, our Fu
 Mock Interview Day is scheduled for Saturday, Feb 22nd! Sign up at http://bit.ly/MIoj2K to be interviewed or to be an interviewer! Prepare yourselves for your future interviews with experienced individuals who ask you the tough questions that you’ll be expected know how to answer! After the event (which ends at 5pm), an informal formal dinner will be held off-campus for those who are interested.
 
 The career fair is Feb 26th. During that week we’ll have a number of visits from various companies. On Monday the 24th, Intuit will be in the lab at 6:30pm to present. On that Tuesday, Constant Contact will here at 6:30pm. That Thursday, the 26th, UTC will be in the lab 6:30pm (complete with our very own Tom Owens)! Word has it that they’ll be bringing pizza for everyone who attends!
+
 ### Projects Updates
 Imagine RIT is coming up sooner than we think, and our projects are preparing to show themselves off to all of campus. Here's what's planned for this year:
 
@@ -28,7 +29,6 @@ Over break the rapid development team created the foundations for a lab assistan
 #### Mechanical Archer
 
 The team is in their later stages of development; they have a working prototype that has shots fired. This beast of a machine is even closer to loading, aiming and firing all on its own. Share an interest in automated medieval weaponry? Email <projects@sse.se.rit.edu> for their meeting times and more information about how you can help!
-
 
 #### Voxel Display Prototype - Creating a 3D pixel
 
