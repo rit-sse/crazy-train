@@ -24,7 +24,7 @@ class HandlebarsFile < Jekyll::StaticFile
 
     FileUtils.mkdir_p(File.dirname(dest_path))
     begin
-      template = `handlebars assets/js/handlebars/#{@name}`
+      template = `node_modules/.bin/handlebars assets/js/handlebars/#{@name}`
       File.open(dest_path, 'w') do |f|
         f.write(template)
       end
