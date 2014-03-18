@@ -25,7 +25,7 @@ function loadEvents() {
 }
 
 function loadUpcomingEvents() {
-  $.getJSON('https://web.ad.sofse.org/events.json', function(data){
+  $.getJSON('https://sse.se.rit.edu/events.json', function(data){
     var template = Handlebars.templates.upcoming;
     var events = $('#eventshighlight');
     var max = 5;
@@ -41,7 +41,7 @@ function loadUpcomingEvents() {
 }
 
 function loadEvent(id) {
-  $.getJSON('https://web.ad.sofse.org/events/'+ id + '.json', function(data){
+  $.getJSON('https://sse.se.rit.edu/events/'+ id + '.json', function(data){
     var source   = $("#event-template").html();
     var template = Handlebars.templates.event;
     $('#event').append(template(data));
