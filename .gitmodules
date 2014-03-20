@@ -1,0 +1,3 @@
+[submodule "governing-docs"]
+	path = governing-docs
+	url = https://github.com/rit-sse/governing-docs
