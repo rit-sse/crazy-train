@@ -1,6 +1,7 @@
 ---
 layout: page
 title: ViSE
+permalink: vise/
 ---
 
 The Voices in Software Engineering (ViSE) committee connect industry and academic professionals to local students, faculty, staff, and alumni. Experts in the field of Software Engineering are invited to the Society of Software Engineers to speak and interact with students of all disciplines. These topics, ranging from the history of C++ to using technology to combat social injustices, are geared to expand one’s interest in both Software Engineering and the field of computing in general.

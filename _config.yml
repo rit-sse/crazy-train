@@ -10,3 +10,5 @@ exclude: ["Gemfile", "Gemfile.lock", "package.json", ".sass-cache", ".gitignore"
 redcarpet:
   extensions:
     - tables
+
+relative_permalinks: false
