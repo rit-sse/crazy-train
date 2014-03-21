@@ -5,4 +5,8 @@ pygments: true
 
 paginate: 5
 paginate_path: blog/index.html
-exclude: ["Gemfile", "Gemfile.lock", "package.json", ".sass-cache", ".gitignore", "node_modules"]
+exclude: ["Gemfile", "Gemfile.lock", "package.json", ".sass-cache", ".gitignore", "node_modules", "README.md", ".gitmodules", ]
+
+redcarpet:
+  extensions:
+    - tables
