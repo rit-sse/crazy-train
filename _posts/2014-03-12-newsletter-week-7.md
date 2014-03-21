@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Newsletter Week 7"
-date: 2014-03-12 20:34:06 -0400
+date: 2014-03-12 12:34:00 -0400
 ---
 
 Hello everyone, it’s week 7! That means that it is time for another SSE newsletter!
