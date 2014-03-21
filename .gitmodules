@@ -1,3 +1,9 @@
 [submodule "governing-docs"]
 	path = governing-docs
 	url = https://github.com/rit-sse/governing-docs
+[submodule "pages"]
+	path = pages
+	url = https://github.com/rit-sse/crazy-train-pages
+[submodule "_posts"]
+	path = _posts
+	url = https://github.com/rit-sse/crazy-train-posts
