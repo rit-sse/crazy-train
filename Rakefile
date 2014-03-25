@@ -45,7 +45,7 @@ namespace :server do
       puts 'Restarted the server'
     else
       puts 'Not running, starting the server...'
-      sh 'unicorn -c config/unicorn.rb -E production -D'
+      sh 'unicorn -c unicorn.rb -E production -D'
     end
   end
 
