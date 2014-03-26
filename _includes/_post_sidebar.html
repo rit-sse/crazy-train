@@ -3,10 +3,10 @@
   {% unless post.next %}
     {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
-    <a data-toggle="collapse" href="#{{year}}" onclick="toggle(this);"><i class="fa fa-angle-down"> {{year}}</i></a>
+    <a data-toggle="collapse" href="#{{year}}" onclick="toggle(this);"><i class="fa fa-angle-down"></i> {{year}}</a>
     <div class="collapse in" id="{{year}}">
       <ul class="list-style-none">
-        <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);"><i class="fa fa-angle-down"> {{month}}</i></a>
+        <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);"><i class="fa fa-angle-down"></i>{{month}}</a>
           <div class="collapse in" id="{{year}}-{{month}}">
             <ul class="list-style-none">
               <li><a href="{{post.url}}">{{post.title}}</a></li>
@@ -21,7 +21,7 @@
       </li>
       </ul>
       <ul class="list-style-none">
-        <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);"><i class="fa fa-angle-right"> {{month}}</i></a>
+        <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);"><i class="fa fa-angle-right"></i> {{month}}</a>
           <div class="collapse" id="{{year}}-{{month}}">
             <ul class="list-style-none">
               <li><a href="{{post.url}}">{{post.title}}</a></li>
@@ -31,10 +31,10 @@
       </li>
       </ul>
       </div>
-      <a data-toggle="collapse" href="#{{year}}" onclick="toggle(this);"><i class="fa fa-angle-right"> {{year}}</i></a>
+      <a data-toggle="collapse" href="#{{year}}" onclick="toggle(this);"><i class="fa fa-angle-right"></i> {{year}}</a>
       <div class="collapse" id="{{year}}">
         <ul class="list-style-none">
-          <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);"><i class="fa fa-angle-right"> {{month}}</i></a>
+          <li><a data-toggle="collapse" href="#{{year}}-{{month}}" onclick="toggle(this);"><i class="fa fa-angle-right"></i>{{month}}</a>
             <div class="collapse" id="{{year}}-{{month}}">
               <ul class="list-style-none">
                 <li><a href="{{post.url}}">{{post.title}}</a></li>
