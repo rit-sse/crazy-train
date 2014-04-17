@@ -59,4 +59,6 @@ namespace :server do
     end
   end
 
+  task restart: [:stop, :start]
+
 end
