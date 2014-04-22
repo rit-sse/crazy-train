@@ -158,7 +158,7 @@ class @SSEController extends Backbone.Router
       can_feature: true
     that_scope = @
     that_scope.event_count = that_scope.event_count or 0
-    $.getJSON 'https://sse.se.rit.edu/events.json', req, (data) ->
+    $.getJSON 'https://sse.se.rit.edu/admin/events.json', req, (data) ->
       if data
         allEvents = _(data).map (event) ->
           if event.image and event.image.url and (event.image.url.length and event.image.url.length>0)
