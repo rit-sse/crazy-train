@@ -122,7 +122,7 @@ class @SSEController extends Backbone.Router
 
   three_week: =>
     sundayStart = SSEHelpers.getLastSunday()
-    $.getJSON 'https://sse.se.rit.edu/events.json', start_date: sundayStart.toISOString(), (data) ->
+    $.getJSON 'https://sse.se.rit.edu/admin/events.json', start_date: sundayStart.toISOString(), (data) ->
       if data
         allEvents = _(data).map (event) ->
           new SSEEvent(event)
@@ -135,7 +135,7 @@ class @SSEController extends Backbone.Router
   event_panels: =>
     req =
       limit: 12
-    $.getJSON 'https://sse.se.rit.edu/events.json', req, (data) ->
+    $.getJSON 'https://sse.se.rit.edu/admin/events.json', req, (data) ->
       if data
         allEvents = _(data).map (event) ->
           new SSEEvent(event)
