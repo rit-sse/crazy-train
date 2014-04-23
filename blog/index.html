@@ -19,20 +19,20 @@ sidebars:
 <ul class="pager">
   {% if paginator.previous_page %}
     <li class="previous">
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
     </li>
   {% else %}
     <li class="previous disabled">
-      <a href="#">&larr; Older</a>
+      <a href="#">&larr; Newer</a>
     </li>
   {% endif %}
   {% if paginator.next_page %}
     <li class="next">
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&rarr; Newer</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&rarr; Older</a>
     </li>
   {% else %}
     <li class="next disabled">
-      <a href="#">&rarr; Newer</a>
+      <a href="#">&rarr; Older</a>
     </li>
   {% endif %}
 </ul>
