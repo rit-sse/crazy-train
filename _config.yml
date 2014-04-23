@@ -4,7 +4,7 @@ future:   true
 pygments: true
 
 paginate: 5
-paginate_path: blog/index.html
+paginate_path: blog/:num/index.html
 exclude: ["Gemfile", "Gemfile.lock", "package.json", ".sass-cache", ".gitignore", "node_modules", "README.md", ".gitmodules", "CONTRIBUTING.md", "tmp", 'config.ru', 'Rakefile', 'unicorn.rb']
 
 redcarpet:
