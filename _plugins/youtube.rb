@@ -1,8 +1,9 @@
-require 'json'
+require 'yaml'
+
 class YoutubeTag < Liquid::Tag
   def initialize(tag_name, text, tokens)
     super
-    @hash = JSON.parse(text)
+    @hash = YAML.load(text)
     @tokens = tokens
   end
 
