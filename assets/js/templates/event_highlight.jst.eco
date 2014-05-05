@@ -1,10 +1,10 @@
 
 <section class="container" style="position: relative">
   <!-- We should only go to this page if there's an image for the event in the first place! Be warned!-->
-  
+
   <div class="gtv_img_container">
-  <center><img src="https://sse.se.rit.edu<%=@event.image()%>" alt="Event Image" class="gtv-event-highlight" id="main_image" onload="<%= @onload %>"/></center>
+  <center><img src="https://sse.se.rit.edu/admin/<%=@event.image()%>" alt="Event Image" class="gtv-event-highlight" id="main_image" onload="<%= @onload %>"/></center>
   </div>
 
   <div class="gtv-highlight-footer"><center><h3><%=@event.startDay()%>, <%=@event.startHour()%> @ <%=@event.location()%></h3></center></div>
-</section> 
+</section>
