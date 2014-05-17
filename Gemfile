@@ -11,3 +11,4 @@ gem 'rake'
 
 eval(IO.read('/events/Gemfile'), binding) if File.exists?('/events/Gemfile')
 eval(IO.read('/pinocchio/Gemfile'), binding) if File.exists?('/pinocchio/Gemfile')
+eval(IO.read('/scoreboard/Gemfile'), binding) if File.exists?('/scoreboard/Gemfile')
