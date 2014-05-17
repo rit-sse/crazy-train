@@ -39,7 +39,7 @@ If you need to update the submodules:
 git submodule foreach git pull origin master
 ```
 
-Often times the submodules don't reflect the lates commits. That's why master for each of them should be checked out instead. If you are making changes to crazy train, feel free to point the submodules to the lastest commit along with your changes. Don't however make new commits everytime one of the submodules is updated. It's really unneccessary.
+Often times the submodules don't reflect the latest commits. That's why master should be checked out for each of them instead. If you are making changes to crazy train, feel free to point the submodules to the lastest commit along with your changes. Don't however make new commits every time one of the submodules is updated. It's really unneccessary.
 
 We use [rack-jekyll](https://github.com/adaoraul/rack-jekyll) so that crazy-train, wtf, and pinocchio can be in one config.ru file. 
 
@@ -50,7 +50,7 @@ If you need images, there are image directories in both posts and pages. The pat
 
 ### Auto Deploy
 
-To make everyone's life a lot simpler, crazy-train auto deploys when changed thanks to Github Webhooks. [site-auto-deploy][8], our daemon written in sinatra, is running on both the production and staging VMs listening for post requests. The following webhooks are set up:
+To make everyone's life a lot simpler, crazy-train auto-deploys when changed thanks to Github Webhooks. [site-auto-deploy][8], our daemon written in sinatra, is running on both the production and staging VMs listening for post requests. The following webhooks are set up:
 
 ##### Production
 * crazy-train: Push to master
@@ -83,7 +83,7 @@ WTF was our old rails site. Since the event system on WTF is still needed, a str
 Pinocchio is the link shortener written in sinatra. It shares a ssession with WTF and is in the same rackup file because of that. You can access it [here](https://sse.se.rit.edu/go)
 
 ### QDB
-The QDB is the SSE Quote Database written in Rails 3. QDB is not in the same config.ru file as everything else. ou can access it [here](https://sse.se.rit.edu/qdb)
+The QDB is the SSE Quote Database written in Rails 3. QDB is not in the same config.ru file as everything else. You can access it [here](https://sse.se.rit.edu/qdb)
 
 ### Scoreboard
 Scoreboard is the membership tracker written in Padrino. It is not deployed yet and probably won't be until next year. Theoretically, it will share a session with WTF and pinnochio but it needs to be tested.  
