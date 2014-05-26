@@ -12,3 +12,10 @@ redcarpet:
     - tables
 
 relative_permalinks: false
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+coffee:
+  coffee_dir: assets/js
+  style: compressed
