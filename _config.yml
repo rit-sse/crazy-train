@@ -31,3 +31,6 @@ defaults:
       type: post
     values:
       layout: post
+collections:
+  meeting_minutes:
+    output: true
