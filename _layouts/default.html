@@ -8,27 +8,26 @@
       {% include _header.html %}
     {% endif %}
   </div>
-    <div id="content_wrapper">
-      {% if page.sidebars %}
-        <div id="content_left">
-          {{ content }}
-        </div>
-        <div id="content_right">
-          {% for sidebar in page.sidebars %}
-            {% include {{sidebar}} %}
-          {% endfor %}
-        </div>
-      {% else %}
+  <div id="content_wrapper">
+    {% if page.sidebars %}
+      <div id="content_left">
         {{ content }}
-      {% endif %}
-      <div class="clear"></div>
-    </div>
+      </div>
+      <div id="content_right">
+        {% for sidebar in page.sidebars %}
+          {% include {{sidebar}} %}
+        {% endfor %}
+      </div>
+    {% else %}
+      {{ content }}
+    {% endif %}
+    <div class="clear"></div>
+  </div>
     <!-- END EVENTS -->
-    <div id="footer">
+  <div id="footer">
 
-      All content is Copyright &copy; 2014 Society of Software Engineers.
+    All content is Copyright &copy; 2014 Society of Software Engineers.
 
-    </div>
   </div>
   <script type="text/javascript">
 

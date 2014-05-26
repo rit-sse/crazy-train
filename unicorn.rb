@@ -1,4 +1,4 @@
-# set path to app that will be used to configure unicorn, 
+# set path to app that will be used to configure unicorn,
 # note the trailing slash in this example
 @dir = "/web/"
 
