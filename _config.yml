@@ -11,11 +11,23 @@ redcarpet:
   extensions:
     - tables
 
-relative_permalinks: false
-
 sass:
   sass_dir: assets/css
   style: compressed
 coffee:
   coffee_dir: assets/js
   style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: page
+    values:
+      layout: page
+  -
+    scope:
+      path: ''
+      type: post
+    values:
+      layout: post
