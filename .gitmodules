@@ -7,3 +7,6 @@
 [submodule "_posts"]
 	path = _posts
 	url = https://github.com/rit-sse/crazy-train-posts
+[submodule "_meeting_minutes"]
+	path = _meeting_minutes
+	url = https://github.com/rit-sse/meeting-minutes
