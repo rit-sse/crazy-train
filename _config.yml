@@ -19,18 +19,32 @@ coffee:
   style: compressed
 
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      path: ''
       type: page
     values:
       layout: page
-  -
-    scope:
+  - scope:
       path: ''
       type: post
     values:
       layout: post
+  - scope:
+      path: pages/committees/talks
+    values:
+      sidebars:
+        - _secondary_nav.html
+      nav_links:
+        - name: Talk Guidelines
+          path: /committees/talks/guidelines/
+        - name: Recorded Tech Talks
+          path: /committees/talks/tech/
+        - name: Recorded Micro Talks
+          path: /committees/talks/micro/
+        - name: Recorded Rand Talks
+          path: /committees/talks/rand/
+        - name: Recorded Alum Talks
+          path: /committees/talks/alum/
 collections:
   meeting_minutes:
     output: true
