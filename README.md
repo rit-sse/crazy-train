@@ -19,11 +19,12 @@ The SSE website has a lot of parts.
  * [site-auto-deploy][8]
  * [scoreboard][9]
  * [governing-docs][10]
+ * [meeting-minutes][11]
 
 ## Overview
 
 ### Crazy Train
-Crazy train is the jekyll portion of the site. There are 3 submodules: [crazy-train-pages][2], [crazy-train-posts][3], and [governing-docs][1].  Website team does not have push access to any of these submodules. They are for the officers.
+Crazy train is the jekyll portion of the site. There are 3 submodules: [crazy-train-pages][2], [crazy-train-posts][3], [governing-docs][10], and [meeting-minutes][11].  Website team does not have push access to any of these submodules. They are for the officers.
 
 If you are running crazy-train locally, do the following:
 
@@ -101,3 +102,4 @@ Kristen is pretty much in charge of the website these days. Ask her.
 [8]: https://github.com/rit-sse/site-auto-deploy
 [9]: https://github.com/rit-sse/scoreboard
 [10]: https://github.com/rit-sse/governing-docs
+[11]: https://github.com/rit-sse/meeting-minutes
