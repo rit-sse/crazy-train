@@ -1,3 +1,6 @@
+---
+---
+
 $white: #f1f1f1;
 $darkblue: #146b9d;
 $darkblueoff: #237aac;
@@ -10,8 +13,8 @@ $lightlightblue: #ebf2f6;
 
 $header_height: 126px;
 
-* 
-{ 
+*
+{
   margin: 0px;
   padding: 0px;
   border-style: none;
@@ -250,7 +253,7 @@ ul.gtv-calendar-eventlist
   max-width: $cal_width_s;
 }
 
-thead .gtv-calendar-weekcol h3 
+thead .gtv-calendar-weekcol h3
 {
   color: $white;
 }
@@ -356,7 +359,7 @@ thead .gtv-calendar-weekcol h3
 .tv-right{
   width:960px;
   height:1080px;
-  
+
   position:absolute;
   display:table;
   left:960px;
@@ -366,7 +369,7 @@ thead .gtv-calendar-weekcol h3
 .tv-left{
   width:960px;
   height:1080px;
-  
+
   position:absolute;
   display:table-cell;
   left:0;

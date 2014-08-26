@@ -8,7 +8,7 @@ class HandlebarsGenerator < Jekyll::Generator
     end
     Dir.open('assets/js/handlebars').each do |x|
       next if x == '.' or x == '..'
-      site.static_files << HandlebarsFile.new(site, site.source, 'assets/javascripts/handlebars', x)
+      site.static_files << HandlebarsFile.new(site, site.source, 'assets/js/handlebars', x)
     end
   end
 

@@ -8,7 +8,7 @@ class EcoGenerator < Jekyll::Generator
     end
     Dir.open('assets/js/templates').each do |x|
       next if x == '.' or x == '..'
-      site.static_files << EcoFile.new(site, site.source, 'assets/javascripts/templates', x)
+      site.static_files << EcoFile.new(site, site.source, 'assets/js/templates', x)
     end
   end
 

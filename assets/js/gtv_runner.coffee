@@ -1,3 +1,5 @@
+---
+---
 class SSEGTVController extends SSEController
 
   routes:

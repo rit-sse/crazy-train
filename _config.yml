@@ -1,7 +1,7 @@
 title: Society of Software Engineers
 markdown: redcarpet
 future:   true
-pygments: true
+higlighter: pygments
 
 paginate: 5
 paginate_path: blog/:num
@@ -11,4 +11,40 @@ redcarpet:
   extensions:
     - tables
 
-relative_permalinks: false
+sass:
+  sass_dir: assets/css
+  style: compressed
+coffee:
+  coffee_dir: assets/js
+  style: compressed
+
+defaults:
+  - scope:
+      path: ''
+      type: page
+    values:
+      layout: page
+  - scope:
+      path: ''
+      type: post
+    values:
+      layout: post
+  - scope:
+      path: pages/committees/talks
+    values:
+      sidebars:
+        - _secondary_nav.html
+      nav_links:
+        - name: Talk Guidelines
+          path: /committees/talks/guidelines/
+        - name: Recorded Tech Talks
+          path: /committees/talks/tech/
+        - name: Recorded Micro Talks
+          path: /committees/talks/micro/
+        - name: Recorded Rand Talks
+          path: /committees/talks/rand/
+        - name: Recorded Alum Talks
+          path: /committees/talks/alum/
+collections:
+  meeting_minutes:
+    output: true
