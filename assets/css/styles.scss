@@ -152,12 +152,12 @@ h1, h2, h3, h4, h5, h6 {
         }
       }
     }
-    
+
     .item {
       width: 940px;
       height: 300px;
     }
-      
+
     #fallwelcome {
       .left {
         width: 55%;
@@ -345,4 +345,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .list-style-none{
   list-style-type: none;
+}
+
+.follow {
+  color: white !important;
+  text-decoration: none !important;
+
+}
+
+.follow:hover {
+  text-decoration: underline !important;
 }
