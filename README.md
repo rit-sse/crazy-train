@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/rit-sse/crazy-train.png?label=ready&title=Ready)](https://waffle.io/rit-sse/crazy-train)
 #Crazy Train
 
 *We're going off the rails on a crazy train*
