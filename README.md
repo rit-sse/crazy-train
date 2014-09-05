@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/rit-sse/crazy-train.png?label=ready&title=Ready)](https://waffle.io/rit-sse/crazy-train)
 #Crazy Train
 [![Dependency Status](https://gemnasium.com/rit-sse/crazy-train.svg)](https://gemnasium.com/rit-sse/crazy-train)
 [![Gitter chat](https://badges.gitter.im/rit-sse/crazy-train.png)](https://gitter.im/rit-sse/crazy-train)
