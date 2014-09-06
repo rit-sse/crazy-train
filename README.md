@@ -33,14 +33,16 @@ If you are running crazy-train locally, do the following:
 ```
 git clone https://github.com/rit-sse/crazy-train
 git submodule init
-git submodule foreach git checkout master
+git submodule update --remote
 ```
 
 If you need to update the submodules:
 
 ```
-git submodule foreach git pull origin master
+git submodule update --remote
 ```
+
+Just a sidenote, `git submodule update --remote` requires git 1.8.2+. You should probably upgrade if you have a version below that.
 
 Often times the submodules don't reflect the latest commits. That's why master should be checked out for each of them instead. If you are making changes to crazy train, feel free to point the submodules to the lastest commit along with your changes. Don't however make new commits every time one of the submodules is updated. It's really unneccessary.
 

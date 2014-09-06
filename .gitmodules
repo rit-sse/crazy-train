@@ -1,12 +1,16 @@
 [submodule "governing-docs"]
 	path = governing-docs
 	url = https://github.com/rit-sse/governing-docs
+	branch = master
 [submodule "pages"]
 	path = pages
 	url = https://github.com/rit-sse/crazy-train-pages
+  branch = master
 [submodule "_posts"]
 	path = _posts
 	url = https://github.com/rit-sse/crazy-train-posts
+  branch = master
 [submodule "_meeting_minutes"]
 	path = _meeting_minutes
 	url = https://github.com/rit-sse/meeting-minutes
+  branch = master
