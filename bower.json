@@ -1,20 +1,6 @@
 {
   "name": "crazy-train",
-  "version": "0.0.0",
-  "homepage": "https://github.com/rit-sse/crazy-train",
-  "authors": [
-    "kristenmills <kristen@kristen-mills.com>"
-  ],
-  "license": "MIT",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "assets/bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
   }
 }
