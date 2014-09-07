@@ -2,32 +2,44 @@
 <html lang="en">
 {% include _head.html %}
 <body>
-  <div id="outer_container">
-    {% include _nav.html %}
-    {% if page.show_header %}
-      {% include _header.html %}
-    {% endif %}
+  <div class="header">
+    <div class="header-inner">
+      <img alt="Society of Software Engineers" id="logo" class="logo" src="/assets/images/logo-white.png">
+
+      {% include _nav.html %}
+    </div>
   </div>
-  <div id="content_wrapper">
+
+  <div class="main">
+    <div class="content">
+      {{ content }}
+    </div>
+    
     {% if page.sidebars %}
-      <div id="content_left">
-        {{ content }}
-      </div>
-      <div id="content_right">
+      <div class="sidebar">    
         {% for sidebar in page.sidebars %}
           {% include {{sidebar}} %}
         {% endfor %}
       </div>
-    {% else %}
-      {{ content }}
     {% endif %}
-    <div class="clear"></div>
   </div>
-    <!-- END EVENTS -->
-  <div id="footer">
 
-    All content is Copyright &copy; 2014 Society of Software Engineers.
+  <div class="footer-container">
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <p class="footer-column-heading">Governing Documents</p>
+            <ul>
+              <li><a href="/constitution">Constitution</a></li>
+              <li><a href="/primary-officers-policy">Primary Officers' Policy</a></li>
+            </ul>
+          </div>
+        </div>
 
+        <p class="footer-muted">All content is Copyright © 2014 Society of Software Engineers.</p>
+      </div>
+    </footer>
   </div>
   <script type="text/javascript">
 
