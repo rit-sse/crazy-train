@@ -1,0 +1,143 @@
+// Colors from http://clrs.cc/
+$aqua: #7fdbff
+$blue: #0074d9
+$navy: #001f3f
+$teal: #39cccc
+$green: #2ecc40
+$olive: #3d9970
+$lime: #01ff70
+$yellow: #ffdc00
+$orange: #ff851b
+$red: #ff4136
+$fuchsia: #f012be
+$purple: #b10dc9
+$maroon: #85144b
+$white: white
+$silver: #dddddd
+$gray: #aaaaaa
+$black: #111111
+
+// Variables
+$bg: $white
+$common-padding: 20px
+$fg-color: $black
+$font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif
+$footer-bg: $black
+$footer-color: $silver
+$footer-link-color: $white
+$footer-muted-color: $gray
+$header-bg: $navy
+$link-color: $blue
+$nav-hover-bg: $blue
+$main-width: 800px
+$sidebar-bg: $silver
+
+// Mixins
+
+=centered
+  max-width: $main-width
+  margin-left: auto
+  margin-right: auto
+
+=list-plain
+  list-style: none
+  padding-left: 0
+
+// General styles
+
+body
+  font-family: $font-family
+  background: $bg
+  color: $fg-color
+
+a
+  color: $link-color
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.list-plain
+  +list-plain
+
+.list-inline
+  padding-left: 0
+  margin-left: -5px
+  li
+    display: inline-block
+    padding: 0 5px
+    
+.social
+  font-size: 1.5em
+  a:hover
+    text-decoration: none
+    color: $navy
+    
+// Section styles
+
+.header
+  background: $navy
+  .logo
+    padding: 20px
+    padding-bottom: 0
+  .header-inner
+    +centered
+
+nav
+  background: $navy
+  ul
+    +list-plain
+    margin-bottom: 0
+  @media (min-width: 768px)
+    li
+      display: inline-block
+  a
+    display: block
+    padding: 10px 20px
+    color: $bg
+    &:hover
+      color: $link-color
+      text-decoration: none
+  .active a
+    color: $link-color
+
+.main
+  +centered
+  display: flex
+  @media (max-width: 767px)
+    display: block
+  .content
+    flex: 2
+    padding: $common-padding
+  .sidebar
+    flex: 1
+    padding: $common-padding
+
+.sidebar
+  background: $sidebar-bg
+  .events-list
+    dt
+      margin-top: 10px
+    dd
+      font-size: 80%
+      margin-left: 0
+
+.footer-container
+  background: $footer-bg
+
+footer
+  +centered
+  color: $footer-color
+  a
+    color: $footer-link-color
+  .footer-inner
+    padding: $common-padding
+  .footer-columns
+    display: flex
+  .footer-muted
+    color: $footer-muted-color
+  .footer-column
+    flex: 1
+    .footer-column-heading
+      font-weight: bold
+    ul
+      +list-plain
