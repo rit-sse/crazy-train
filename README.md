@@ -9,11 +9,19 @@
 Crazy train is the new improved [SSE Website](https://sse.se.rit.edu). It's powered by Jekyll and auto deploys using webhooks. It's pretty cool.
 
 ## Installation
+
+### Prerequisites
+- [git](http://git-scm.com/downloads) 1.8.2+
+- [Ruby](https://www.ruby-lang.org/en/downloads/) 1.9+
+- [Bundler](http://bundler.io/) (just run `gem install bundler`)
+
+### Setup
 If you are running crazy-train locally, do the following:
 
 ```
 git submodule init
 git submodule update --remote
+bundle
 ```
 
 If you need to update the submodules:
