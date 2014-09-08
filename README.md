@@ -37,7 +37,7 @@ git submodule update --remote
 ```
 bundle exec jekyll serve
 ```
-Now visit [localhost:3000](http://localhost:3000/).
+Now visit [localhost:4000](http://localhost:4000/).
 
 ## Repos
 The SSE website has a lot of parts.
