@@ -8,7 +8,7 @@
 
 Crazy train is the new improved [SSE Website](https://sse.se.rit.edu). It's powered by Jekyll and auto deploys using webhooks. It's pretty cool.
 
-## Installation
+## Local Installation
 
 ### Prerequisites
 - [git](http://git-scm.com/downloads) 1.8.2+
