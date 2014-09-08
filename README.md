@@ -8,6 +8,22 @@
 
 Crazy train is the new improved [SSE Website](https://sse.se.rit.edu). It's powered by Jekyll and auto deploys using webhooks. It's pretty cool.
 
+## Installation
+If you are running crazy-train locally, do the following:
+
+```
+git submodule init
+git submodule update --remote
+```
+
+If you need to update the submodules:
+
+```
+git submodule update --remote
+```
+
+Just a sidenote, `git submodule update --remote` requires git 1.8.2+. You should probably upgrade if you have a version below that.
+
 ## Repos
 The SSE website has a lot of parts.
 
@@ -27,21 +43,6 @@ The SSE website has a lot of parts.
 
 ### Crazy Train
 Crazy train is the jekyll portion of the site. There are 3 submodules: [crazy-train-pages][2], [crazy-train-posts][3], [governing-docs][10], and [meeting-minutes][11].  Website team does not have push access to any of these submodules. They are for the officers.
-
-If you are running crazy-train locally, do the following:
-
-```
-git submodule init
-git submodule update --remote
-```
-
-If you need to update the submodules:
-
-```
-git submodule update --remote
-```
-
-Just a sidenote, `git submodule update --remote` requires git 1.8.2+. You should probably upgrade if you have a version below that.
 
 #### Posts/Pages
 Just commit and push to the repos to create a post or a page. Inside of the main crazy-train repo, there is a `Rakefile` with rake task `rake new_post`. That will generate a new post for you in the post directory.
