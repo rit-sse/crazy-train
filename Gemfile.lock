@@ -1,6 +1,8 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    autoprefixer-rails (2.2.0.20140804)
+      execjs
     blankslate (2.1.2.4)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -55,6 +57,12 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.4)
+    octopress-autoprefixer (1.0.0)
+      autoprefixer-rails (~> 2.2)
+      jekyll (~> 2.0)
+      octopress-hooks (~> 2.0)
+    octopress-hooks (2.2.1)
+      jekyll (~> 2.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.9)
@@ -87,6 +95,7 @@ DEPENDENCIES
   eco
   handlebars
   jekyll (~> 2.3)
+  octopress-autoprefixer
   rake
   sass
   stringex
