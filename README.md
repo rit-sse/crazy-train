@@ -30,7 +30,11 @@ If you need to update the submodules:
 git submodule update --remote
 ```
 
-Just a sidenote, `git submodule update --remote` requires git 1.8.2+. You should probably upgrade if you have a version below that.
+### Running
+```
+bundle exec jekyll serve
+```
+Now visit http://localhost:3000/.
 
 ## Repos
 The SSE website has a lot of parts.
