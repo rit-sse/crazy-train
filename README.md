@@ -8,6 +8,32 @@
 
 Crazy train is the new improved [SSE Website](https://sse.se.rit.edu). It's powered by Jekyll and auto deploys using webhooks. It's pretty cool.
 
+## Local Installation
+
+### Prerequisites
+- [git](http://git-scm.com/downloads) 1.8.2+
+- [Ruby](https://www.ruby-lang.org/en/downloads/) 1.9+
+- [Bundler](http://bundler.io/) (run `gem install bundler`)
+- [Node.js](http://nodejs.org/download/)
+- [Bower](http://bower.io/) (run `npm install -g bower`)
+
+### Setup
+```
+git submodule init
+git submodule update --remote
+bundle
+npm install
+bower install
+```
+
+You should rerun the above commands if someone updates our git submodules, gems, npm modules, or bower packages.
+
+### Running
+```
+bundle exec jekyll serve
+```
+Now visit [localhost:4000](http://localhost:4000/).
+
 ## Repos
 The SSE website has a lot of parts.
 
@@ -27,22 +53,6 @@ The SSE website has a lot of parts.
 
 ### Crazy Train
 Crazy train is the jekyll portion of the site. There are 3 submodules: [crazy-train-pages][2], [crazy-train-posts][3], [governing-docs][10], and [meeting-minutes][11].  Website team does not have push access to any of these submodules. They are for the officers.
-
-If you are running crazy-train locally, do the following:
-
-```
-git clone https://github.com/rit-sse/crazy-train
-git submodule init
-git submodule update --remote
-```
-
-If you need to update the submodules:
-
-```
-git submodule update --remote
-```
-
-Just a sidenote, `git submodule update --remote` requires git 1.8.2+. You should probably upgrade if you have a version below that.
 
 #### Posts/Pages
 Just commit and push to the repos to create a post or a page. Inside of the main crazy-train repo, there is a `Rakefile` with rake task `rake new_post`. That will generate a new post for you in the post directory.
