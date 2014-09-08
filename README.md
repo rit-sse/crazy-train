@@ -31,7 +31,6 @@ Crazy train is the jekyll portion of the site. There are 3 submodules: [crazy-tr
 If you are running crazy-train locally, do the following:
 
 ```
-git clone https://github.com/rit-sse/crazy-train
 git submodule init
 git submodule update --remote
 ```
