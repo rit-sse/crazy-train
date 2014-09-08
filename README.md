@@ -14,6 +14,7 @@ Crazy train is the new improved [SSE Website](https://sse.se.rit.edu). It's powe
 - [git](http://git-scm.com/downloads) 1.8.2+
 - [Ruby](https://www.ruby-lang.org/en/downloads/) 1.9+
 - [Bundler](http://bundler.io/) (run `gem install bundler`)
+- [Node.js](http://nodejs.org/download/)
 - [Bower](http://bower.io/) (run `npm install -g bower`)
 
 ### Setup
