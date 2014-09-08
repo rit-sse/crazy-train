@@ -7,6 +7,9 @@ paginate: 5
 paginate_path: blog/:num
 exclude: ["Gemfile", "Gemfile.lock", "package.json", ".sass-cache", ".gitignore", "node_modules", "README.md", ".gitmodules", "CONTRIBUTING.md", "tmp", 'config.ru', 'Rakefile', 'unicorn.rb']
 
+gems:
+  - octopress-autoprefixer
+
 redcarpet:
   extensions:
     - tables
