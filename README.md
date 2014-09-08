@@ -18,8 +18,6 @@ Crazy train is the new improved [SSE Website](https://sse.se.rit.edu). It's powe
 - [Bower](http://bower.io/) (run `npm install -g bower`)
 
 ### Setup
-If you are running crazy-train locally, do the following:
-
 ```
 git submodule init
 git submodule update --remote
@@ -28,11 +26,7 @@ npm install
 bower install
 ```
 
-If you need to update the submodules:
-
-```
-git submodule update --remote
-```
+You should rerun the above commands if someone updates our git submodules, gems, npm modules, or bower packages.
 
 ### Running
 ```
