@@ -1,9 +1,9 @@
 <nav>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/events/">Events</a></li>
-    <li><a href="/committees/projects">Project</a></li>
+    <li {% if page.url == "/" %}class="active"{% endif %}><a href="/">Home</a></li>
+    <li {% if page.url == "/blog/index.html" %}class="active"{% endif %}><a href="/blog/">Blog</a></li>
+    <li {% if page.url == "/events/index.html" %}class="active"{% endif %}><a href="/events/">Events</a></li>
+    <li {% if page.url == "/committees/projects/" %}class="active"{% endif %}><a href="/committees/projects/">Projects</a></li>
     <li><a href="#">About <b class='caret'></b></a></li>
   </ul>
 </nav>
