@@ -4,8 +4,8 @@ layout: empty
 ---
 <!DOCTYPE html>
 
-<link href="/assets/css/gtv.css" media="screen" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
 <script type="text/javascript" src="/assets/bower_components/underscore/underscore-min.js"></script>
 <script type="text/javascript" src="/assets/bower_components/json2/json2.js"></script>
 <script type="text/javascript" src="/assets/bower_components/backbone/backbone-min.js"></script>
@@ -19,3 +19,15 @@ layout: empty
 <script type="text/javascript" src="/assets/js/templates/mentoring_hours_view.js"></script>
 <script type="text/javascript" src="/assets/js/tv_runner.js"></script>
 <script type="text/javascript" src="/assets/js/gtv_runner.js"></script>
+ -->
+<script type="text/javascript" src="/assets/bower_components/platform/platform.js"></script>
+<script type="text/javascript" src="/assets/bower_components/moment/min/moment.min.js"></script>
+<link href="/assets/css/gtv.css" media="screen" rel="stylesheet" type="text/css" />
+<link rel="import" href="/assets/bower_components/torque/torque-slides.html">
+<link rel="import" href="/assets/components/three-week.html">
+
+<torque-slides duration="30">
+  <torque-slide>
+    <three-week></three-week>
+  </torque-slide>
+</torque-slides>
