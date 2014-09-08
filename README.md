@@ -24,6 +24,7 @@ If you are running crazy-train locally, do the following:
 git submodule init
 git submodule update --remote
 bundle
+npm install
 bower install
 ```
 
