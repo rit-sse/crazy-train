@@ -13,7 +13,8 @@ Crazy train is the new improved [SSE Website](https://sse.se.rit.edu). It's powe
 ### Prerequisites
 - [git](http://git-scm.com/downloads) 1.8.2+
 - [Ruby](https://www.ruby-lang.org/en/downloads/) 1.9+
-- [Bundler](http://bundler.io/) (just run `gem install bundler`)
+- [Bundler](http://bundler.io/) (run `gem install bundler`)
+- [Bower](http://bower.io/) (run `npm install -g bower`)
 
 ### Setup
 If you are running crazy-train locally, do the following:
@@ -22,6 +23,7 @@ If you are running crazy-train locally, do the following:
 git submodule init
 git submodule update --remote
 bundle
+bower install
 ```
 
 If you need to update the submodules:
