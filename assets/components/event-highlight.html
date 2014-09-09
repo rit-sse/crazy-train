@@ -3,7 +3,7 @@
 <polymer-element name="event-highlight" on-no-longer-hidden="{{updateIndex}}">
   <template>
     <link rel="stylesheet" href="/assets/css/gtv.css">
-    <core-ajax id="events" url="http://localhost:3000/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
+    <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
     <section class="container" style="position: relative">
 
       <div class="gtv_img_container">
@@ -36,6 +36,7 @@
         this.$.events.go();
       },
       updateIndex: function(e) {
+        adjustImage();
         this.eventsIndex = (this.eventsIndex + 1) % this.events.length;
       },
       dateString: function(event) {
@@ -49,7 +50,7 @@
         return event.image && event.image.url && event.image.url.length > 0;
       },
       adjustImage: function() {
-        var img = document.querySelector('event-highlight').$.main_image;
+        var img = this.$.main_image;
         var theImage = new Image();
         theImage.src = img.attr("src");
         if (Math.abs((theImage.height/theImage.width)-(img.height()/img.width()))>=0.001) {
