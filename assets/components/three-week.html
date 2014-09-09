@@ -21,14 +21,12 @@
         </thead>
 
         <tbody>
-          <tr template repeat="{{week in weeks}}">
-            <td class="gtv-calendar-weekcol"><h3>{{date | format(week) }}</h3></td>
-            <td template repeat="{{day in days}}" class="{{ { today: same(date, day, week) }  | tokenList }}">
+          <tr template repeat="{{week in days}}">
+            <td class="gtv-calendar-weekcol"><h3>{{week[0].date | format }}</h3></td>
+            <td template repeat="{{day in week}}" class="{{ { today: same(day.date) }  | tokenList }}">
               <ul class="gtv-calendar-eventlist">
-                <template repeat="{{event in events}}">
-                  <template if="{{sameEvent(event, date, day, week)}}" >
-                    <li>{{ event.short_name }}</li>
-                  </template>
+                <template repeat="{{event in day.events}}">
+                  <li>{{ event.short_name }}</li>
                 </template>
               </ul>
             </td>
@@ -41,35 +39,39 @@
     Polymer('three-week', {
       ready: function() {
         var self = this;
-        self.weeks = _.range(3);
-        self.days = _.range(7);
-        var date = moment().clone();
-        this.sunday = date.day("Sunday");
-        this.date = this.sunday;
+        this.days = [[], [], []];
         self.updateData();
         setInterval(function(){self.updateData()}, 180000);
       },
       handleResponse: function(event) {
         this.events = event.detail.response;
+        for(var i = 0; i < 3; i++) {
+          for(var j = 0; j < 7; j++) {
+            this.days[i][j] = { date: this.sunday.clone().add(7*i + j, 'days'), events: []}
+            for(var k = 0; k < this.events.length; k++){
+              var event = this.events[k];
+              if(this.days[i][j].date.isSame(moment(event.start_date), 'day')) {
+                this.days[i][j].events.push(event);
+                break;
+              }
+            }
+          }
+        }
       },
       updateData: function(){
-        this.sunday = moment().day("Sunday");
-        this.date = this.sunday;
+        this.sunday = moment().day('Sunday');
         this.params = JSON.stringify({start_date: this.sunday.toISOString()});
         this.$.events.go();
       },
-      format: function(date, week) {
+      format: function(date) {
         if(date) {
-          return date.clone().day(7*week).format('M/DD');
-        } else {
+          return date.format('M/DD');
+        }else {
           return "";
         }
       },
-      same: function(date, day, week) {
-          return moment().isSame(date.clone().day(7*week+ day), 'day');
-      },
-      sameEvent: function(event, date, day, week) {
-        return moment(event.start_date).isSame(date.clone().day(7*week + day), 'day');
+      same: function(date) {
+          return moment().isSame(date, 'day');
       }
     });
   </script>

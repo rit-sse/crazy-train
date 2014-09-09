@@ -10,12 +10,23 @@ layout: empty
 <link rel="import" href="/assets/bower_components/torque/torque-slides.html">
 <link rel="import" href="/assets/components/three-week.html">
 <link rel="import" href="/assets/components/event-panels.html">
+<link rel="import" href="/assets/components/color-view.html">
+<link rel="import" href="/assets/components/event-highlight.html">
 
-<torque-slides duration="30">
+<torque-slides duration="10">
+  <torque-slide>
+    <event-panels></event-panels>
+  </torque-slide>
+  <torque-slide duration="5">
+    <color-view color="white"></color-view>
+  </torque-slide>
+  <torque-slide duration="10">
+    <event-highlight></event-highlight>
+  </torque-slide>
   <torque-slide>
     <three-week></three-week>
   </torque-slide>
-  <torque-slide>
-    <event-panels></event-panels>
+  <torque-slide duration="5">
+    <color-view color="black"></color-view>
   </torque-slide>
 </torque-slides>
