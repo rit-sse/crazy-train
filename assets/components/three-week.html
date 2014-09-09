@@ -41,8 +41,8 @@
     Polymer('three-week', {
       ready: function() {
         var self = this;
-        self.weeks = [0, 1, 2];
-        self.days = [0, 1, 2, 3, 4, 5, 6];
+        self.weeks = _.range(3);
+        self.days = _.range(7);
         var date = moment().clone();
         this.sunday = date.day("Sunday");
         this.date = this.sunday;
@@ -60,8 +60,7 @@
       },
       format: function(date, week) {
         if(date) {
-          var newDate = date.clone()
-          return newDate.day(7*week).format('M/DD');
+          return date.clone().day(7*week).format('M/DD');
         } else {
           return "";
         }
