@@ -4,7 +4,7 @@
 
   <template>
     <link rel="stylesheet" href="/assets/css/gtv.css">
-    <core-ajax id="events" url="http://localhost:3000/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
+    <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
     <section class="container">
       <table>
         <thead>
@@ -70,7 +70,7 @@
           return moment().isSame(date.clone().day(7*week+ day), 'day');
       },
       sameEvent: function(event, date, day, week) {
-        return moment(event.same_date).isSame(date.clone().day(7*week + day), 'day');
+        return moment(event.start_date).isSame(date.clone().day(7*week + day), 'day');
       }
     });
   </script>
