@@ -40,6 +40,7 @@
       ready: function() {
         var self = this;
         this.days = [[], [], []];
+        self.updateData();
       },
       handleResponse: function(event) {
         this.events = event.detail.response;

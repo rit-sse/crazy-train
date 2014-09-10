@@ -52,6 +52,7 @@
         var self = this;
         self.params = { limit: 12 }
         self.eventSets = _.range(3);
+        this.updateData();
         this.events = [];
       },
       handleResponse: function(event) {
