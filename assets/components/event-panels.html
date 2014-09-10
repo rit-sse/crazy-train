@@ -1,0 +1,81 @@
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="event-panels" on-no-longer-hidden="{{updateData}}">
+
+  <template>
+    <link rel="stylesheet" href="/assets/css/gtv.css"s>
+    <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
+    <section class="container">
+      <div class="gtv-event-header">
+        <h3>Upcoming Events</h3>
+      </div>
+      <template repeat="{{eventSet in eventSets}}">
+        <div id="wrapper{{eventSet}}" class="gtv-panel-wrapper">
+          <div class="gtv-event-panel">
+            <template repeat="{{event, eventNum in events[eventSet]}}">
+              <div class="gtv-event" id="event-{{eventSet}}-{{eventNum}} %>">
+                <div class="gtv-event-title">
+                  {{ event.short_name }}
+                </div>
+                <template if="{{isOneDay(event)}}">
+                  <div class="gtv-event-data">
+                    <span>{{ event | fullStartDay }}</span>
+                  </div>
+                  <div class="gtv-event-data">
+                    <span>{{ event | timeRange }}</span>
+                  </div>
+                  <div class="gtv-event-data faded">
+                    <span>{{event.location}}</span>
+                  </div>
+                </template>
+                <template if="{{!isOneDay(event)}}">
+                  <div class="gtv-event-data">
+                    <span>{{event | startDay}} to</span>
+                  </div>
+                  <div class="gtv-event-data">
+                    <span>{{event | endDay}}</span>
+                  </div>
+                  <div class="gtv-event-data faded">
+                    <span>{{event.location}}</span>
+                  </div>
+                </template>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+    </section>
+  </template>
+  <script>
+    Polymer('event-panels', {
+      ready: function(){
+        this.params = { limit: 12 }
+        this.eventSets = _.range(3);
+        this.updateData();
+        this.events = [];
+      },
+      handleResponse: function(event) {
+        var events = event.detail.response;
+        this.events = [events.slice(0, 4), events.slice(4, 8),events.slice(8, 12)];
+      },
+      updateData: function(){
+        this.$.events.go();
+      },
+      isOneDay: function(event) {
+        return moment(event.start_date).isSame(moment(event.end_date), 'day');
+      },
+      fullStartDay: function(event) {
+        return moment(event.start_date).format('dddd, MMMM D');
+      },
+      timeRange: function(event) {
+        return moment(event.start_date).format('h:mm a') + " to " + moment(event.end_date).format('h:mm a');
+      },
+      startDay: function(event) {
+        return moment(event.start_date).format("MMMM D") + ", " + moment(event.start_date).format('h:mm a');
+      },
+      endDay: function(event) {
+        return moment(event.end_date).format("MMMM D") + ", " + moment(event.end_date).format('h:mm a');
+      }
+    });
+  </script>
+</polymer-element>

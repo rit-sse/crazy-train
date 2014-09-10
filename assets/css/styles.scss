@@ -26,7 +26,6 @@ $std-margin: 25px;
   margin: 0 auto;
 }
 
-@import "mixins";
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,13 +72,13 @@ h1, h2, h3, h4, h5, h6 {
       }
 
       & > a, & .dropdown > a {
-        @include transition(300ms all);
+        transition: 300ms all;
         display: inline-block;
         color: #9ab7c7;
         padding: 7px;
 
         &:hover, &.active {
-          @include transition(300ms all);
+          transition: 300ms all;
           color: #fff;
           text-shadow: 1px 1px 0 #333;
         }
@@ -226,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 .float-right { float: right; }
 
 .ace {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   //width: $width;
   height: 325px;
   margin: 5px 0 15px;
