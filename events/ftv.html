@@ -3,19 +3,38 @@ permalink: ftv/
 layout: empty
 ---
 <!DOCTYPE html>
-
-<link href="/assets/css/gtv.css" media="screen" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="/assets/bower_components/platform/platform.js"></script>
+<script type="text/javascript" src="/assets/bower_components/moment/min/moment.min.js"></script>
 <script type="text/javascript" src="/assets/bower_components/underscore/underscore-min.js"></script>
-<script type="text/javascript" src="/assets/bower_components/json2/json2.js"></script>
-<script type="text/javascript" src="/assets/bower_components/backbone/backbone-min.js"></script>
-<script type="text/javascript" src="/assets/bower_components/datejs/build/production/date.min.js"></script>
-<script type="text/javascript" src="/assets/js/templates/three_week_view.js"></script>
-<script type="text/javascript" src="/assets/js/templates/15_event_view.js"></script>
-<script type="text/javascript" src="/assets/js/templates/color_view.js"></script>
-<script type="text/javascript" src="/assets/js/templates/event_highlight.js"></script>
-<script type="text/javascript" src="/assets/js/templates/sse_info_view.js"></script>
-<script type="text/javascript" src="/assets/js/templates/sse_meeting_view.js"></script>
-<script type="text/javascript" src="/assets/js/templates/mentoring_hours_view.js"></script>
-<script type="text/javascript" src="/assets/js/tv_runner.js"></script>
-<script type="text/javascript" src="/assets/js/ftv_runner.js"></script>
+<link href="/assets/css/gtv.css" media="screen" rel="stylesheet" type="text/css" />
+<link rel="import" href="/assets/bower_components/torque/torque-slides.html">
+<link rel="import" href="/assets/components/mentoring-hours.html">
+<link rel="import" href="/assets/components/sse-info.html">
+<link rel="import" href="/assets/components/sse-meeting.html">
+<link rel="import" href="/assets/components/event-panels.html">
+<link rel="import" href="/assets/components/color-view.html">
+<link rel="import" href="/assets/components/event-highlight.html">
+
+<torque-slides duration="15">
+  <torque-slide>
+    <mentoring-hours></mentoring-hours>
+  </torque-slide>
+  <torque-slide>
+    <event-panels></event-panels>
+  </torque-slide>
+  <torque-slide duration="5">
+    <color-view color="white"></color-view>
+  </torque-slide>
+  <torque-slide>
+    <sse-info></sse-info>
+  </torque-slide>
+  <torque-slide>
+    <sse-meeting></sse-meeting>
+  </torque-slide>
+  <torque-slide duration="5">
+    <color-view color="black"></color-view>
+  </torque-slide>
+  <torque-slide>
+    <event-highlight></event-highlight>
+  </torque-slide>
+</torque-slides>
