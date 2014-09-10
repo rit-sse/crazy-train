@@ -1,9 +1,9 @@
 <link rel="import" href="../bower_components/core-ajax/core-ajax.html">
 
-<polymer-element name="event-panels">
+<polymer-element name="event-panels" on-no-longer-hidden="{{updateData}}">
 
   <template>
-    <link rel="stylesheet" href="/assets/css/gtv.css" on-no-longer-hidden="{{updateData}}">
+    <link rel="stylesheet" href="/assets/css/gtv.css"s>
     <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
     <section class="container">
       <div class="gtv-event-header">

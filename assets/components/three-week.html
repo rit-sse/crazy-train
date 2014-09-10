@@ -1,9 +1,9 @@
 <link rel="import" href="../bower_components/core-ajax/core-ajax.html">
 
-<polymer-element name="three-week">
+<polymer-element name="three-week" on-no-longer-hidden="{{updateData}}">>
 
   <template>
-    <link rel="stylesheet" href="/assets/css/gtv.css" on-no-longer-hidden="{{updateData}}">
+    <link rel="stylesheet" href="/assets/css/gtv.css">
     <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
     <section class="container">
       <table>
