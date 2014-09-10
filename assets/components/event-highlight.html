@@ -51,7 +51,7 @@
         var img = this.$.main_image;
         var theImage = new Image();
         theImage.src = img.src;
-        if (Math.abs((theImage.height/theImage.width)-(img.height/img.width)>=0.001) {
+        if (Math.abs((theImage.height/theImage.width)-(img.height/img.width))>=0.001) {
           img.style.width = 'auto';
           img.style.height = '100%';
         }
