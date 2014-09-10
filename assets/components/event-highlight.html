@@ -1,6 +1,6 @@
 <link rel="import" href="../bower_components/core-ajax/core-ajax.html">
 
-<polymer-element name="event-highlight" on-no-longer-hidden="{{updateIndex}}">
+<polymer-element name="event-highlight" on-no-longer-hidden="{{updateData}}">
   <template>
     <link rel="stylesheet" href="/assets/css/gtv.css">
     <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
@@ -27,16 +27,12 @@
         self.params = { limit: 12 }
         self.updateData();
         self.eventsIndex = 0;
-        setInterval(function(){self.updateData()}, 180000);
       },
       handleResponse: function(event) {
         this.events = _.filter(event.detail.response, this.imageEvent);
       },
       updateData: function(){
         this.$.events.go();
-      },
-      updateIndex: function(e) {
-        adjustImage();
         this.eventsIndex = (this.eventsIndex + 1) % this.events.length;
       },
       dateString: function(event) {
@@ -49,15 +45,6 @@
       imageEvent: function(event) {
         return event.image && event.image.url && event.image.url.length > 0;
       },
-      adjustImage: function() {
-        var img = this.$.main_image;
-        var theImage = new Image();
-        theImage.src = img.attr("src");
-        if (Math.abs((theImage.height/theImage.width)-(img.height()/img.width()))>=0.001) {
-          img.css('width','auto');
-          img.css('height','100%');
-        }
-      }
     });
   </script>
 </polymer-element>

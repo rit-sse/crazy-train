@@ -3,7 +3,7 @@
 <polymer-element name="three-week">
 
   <template>
-    <link rel="stylesheet" href="/assets/css/gtv.css">
+    <link rel="stylesheet" href="/assets/css/gtv.css" on-no-longer-hidden="{{updateData}}">
     <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
     <section class="container">
       <table>
@@ -40,8 +40,6 @@
       ready: function() {
         var self = this;
         this.days = [[], [], []];
-        self.updateData();
-        setInterval(function(){self.updateData()}, 180000);
       },
       handleResponse: function(event) {
         this.events = event.detail.response;

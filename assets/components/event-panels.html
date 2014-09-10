@@ -3,7 +3,7 @@
 <polymer-element name="event-panels">
 
   <template>
-    <link rel="stylesheet" href="/assets/css/gtv.css">
+    <link rel="stylesheet" href="/assets/css/gtv.css" on-no-longer-hidden="{{updateData}}">
     <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
     <section class="container">
       <div class="gtv-event-header">
@@ -52,9 +52,7 @@
         var self = this;
         self.params = { limit: 12 }
         self.eventSets = _.range(3);
-        self.updateData();
-        this.events = []
-        setInterval(function(){self.updateData()}, 180000);
+        this.events = [];
       },
       handleResponse: function(event) {
         var events = event.detail.response;
