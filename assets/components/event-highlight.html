@@ -30,10 +30,10 @@
       },
       handleResponse: function(event) {
         this.events = _.filter(event.detail.response, this.imageEvent);
+        this.eventsIndex = (this.eventsIndex + 1) % this.events.length;
       },
       updateData: function(){
         this.$.events.go();
-        this.eventsIndex = (this.eventsIndex + 1) % this.events.length;
       },
       dateString: function(event) {
         if(event) {
