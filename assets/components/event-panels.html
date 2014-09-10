@@ -49,9 +49,8 @@
   <script>
     Polymer('event-panels', {
       ready: function(){
-        var self = this;
-        self.params = { limit: 12 }
-        self.eventSets = _.range(3);
+        this.params = { limit: 12 }
+        this.eventSets = _.range(3);
         this.updateData();
         this.events = [];
       },

@@ -38,9 +38,8 @@
   <script>
     Polymer('three-week', {
       ready: function() {
-        var self = this;
         this.days = [[], [], []];
-        self.updateData();
+        this.updateData();
       },
       handleResponse: function(event) {
         this.events = event.detail.response;
