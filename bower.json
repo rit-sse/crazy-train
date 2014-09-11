@@ -2,7 +2,6 @@
   "name": "crazy-train",
   "private": true,
   "dependencies": {
-    "backbone": "0.9.1",
     "history": "~1.8.0",
     "handlebars": "1.3.0",
     "json2": "*",
