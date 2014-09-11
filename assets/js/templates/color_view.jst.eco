@@ -1,4 +1,0 @@
-
-<section class="container" style="background-color: <%= @color %>;">
-</section>
-

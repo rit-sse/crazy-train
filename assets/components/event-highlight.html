@@ -1,0 +1,61 @@
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="event-highlight" on-no-longer-hidden="{{updateData}}">
+  <template>
+    <link rel="stylesheet" href="/assets/css/gtv.css">
+    <core-ajax id="events" url="/admin/events.json" params="{{ params }}" on-core-response="{{handleResponse}}" ></core-ajax>
+    <section class="container" style="position: relative">
+
+      <div class="gtv_img_container">
+        <center>
+          <img src="/admin{{events[eventsIndex].image.url}}" alt="Event Image" class="gtv-event-highlight" id="main_image"/>
+        </center>
+      </div>
+
+      <div class="gtv-highlight-footer">
+        <center>
+          <h3>{{events[eventsIndex] | dateString }}</h3>
+        </center>
+      </div>
+    </section>
+  </template>
+
+  <script>
+    Polymer('event-highlight', {
+      ready: function(){
+        self.params = { limit: 12 }
+        this.events = [];
+        this.updateData();
+        this.eventsIndex = 0;
+      },
+      handleResponse: function(event) {
+        this.events = _.filter(event.detail.response, this.imageEvent);
+
+      },
+      updateData: function(){
+        this.$.events.go();
+        this.eventsIndex = (this.eventsIndex + 1) % this.events.length;
+        this.adjustImage();
+      },
+      dateString: function(event) {
+        if(event) {
+          return moment(event.start_date).format('MMMM D, h:mm a') + ' @ ' + event.location;
+        } else {
+          return "";
+        }
+      },
+      imageEvent: function(event) {
+        return event.image && event.image.url && event.image.url.length > 0;
+      },
+      adjustImage: function() {
+        var img = this.$.main_image;
+        var theImage = new Image();
+        theImage.src = img.src;
+        if (Math.abs((theImage.height/theImage.width)-(img.height/img.width))>=0.001) {
+          img.style.width = 'auto';
+          img.style.height = '100%';
+        }
+      }
+    });
+  </script>
+</polymer-element>
