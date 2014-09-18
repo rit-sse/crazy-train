@@ -8,7 +8,7 @@
 
       <div class="gtv_img_container">
         <center>
-          <img src="/admin{{events[eventsIndex].image.url}}" alt="Event Image" class="gtv-event-highlight" id="main_image"/>
+          <img src="/admin{{events[eventsIndex].image.url}}" alt="Event Image" class="gtv-event-highlight" id="main-image" />
         </center>
       </div>
 
@@ -35,7 +35,6 @@
       updateData: function(){
         this.$.events.go();
         this.eventsIndex = (this.eventsIndex + 1) % this.events.length;
-        this.adjustImage();
       },
       dateString: function(event) {
         if(event) {
@@ -46,15 +45,6 @@
       },
       imageEvent: function(event) {
         return event.image && event.image.url && event.image.url.length > 0;
-      },
-      adjustImage: function() {
-        var img = this.$.main_image;
-        var theImage = new Image();
-        theImage.src = img.src;
-        if (Math.abs((theImage.height/theImage.width)-(img.height/img.width))>=0.001) {
-          img.style.width = 'auto';
-          img.style.height = '100%';
-        }
       }
     });
   </script>
