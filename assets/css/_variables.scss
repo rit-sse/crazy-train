@@ -53,7 +53,7 @@ $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        20px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    "Minion Pro", serif !important; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
 $headingsColor:         $textColor; // empty to use BS default, $textColor
 
