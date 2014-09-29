@@ -8,6 +8,8 @@
     "datejs": "~1.0.0-rc1",
     "json2": "*",
     "moment": "~2.8.3",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "torque": "~0.1.1",
+    "core-ajax": "Polymer/core-ajax#~0.4.0"
   }
 }
