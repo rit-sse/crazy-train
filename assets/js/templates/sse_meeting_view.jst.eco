@@ -1,0 +1,11 @@
+<section class="container">
+	<div class="gtv-event-header">
+	    <h3>SSE Meetings</h3>
+	</div>
+	<div id="meeting-img" class="info-content-with-footer">
+	</div>
+
+	<div class="info-footer">
+		<h3>Fridays at 5:00 PM</h3>
+	</div>
+</section>

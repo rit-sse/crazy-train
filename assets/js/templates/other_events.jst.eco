@@ -1,0 +1,48 @@
+<% for event in @events: %>
+<div class="other-events-event"><p>
+	<a href="<%= 'https://sse.se.rit.edu/events/' + event.id%>" target="about:blank">
+		<h4><%= event.short_name %></h4>
+	</a>
+	<% format = "yyyy-MM-ddTHH:mm:ss"%>
+	<% start_time = parseDateTime(event.start_date) %>
+	<% end_time = parseDateTime(event.end_date)%>
+
+	<% one_day_event = (start_time.toString("M-d-yyyy") == end_time.toString("M-d-yyyy")) %>
+	<% if one_day_event: %>
+		
+		<div class="row">
+			<div class="span">
+				<%= start_time.toString("dddd, MMMM d") %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span">
+				<%= start_time.toString("h:mm tt") %>
+				 to 
+				<%= end_time.toString("h:mm tt") %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span location">
+				<%= event.location %>
+			</div>
+		</div>
+	<% else: %>
+		<div class="row">
+			<div class="span">
+				<%= start_time.toString("MMMM d, h:mm tt") %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span">
+				<%= end_time.toString("MMMM d, h:mm tt") %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span location">
+				<%= event.location %>
+			</div>
+		</div>
+	<% end %>
+</p></div>
+<% end %>
