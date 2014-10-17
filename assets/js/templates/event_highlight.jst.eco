@@ -6,5 +6,8 @@
   <center><img src="https://sse.se.rit.edu/admin<%=@event.image()%>" alt="Event Image" class="gtv-event-highlight" id="main_image" onload="<%= @onload %>"/></center>
   </div>
 
-  <div class="gtv-highlight-footer"><center><h3><%=@event.startDay()%>, <%=@event.startHour()%> @ <%=@event.location()%></h3></center></div>
+  <div class="gtv-highlight-footer">
+    <center><h3><%=@event.shortName() %></h3></center>
+    <center><h3><%=@event.startDay()%>, <%=@event.startHour()%> @ <%=@event.location()%></h3></center>
+  </div>
 </section>
