@@ -29,6 +29,7 @@ html, body
 
 body{
   background-color: black;
+  overflow: hidden;
 }
 
 h1, h2, h3, th
@@ -298,6 +299,13 @@ thead .gtv-calendar-weekcol h3
     width: 1920px;
     height: 1080px-$header_height;
 }
+#main-image {
+    display: block;
+    max-width: 1920px;
+    max-height: 1080px-$header_height;
+    width: auto;
+    height: 100%;
+}
 
 .gtv-highlight-footer {
   overflow: hidden;
@@ -307,7 +315,7 @@ thead .gtv-calendar-weekcol h3
   bottom: 0px;
   height: $header_height;
   max-height: $header_height;
-  line-height: $header_height;
+  line-height: $header_height/2;
   width: 1920px;
 
   background-color: $darkblueoff;
@@ -342,7 +350,7 @@ thead .gtv-calendar-weekcol h3
   width:1920px;
   height:$header_height;
   background-color: $darkblueoff;;
-  top:1080px-$header_height;
+  top: 1080px - $header_height;
   max-height: $header_height;
   line-height: $header_height;
 }

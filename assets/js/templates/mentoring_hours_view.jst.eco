@@ -1,0 +1,20 @@
+<section class="container">
+	<div class="tv-left-right">
+		<div class="tv-left">
+			<img src="/assets/images/mentoring.png"/>
+		</div>
+		<div class="tv-right huge">
+			<div class="tv-inner">
+				Need some help?
+				<br><br>
+				Official mentoring hours: 
+				<br>
+				<b>Weekdays, 10am-6pm</b>
+				<br><br>
+				Unofficial hours: 
+				<br>
+				<b>Whenever we're open</b>
+			</div>
+		</div>
+	</div>
+</section>
