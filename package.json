@@ -16,10 +16,12 @@
   },
   "homepage": "https://github.com/rit-sse/crazy-train",
   "dependencies": {
+    "es6-promise": "^2.0.1",
     "fluxxor": "^1.5.1",
     "handlebars": "^2.0.0",
     "react": "^0.12.2",
-    "torque-react": "^1.0.0"
+    "torque-react": "^1.0.0",
+    "whatwg-fetch": "^0.7.0"
   },
   "devDependencies": {
     "browserify": "^8.1.1",
