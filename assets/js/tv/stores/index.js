@@ -1,5 +1,5 @@
 var EventStore = require('./event');
 
 module.exports = {
-  EventStore
+  EventStore: new EventStore()
 }
