@@ -2,9 +2,6 @@
   "name": "crazy-train",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "browserify": "browserify --extension .jsx -t [ reactify --es6 ]"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rit-sse/crazy-train"
@@ -21,7 +18,7 @@
     "handlebars": "^2.0.0",
     "moment": "^2.9.0",
     "react": "^0.12.2",
-    "torque-react": "^1.0.0",
+    "torque-react": "^1.0.1",
     "whatwg-fetch": "^0.7.0"
   },
   "devDependencies": {
