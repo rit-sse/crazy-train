@@ -22,7 +22,9 @@ var FTV = React.createClass({
     return (
       <TorqueSlides duration={15}>
         <TorqueSlide id="mentoringHours"></TorqueSlide>
-        <TorqueSlide id="eventPanels"></TorqueSlide>
+        <TorqueSlide>
+          <EventPanels events={this.state.events.events} />
+        </TorqueSlide>
         <TorqueSlide duration={5}>
           <ColorView color="white" />
         </TorqueSlide>

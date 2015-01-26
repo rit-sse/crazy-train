@@ -5,6 +5,7 @@ var torque = require('torque-react');
 var TorqueSlides = torque.TorqueSlides;
 var TorqueSlide = torque.TorqueSlide;
 var ColorView = require('./color-view');
+var EventPanels = require('./event-panels');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
@@ -21,7 +22,9 @@ var GTV = React.createClass({
   render() {
     return (
       <TorqueSlides duration={30}>
-        <TorqueSlide id="eventPanels"></TorqueSlide>
+        <TorqueSlide>
+          <EventPanels events={this.state.events.events} />
+        </TorqueSlide>
         <TorqueSlide duration={5}>
           <ColorView color="white" />
         </TorqueSlide>
