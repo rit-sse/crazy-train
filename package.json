@@ -2,16 +2,8 @@
   "name": "crazy-train",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {
-    "browserify": "^8.1.1",
-    "reactify": "^1.0.0"
-  },
-  "dependencies": {
-    "fluxxor": "^1.5.1",
-    "handlebars": "^2.0.0"
-  },
   "scripts": {
-    "browserify": "browserify --extension .jsx -t reactify"
+    "browserify": "browserify --extension .jsx -t [ reactify --es6 ]"
   },
   "repository": {
     "type": "git",
@@ -22,5 +14,15 @@
   "bugs": {
     "url": "https://github.com/rit-sse/crazy-train/issues"
   },
-  "homepage": "https://github.com/rit-sse/crazy-train"
+  "homepage": "https://github.com/rit-sse/crazy-train",
+  "dependencies": {
+    "fluxxor": "^1.5.1",
+    "handlebars": "^2.0.0",
+    "react": "^0.12.2",
+    "torque-react": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.1",
+    "reactify": "^1.0.0"
+  }
 }

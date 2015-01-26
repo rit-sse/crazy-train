@@ -1,0 +1,4 @@
+module.exports = {
+  UPDATE_EVENTS: 'UPDATE_EVENTS',
+  NEXT_EVENT: 'NEXT_EVENT'
+}
