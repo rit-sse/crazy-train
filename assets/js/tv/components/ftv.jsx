@@ -10,6 +10,7 @@ var EventPanels = require('./event-panels');
 var ColorView = require('./color-view');
 var SSEInfo = require('./sse-info');
 var SSEMeeting = require('./sse-meeting');
+var EventHighlight = require('./event-highlight');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
@@ -44,7 +45,9 @@ var FTV = React.createClass({
         <TorqueSlide duration={5}>
           <ColorView color="black" />
         </TorqueSlide>
-        <TorqueSlide id="eventHighlight"></TorqueSlide>
+        <TorqueSlide>
+          <EventHighlight events={this.state.events.imageEvents} current={this.state.events.current} />
+        </TorqueSlide>
       </TorqueSlides>
     );
   }
