@@ -9,6 +9,7 @@ var MentoringHours = require('./mentoring-hours');
 var EventPanels = require('./event-panels');
 var ColorView = require('./color-view');
 var SSEInfo = require('./sse-info');
+var SSEMeeting = require('./sse-meeting');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
@@ -37,7 +38,9 @@ var FTV = React.createClass({
         <TorqueSlide>
           <SSEInfo />
         </TorqueSlide>
-        <TorqueSlide id="sseMeeting"></TorqueSlide>
+        <TorqueSlide>
+          <SSEMeeting />
+        </TorqueSlide>
         <TorqueSlide duration={5}>
           <ColorView color="black" />
         </TorqueSlide>
