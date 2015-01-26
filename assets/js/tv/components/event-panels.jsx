@@ -67,13 +67,13 @@ var EventPanels = React.createClass({
         <div className="gtv-event-header">
           <h3>Upcoming Events</h3>
         </div>
-        { events.map(events, (eventSet, i) => {
+        { events.map((eventSet, i) => {
           return (
-            <div id={`wrapper${i}`} className="gtv-panel-wrapper">
+            <div key={`wrapper${i}`} id={`wrapper${i}`} className="gtv-panel-wrapper">
               <div className="gtv-event-panel">
-                { events.map(eventSet, (event, j) => {
+                { eventSet.map((event, j) => {
                   return (
-                    <div className="gtv-event" id={`event-${i}-${j}`}>
+                    <div className="gtv-event" id={`event-${i}-${j}`} key={`event-${i}-${j}`}>
                       <div className="gtv-event-title">
                         { event.short_name }
                       </div>
