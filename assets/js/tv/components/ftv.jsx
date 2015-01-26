@@ -5,6 +5,8 @@ var torque = require('torque-react');
 var TorqueSlides = torque.TorqueSlides;
 var TorqueSlide = torque.TorqueSlide;
 var ColorView = require('./color-view');
+var EventPanels = require('./event-panels');
+var MentoringHours = require('./mentoring-hours');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
@@ -21,7 +23,9 @@ var FTV = React.createClass({
   render() {
     return (
       <TorqueSlides duration={15}>
-        <TorqueSlide id="mentoringHours"></TorqueSlide>
+        <TorqueSlide>
+          <MentoringHours />
+        </TorqueSlide>
         <TorqueSlide>
           <EventPanels events={this.state.events.events} />
         </TorqueSlide>
