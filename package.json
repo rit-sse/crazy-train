@@ -11,8 +11,7 @@
     "handlebars": "^2.0.0"
   },
   "scripts": {
-    "ftv": "broswerify --extension .jsx -t reactify assets/js/tv/ftv.jsx",
-    "gtv": "browserify --extension .jsx -t reactify assets/js/tv/gtv.jsx"
+    "browserify": "browserify --extension .jsx -t reactify"
   },
   "repository": {
     "type": "git",
