@@ -4,9 +4,11 @@ var torque = require('torque-react');
 
 var TorqueSlides = torque.TorqueSlides;
 var TorqueSlide = torque.TorqueSlide;
-var ColorView = require('./color-view');
-var EventPanels = require('./event-panels');
+
 var MentoringHours = require('./mentoring-hours');
+var EventPanels = require('./event-panels');
+var ColorView = require('./color-view');
+var SSEInfo = require('./sse-info');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
@@ -32,7 +34,9 @@ var FTV = React.createClass({
         <TorqueSlide duration={5}>
           <ColorView color="white" />
         </TorqueSlide>
-        <TorqueSlide id="sseInfo"></TorqueSlide>
+        <TorqueSlide>
+          <SSEInfo />
+        </TorqueSlide>
         <TorqueSlide id="sseMeeting"></TorqueSlide>
         <TorqueSlide duration={5}>
           <ColorView color="black" />
