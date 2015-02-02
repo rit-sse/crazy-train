@@ -7,12 +7,18 @@ var TorqueSlide = torque.TorqueSlide;
 var ColorView = require('./color-view');
 var EventPanels = require('./event-panels');
 var EventHighlight = require('./event-highlight');
+var ThreeWeek = require('./three-week');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
+var TVMixin = require('../mixins/tv-mixin');
 
 var GTV = React.createClass({
-  mixins: [FluxMixin, StoreWatchMixin('EventStore')],
+  mixins: [
+            FluxMixin,
+            StoreWatchMixin('EventStore'),
+            TVMixin
+          ],
 
   getStateFromFlux() {
     return {
@@ -32,7 +38,9 @@ var GTV = React.createClass({
         <TorqueSlide duration={15}>
           <EventHighlight events={this.state.events.imageEvents} current={this.state.events.current} />
         </TorqueSlide>
-        <TorqueSlide id="threeWeek"></TorqueSlide>
+        <TorqueSlide>
+          <ThreeWeek weeks={this.state.events.threeWeek} />
+        </TorqueSlide>
         <TorqueSlide duration={5}>
           <ColorView color="black" />
         </TorqueSlide>

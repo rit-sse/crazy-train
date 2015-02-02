@@ -29,7 +29,7 @@ html, body
 
 body{
   background-color: black;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 h1, h2, h3, th
@@ -298,13 +298,6 @@ thead .gtv-calendar-weekcol h3
 .gtv_img_container {
     width: 1920px;
     height: 1080px-$header_height;
-}
-#main-image {
-    display: block;
-    max-width: 1920px;
-    max-height: 1080px-$header_height;
-    width: auto;
-    height: 100%;
 }
 
 .gtv-highlight-footer {

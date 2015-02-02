@@ -22,7 +22,7 @@ class BrowserifyFile < Jekyll::StaticFile
 
     FileUtils.mkdir_p(File.dirname(dest_path))
     begin
-      template = `node_modules/.bin/browserify --extension .jsx -t [ reactify --es6 ] #{@dir}/#{@name}`
+      template = `node_modules/.bin/browserify -d --extension .jsx -t [ reactify --es6 ] #{@dir}/#{@name}`
       File.open(dest_path, 'w') do |f|
         f.write(template)
       end

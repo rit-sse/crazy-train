@@ -24,14 +24,14 @@ var EventPanels = React.createClass({
   },
 
   renderInner(event) {
-    if(isOneDay(event)){
+    if(this.isOneDay(event)){
       return (
         <div>
           <div className="gtv-event-data">
-            <span>{ fullStartDay(event) }</span>
+            <span>{ this.fullStartDay(event) }</span>
           </div>
           <div className="gtv-event-data">
-            <span>{ timeRange(event) }</span>
+            <span>{ this.timeRange(event) }</span>
           </div>
           <div className="gtv-event-data faded">
             <span>{ event.location }</span>
@@ -42,10 +42,10 @@ var EventPanels = React.createClass({
       return (
         <div>
           <div className="gtv-event-data">
-            <span>{ startDay(event) }} to</span>
+            <span>{ this.startDay(event) }} to</span>
           </div>
           <div className="gtv-event-data">
-            <span>{ endDay(event) }</span>
+            <span>{ this.endDay(event) }</span>
           </div>
           <div className="gtv-event-data faded">
             <span>{ event.location }</span>
@@ -77,7 +77,7 @@ var EventPanels = React.createClass({
                       <div className="gtv-event-title">
                         { event.short_name }
                       </div>
-                      { renderInner(event) }
+                      { this.renderInner(event) }
                     </div>
                   );
                 }) }

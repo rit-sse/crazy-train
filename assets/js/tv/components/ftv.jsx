@@ -14,9 +14,14 @@ var EventHighlight = require('./event-highlight');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
+var TVMixin = require('../mixins/tv-mixin');
 
 var FTV = React.createClass({
-  mixins: [FluxMixin, StoreWatchMixin('EventStore')],
+  mixins: [
+            FluxMixin,
+            StoreWatchMixin('EventStore'),
+            TVMixin
+          ],
 
   getStateFromFlux() {
     return {

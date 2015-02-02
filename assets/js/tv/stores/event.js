@@ -1,5 +1,6 @@
 var Fluxxor = require('fluxxor');
 var constants = require('../constants/event');
+var moment = require('moment');
 
 var EventStore = Fluxxor.createStore({
   initialize() {
@@ -27,8 +28,22 @@ var EventStore = Fluxxor.createStore({
   },
 
   onUpdateThreeWeek(payload) {
-    this.threeWeek = payload.events;
-    this.sunday = payload.sunday;
+    var events = payload.events;
+    var sunday = payload.sunday;
+    this.threeWeek = [[], [], []];
+
+    for(var i = 0; i < 3; i++) {
+      for(var j = 0; j < 7; j++) {
+        this.threeWeek[i][j] = { date: sunday.clone().add(7*i + j, 'days'), events: []}
+        for(var k = 0; k < events.length; k++){
+          var event = events[k];
+          if(this.threeWeek[i][j].date.isSame(moment(event.start_date), 'day')) {
+            this.threeWeek[i][j].events.push(event);
+          }
+        }
+      }
+    }
+
     this.emit('change');
   },
 
