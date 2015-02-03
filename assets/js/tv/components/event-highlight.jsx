@@ -39,7 +39,7 @@ var EventHighlight = React.createClass({
 
   render() {
 
-    var event = this.props.events[0];
+    var event = this.props.events[this.props.current];
     return (
       <section className="container" style={{position: 'relative'}}>
 
