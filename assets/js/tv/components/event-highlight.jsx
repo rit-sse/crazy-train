@@ -48,6 +48,7 @@ var EventHighlight = React.createClass({
         </div>
 
         <div className="gtv-highlight-footer">
+          <h3 className="center">{ event.short_name }</h3>
           <h3 className="center">{ this.dateString(event) }</h3>
         </div>
       </section>
