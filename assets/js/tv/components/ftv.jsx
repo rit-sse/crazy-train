@@ -11,6 +11,7 @@ var ColorView = require('./color-view');
 var SSEInfo = require('./sse-info');
 var SSEMeeting = require('./sse-meeting');
 var EventHighlight = require('./event-highlight');
+var Tour = require('./tour');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
@@ -29,7 +30,17 @@ var FTV = React.createClass({
     };
   },
 
-  render() {
+  renderTourSlide() {
+    return (
+      <TorqueSlides duration={15}>
+        <TorqueSlide>
+          <Tour />
+        </TorqueSlide>
+      </TorqueSlides>
+    );
+  },
+
+  renderRealSlides(){
     return (
       <TorqueSlides duration={15}>
         <TorqueSlide>
@@ -55,6 +66,15 @@ var FTV = React.createClass({
         </TorqueSlide>
       </TorqueSlides>
     );
+  },
+
+  render() {
+    console.log(this.state)
+    if(this.state.tour) {
+      return this.renderTourSlide();
+    } else {
+      return this.renderRealSlides();
+    }
   }
 });
 
