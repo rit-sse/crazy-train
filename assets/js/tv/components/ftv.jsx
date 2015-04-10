@@ -26,7 +26,7 @@ var FTV = React.createClass({
           ],
 
   componentDidMount() {
-    var socket = require('socket.io-client')('https://sse.se.rit.edu:8000');
+    var socket = require('socket.io-client')('http://sse.se.rit.edu:8000');
     socket.on('tour', (data) =>  {
       this.setState({tour: true});
       setTimeout(() => {
