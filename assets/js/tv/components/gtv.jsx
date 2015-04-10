@@ -8,6 +8,7 @@ var ColorView = require('./color-view');
 var EventPanels = require('./event-panels');
 var EventHighlight = require('./event-highlight');
 var ThreeWeek = require('./three-week');
+var Tour = require('./tour');
 
 var FluxMixin = Fluxxor.FluxMixin(React);
 var StoreWatchMixin = Fluxxor.StoreWatchMixin;
@@ -20,13 +21,36 @@ var GTV = React.createClass({
             TVMixin
           ],
 
+  componentDidMount() {
+    var socket = require('socket.io-client')('https://sse.se.rit.edu/servehook');
+    socket.on('tour', (data) =>  {
+      this.setState({tour: true});
+      setTimeout(() => {
+        this.setState({tour: false})
+      }, 15*1000);
+    });
+  },
+
   getStateFromFlux() {
     return {
       events: this.getFlux().store('EventStore').getState()
     };
   },
 
-  render() {
+  renderTourSlide() {
+    return (
+      <TorqueSlides duration={15}>
+        <TorqueSlide>
+          <Tour />
+        </TorqueSlide>
+        <TorqueSlide>
+          <Tour />
+        </TorqueSlide>
+      </TorqueSlides>
+    );
+  },
+
+  renderRealSlides(){
     return (
       <TorqueSlides duration={30}>
         <TorqueSlide>
@@ -46,6 +70,15 @@ var GTV = React.createClass({
         </TorqueSlide>
       </TorqueSlides>
     );
+  },
+
+  render() {
+    console.log(this.state)
+    if(this.state.tour) {
+      return this.renderTourSlide();
+    } else {
+      return this.renderRealSlides();
+    }
   }
 });
 

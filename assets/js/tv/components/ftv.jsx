@@ -2,6 +2,7 @@ var React = require('react');
 var Fluxxor = require('fluxxor');
 var torque = require('torque-react');
 
+
 var TorqueSlides = torque.TorqueSlides;
 var TorqueSlide = torque.TorqueSlide;
 
@@ -24,6 +25,16 @@ var FTV = React.createClass({
             TVMixin
           ],
 
+  componentDidMount() {
+    var socket = require('socket.io-client')('https://sse.se.rit.edu/servehook');
+    socket.on('tour', (data) =>  {
+      this.setState({tour: true});
+      setTimeout(() => {
+        this.setState({tour: false})
+      }, 15*1000);
+    });
+  },
+
   getStateFromFlux() {
     return {
       events: this.getFlux().store('EventStore').getState()
@@ -33,6 +44,9 @@ var FTV = React.createClass({
   renderTourSlide() {
     return (
       <TorqueSlides duration={15}>
+        <TorqueSlide>
+          <Tour />
+        </TorqueSlide>
         <TorqueSlide>
           <Tour />
         </TorqueSlide>
