@@ -1,32 +1,36 @@
 -
   position: Mentoring
   email: mentoring
-  name: Brian Besmanoff
+  name: Matt Mokary
 -
   position: Projects
   email: projects
-  name: Morgan Cabral
+  name: John Grischuk
 -
   position: Events
   email: events
-  name: Dylan Vuz
+  name: Wade Mauger
 -
   position: Fundraising
   email: fundraising
-  name: Matt Metcalf
+  name: Justin Peterson
 -
   position: Technology
   email: technology
-  name: Michael Timbrook
+  name: Kristen Mills
 -
   position: Winter Ball
   email: winterball
-  name: Melissa Young
+  name: Kayla Nussbaum
 -
   position: Public Relations
   email: pr
   name: Dominic Cicilio
 -
-  position: Lab Upkeep
-  email: upkeep
-  name: Robert McLaughlin
+  position: Lab Operations
+  email: labops
+  name: Matt Smicinski
+-
+  position: Talks
+  email: talks
+  name: Colin Fausnaught
