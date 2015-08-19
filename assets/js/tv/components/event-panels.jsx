@@ -42,7 +42,7 @@ var EventPanels = React.createClass({
       return (
         <div>
           <div className="gtv-event-data">
-            <span>{ this.startDay(event) }} to</span>
+            <span>{ this.startDay(event) } to</span>
           </div>
           <div className="gtv-event-data">
             <span>{ this.endDay(event) }</span>
