@@ -20,13 +20,8 @@ test:
     - jekyll build
 
 deployment:
-  production:
-    branch: src
+  master:
+    branch: master
     owner: rit-sse
     commands:
-      - git config --global user.email technology@sse.se.rit.edu
-      - git config --global user.name SSE Deploy
-      - cd _site/ && git checkout master
-      - cd _site/ && git add .
-      - cd _site/ && git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
-      - cd _site/ && git push
+      - ssh deploy@$SSE_HOST 'cd /docker && docker-compose restart api nginx'
