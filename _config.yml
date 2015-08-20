@@ -22,6 +22,7 @@ exclude:
   - governing-docs/CONTRIBUTING.md
   - governing-docs/README.md
   - _meeting_minutes/README.md
+  - vendor
 
 gems:
   - octopress-autoprefixer
