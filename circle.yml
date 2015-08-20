@@ -20,12 +20,13 @@ test:
     - jekyll build
 
 deployment:
-  branch: src
-  owner: rit-sse
-  commands:
-    - cd _site/
-    - git config --global user.email technology@sse.se.rit.edu
-    - git config --global user.name SSE Deploy
-    - git add .
-    - git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
-    - git push
+  production:
+    branch: src
+    owner: rit-sse
+    commands:
+      - cd _site/
+      - git config --global user.email technology@sse.se.rit.edu
+      - git config --global user.name SSE Deploy
+      - git add .
+      - git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
+      - git push
