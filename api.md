@@ -6,4 +6,4 @@ permalink: api/
 > <br>
 >—Sneakers (1992)
 
-We’ll announce a SSE API very soon.
+We’ll announce a SSE API very soon
