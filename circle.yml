@@ -1,0 +1,31 @@
+machine:
+  ruby:
+    version: 2.2.2
+  node:
+    version: 0.12.0
+
+dependencies:
+  override:
+    - bundle
+    - npm install
+    - npm install -g bower
+    - bower install
+
+test:
+  pre:
+    - git submodule init
+    - git submodule update --remote
+    - rake pre_build
+  override:
+    - jekyll build
+
+deployment:
+  branch: src
+  owner: rit-sse
+  commands:
+    - cd _site/
+    - git config --global user.email technology@sse.se.rit.edu
+    - git config --global user.name SSE Deploy
+    - git add .
+    - git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
+    - git push

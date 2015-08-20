@@ -14,3 +14,7 @@
 	path = _meeting_minutes
 	url = https://github.com/rit-sse/meeting-minutes
   branch = master
+[submodule "_site"]
+	path = _site
+	url = https://github.com/rit-sse/rit-sse.github.io
+	branch = master
