@@ -24,4 +24,4 @@ deployment:
     branch: master
     owner: rit-sse
     commands:
-      - ssh deploy@$SSE_HOST 'cd /docker && docker-compose restart web'
+      - ssh deploy@$SSE_HOST 'cd /docker && docker-compose start web'
