@@ -10,7 +10,7 @@ var SSEMeeting = React.createClass({
         </div>
         <div id="meeting-img" className="info-content-with-footer" />
         <div className="info-footer">
-          <h3>Wednesday at 4:05 PM</h3>
+          <h3>Thursday at 4:05 PM</h3>
         </div>
       </section>
     );
