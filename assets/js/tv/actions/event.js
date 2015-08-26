@@ -1,40 +1,35 @@
-require('es6-promise').polyfill();
-require('whatwg-fetch');
-
 var constants = require('../constants/event');
 var moment = require('moment');
-
-function status(response) {
-  if (response.status >= 200 && response.status < 300) {
-    return Promise.resolve(response);
-  } else {
-    return Promise.reject(new Error(response.statusText));
-  }
-}
-
-function json(response) {
-  return response.json();
-}
+var API = require('sse-api-client');
+var Events = new API('http://localhost:8000/api/v1/').Events
 
 module.exports = {
   updateEvents() {
-    fetch('/admin/events.json?limit=12')
-      .then(status)
-      .then(json)
+    Events.all({ after: new Date(), sort: 'ASC'})
       .then(response => {
-        this.dispatch(constants.UPDATE_EVENTS, { events: response });
+        this.dispatch(constants.UPDATE_EVENTS, { events: response.data });
       });
   },
 
   updateThreeWeek() {
     var sunday = moment().day('Sunday');
-    var sunday_string = sunday.toISOString();
-    fetch(`/admin/events.json?start_date=${sunday_string}`)
-      .then(status)
-      .then(json)
+    var monthFromSunday = moment().day('Sunday').add(1, 'Month');
+    var query = { before: monthFromSunday.toDate(), after: sunday.toDate(), page: 1, sort: 'ASC' };
+    Events.all(query)
+      .then(body => {
+        var pages = Math.ceil(body.total/body.perPage);
+        var array = [body]
+        for(var i=1; i < pages; i++) {
+          query.page++;
+          array.push(Events.all(query));
+        }
+        return Promise.all(array);
+      })
       .then(response => {
-        this.dispatch(constants.UPDATE_THREE_WEEK, { sunday: sunday, events: response });
-      });
+        var events = response.reduce((prev, body) => prev.concat(body.data), []);
+        this.dispatch(constants.UPDATE_THREE_WEEK, { sunday: sunday, events });
+      })
+      .catch(err => console.log(err.stack))
   },
 
   nextEvent() {
