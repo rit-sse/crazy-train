@@ -25,15 +25,15 @@ var FTV = React.createClass({
             TVMixin
           ],
 
-  componentDidMount() {
-    var socket = require('socket.io-client')('http://sse.se.rit.edu:8000');
-    socket.on('tour', (data) =>  {
-      this.setState({tour: true});
-      setTimeout(() => {
-        this.setState({tour: false})
-      }, 15*1000);
-    });
-  },
+  // componentDidMount() {
+  //   var socket = require('socket.io-client')('http://sse.se.rit.edu:8000');
+  //   socket.on('tour', (data) =>  {
+  //     this.setState({tour: true});
+  //     setTimeout(() => {
+  //       this.setState({tour: false})
+  //     }, 15*1000);
+  //   });
+  // },
 
   getStateFromFlux() {
     return {

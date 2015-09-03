@@ -9,7 +9,7 @@ var EventHighlight = React.createClass({
 
   dateString(event) {
     if(event) {
-      return moment(event.start_date).format('MMMM D, h:mm a') + ' @ ' + event.location;
+      return moment(event.startDate).format('MMMM D, h:mm a') + ' @ ' + event.location;
     } else {
       return "";
     }
@@ -17,7 +17,7 @@ var EventHighlight = React.createClass({
 
   imageUrl(event) {
     if(event) {
-      return event.image.url;
+      return event.image;
     } else {
       return "";
     }
@@ -44,11 +44,11 @@ var EventHighlight = React.createClass({
       <section className="container" style={{position: 'relative'}}>
 
         <div className="gtv_img_container">
-          <img className="center gtv-event-highlight" src={`/admin${this.imageUrl(event)}`} alt="Event Image" id="main_image" onLoad={this.onLoad} />
+          <img className="center gtv-event-highlight" src={this.imageUrl(event)} alt="Event Image" id="main_image" onLoad={this.onLoad} />
         </div>
 
         <div className="gtv-highlight-footer">
-          <h3 className="center">{ event.short_name }</h3>
+          <h3 className="center">{ event.name }</h3>
           <h3 className="center">{ this.dateString(event) }</h3>
         </div>
       </section>

@@ -4,6 +4,11 @@ machine:
   node:
     version: 0.12.0
 
+checkout:
+  post:
+    - git submodule init
+    - git submodule update --remote
+
 dependencies:
   override:
     - bundle
@@ -13,8 +18,6 @@ dependencies:
 
 test:
   pre:
-    - git submodule init
-    - git submodule update --remote
     - rake pre_build
   override:
     - jekyll build

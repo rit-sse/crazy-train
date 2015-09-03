@@ -3,19 +3,15 @@ var moment = require('moment');
 
 var ThreeWeek = React.createClass({
 
-  format(date) {
-    if(date) {
-      return date.format('M/DD');
-    }else {
-      return "";
-    }
+  format(i) {
+    return this.props.sunday.clone().add(7*i, 'days').format('M/DD');
   },
 
   renderWeeks() {
     return this.props.weeks.map((week, i) => {
       return (
           <tr key={`week-${i}`}>
-            <td className="gtv-calendar-weekcol"><h3>{ this.format(week[0].date) }</h3></td>
+            <td className="gtv-calendar-weekcol"><h3>{ this.format(i) }</h3></td>
             { this.renderDays(week, i) }
           </tr>
         );
@@ -40,7 +36,7 @@ var ThreeWeek = React.createClass({
 
   renderEvents(day, i, j) {
     return day.events.map((event, k) => {
-      return <li key={`event-${i}-${j}-${k}`}>{ event.short_name }</li>
+      return <li key={`event-${i}-${j}-${k}`}>{ event.name }</li>
     });
   },
 

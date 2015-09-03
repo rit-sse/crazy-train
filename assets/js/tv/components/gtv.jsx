@@ -21,15 +21,15 @@ var GTV = React.createClass({
             TVMixin
           ],
 
-  componentDidMount() {
-    var socket = require('socket.io-client')('http://sse.se.rit.edu:8000');
-    socket.on('tour', (data) =>  {
-      this.setState({tour: true});
-      setTimeout(() => {
-        this.setState({tour: false})
-      }, 15*1000);
-    });
-  },
+  // componentDidMount() {
+  //   var socket = require('socket.io-client')('http://sse.se.rit.edu:8000');
+  //   socket.on('tour', (data) =>  {
+  //     this.setState({tour: true});
+  //     setTimeout(() => {
+  //       this.setState({tour: false})
+  //     }, 15*1000);
+  //   });
+  // },
 
   getStateFromFlux() {
     return {
@@ -63,7 +63,7 @@ var GTV = React.createClass({
           <EventHighlight events={this.state.events.imageEvents} current={this.state.events.current} />
         </TorqueSlide>
         <TorqueSlide>
-          <ThreeWeek weeks={this.state.events.threeWeek} />
+          <ThreeWeek weeks={this.state.events.threeWeek} sunday={this.state.events.sunday} />
         </TorqueSlide>
         <TorqueSlide duration={5}>
           <ColorView color="black" />
@@ -73,7 +73,6 @@ var GTV = React.createClass({
   },
 
   render() {
-    console.log(this.state)
     if(this.state.tour) {
       return this.renderTourSlide();
     } else {

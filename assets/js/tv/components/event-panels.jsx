@@ -4,23 +4,23 @@ var moment = require('moment');
 var EventPanels = React.createClass({
 
   isOneDay(event) {
-    return moment(event.start_date).isSame(moment(event.end_date), 'day');
+    return moment(event.startDate).isSame(moment(event.endDate), 'day');
   },
 
   fullStartDay(event) {
-    return moment(event.start_date).format('dddd, MMMM D');
+    return moment(event.startDate).format('dddd, MMMM D');
   },
 
   timeRange(event) {
-    return moment(event.start_date).format('h:mm a') + " to " + moment(event.end_date).format('h:mm a');
+    return moment(event.startDate).format('h:mm a') + " to " + moment(event.endDate).format('h:mm a');
   },
 
   startDay(event) {
-    return moment(event.start_date).format("MMMM D") + ", " + moment(event.start_date).format('h:mm a');
+    return moment(event.startDate).format("MMMM D") + ", " + moment(event.startDate).format('h:mm a');
   },
 
   endDay(event) {
-    return moment(event.end_date).format("MMMM D") + ", " + moment(event.end_date).format('h:mm a');
+    return moment(event.endDate).format("MMMM D") + ", " + moment(event.endDate).format('h:mm a');
   },
 
   renderInner(event) {
@@ -75,7 +75,7 @@ var EventPanels = React.createClass({
                   return (
                     <div className="gtv-event" id={`event-${i}-${j}`} key={`event-${i}-${j}`}>
                       <div className="gtv-event-title">
-                        { event.short_name }
+                        { event.name }
                       </div>
                       { this.renderInner(event) }
                     </div>
