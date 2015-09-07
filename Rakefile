@@ -35,3 +35,22 @@ def ask(message, valid_options)
   end
   answer
 end
+
+
+desc "Pre build stuff"
+task :pre_build do |t, args|
+  Dir.chdir('governing-docs') do
+    constitution = File.open('constitution.md').read
+    popol = File.open('primary-officers-policy.md').read
+    constitution = "---\nlayout: page\ntitle: \nsidebars: _constitution.html\npermalink: constitution/\n---\n#{constitution}"
+    popol = "---\nlayout: page\ntitle: \nsidebars:\n- _constitution.html\npermalink: primary-officers-policy/\n---\n#{popol}"
+
+    File.open('constitution.md', 'w') {|f| f.write(constitution)}
+    File.open('primary-officers-policy.md', 'w'){|f| f.write(popol)}
+  end
+  FileUtils.rm_r('assets/images/pages', force: true)
+  FileUtils.cp_r('pages/images/.', 'assets/images/pages')
+
+  FileUtils.rm_r('assets/images/posts', force: true)
+  FileUtils.cp_r('_posts/images/.', 'assets/images/posts')
+end

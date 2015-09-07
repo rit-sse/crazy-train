@@ -3,7 +3,7 @@ require 'yaml'
 class YoutubeTag < Liquid::Tag
   def initialize(tag_name, text, tokens)
     super
-    @hash = YAML.load(text)
+    @hash = YAML.load(text).inject({}) { |h, (k,v)| h[k.to_sym] = v ; h}
     @tokens = tokens
   end
 

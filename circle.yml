@@ -1,0 +1,27 @@
+machine:
+  ruby:
+    version: 2.2.2
+  node:
+    version: 0.12.0
+
+dependencies:
+  override:
+    - bundle
+    - npm install
+    - npm install -g bower
+    - bower install
+
+test:
+  pre:
+    - git submodule init
+    - git submodule update --remote
+    - rake pre_build
+  override:
+    - jekyll build
+
+deployment:
+  master:
+    branch: master
+    owner: rit-sse
+    commands:
+      - ssh deploy@$SSE_HOST 'cd /docker && docker-compose start web'

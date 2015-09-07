@@ -1,5 +1,8 @@
-_site
 .DS_Store
 .sass-cache
 node_modules
 bower_components
+npm-debug.log
+assets/images/pages/
+assets/images/posts/
+_site
