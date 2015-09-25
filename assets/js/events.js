@@ -10,8 +10,8 @@ function loadUpcomingEvents() {
     var template = Handlebars.templates.upcoming;
     var events = $('#eventshighlight');
     var max = 5;
-    if(res.length < max){
-      max = res.length;
+    if(res.data.length < max){
+      max = res.data.length;
     }
     for(var i = 0; i < max; i++){
       var obj = res.data[i];
