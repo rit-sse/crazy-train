@@ -6,7 +6,7 @@ function param(name) {
 }
 
 function loadUpcomingEvents() {
-  $.getJSON('https://sse.se.rit.edu/api/v1/events?perPage=5', function(res){
+  $.getJSON('/api/v1/events?perPage=5', function(res){
     var template = Handlebars.templates.upcoming;
     var events = $('#eventshighlight');
     var max = 5;

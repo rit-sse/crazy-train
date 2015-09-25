@@ -1,7 +1,7 @@
 var constants = require('../constants/event');
 var moment = require('moment');
 var API = require('sse-api-client');
-var Events = new API('http://localhost:8000/api/v1/').Events
+var Events = new API('/api/v1/').Events
 
 module.exports = {
   updateEvents() {
