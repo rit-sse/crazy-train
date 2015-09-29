@@ -6,7 +6,7 @@ function param(name) {
 }
 
 function loadUpcomingEvents() {
-  $.getJSON('/api/v1/events?perPage=5&sort=ASC', function(res){
+  $.getJSON('/api/v1/events?perPage=5&sort=ASC&after=' + new Date().toISOString(), function(res){
     var template = Handlebars.templates.upcoming;
     var events = $('#eventshighlight');
     var max = 5;
