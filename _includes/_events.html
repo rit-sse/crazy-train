@@ -4,8 +4,8 @@
 
 <script id="event-template" type="text/x-handlebar-template">
   {% raw %}
-    <a href="/event?id={{id}}" title="{{short_description}}">{{name}}</a>
-    <p>{{formatDateRange start_date end_date}}</p>
+    <a href="/events#{{id}}" title="{{description}}">{{name}}</a>
+    <p>{{formatDateRange startDate endDate}}</p>
   {% endraw %}
 </script>
 
