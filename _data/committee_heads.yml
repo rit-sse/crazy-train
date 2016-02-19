@@ -5,27 +5,31 @@
 -
   position: Projects
   email: projects
-  name: John Grischuk
+  name: Laura King
 -
   position: Events
   email: events
+  name: Carter Buce
+-
+  position: Student Outreach
+  email: outreach
   name: Wade Mauger
 -
   position: Fundraising
   email: fundraising
-  name: Justin Peterson
+  name: Danielle Gonzalez
 -
   position: Technology
   email: technology
-  name: Kristen Mills
+  name: Dylan Vuz
 -
-  position: Winter Ball
-  email: winterball
+  position: Art
+  email: art
   name: Kayla Nussbaum
 -
   position: Public Relations
   email: pr
-  name: Dominic Cicilio
+  name: Justin Peterson
 -
   position: Lab Operations
   email: labops
@@ -34,3 +38,7 @@
   position: Talks
   email: talks
   name: Colin Fausnaught
+-
+  position: Historian
+  email: historian
+  name: Dan Sweetman
