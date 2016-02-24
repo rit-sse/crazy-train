@@ -18,5 +18,5 @@ ENV LANG=C.UTF-8
 RUN bundle exec jekyll build
 EXPOSE 4000
 
-WORKDIR
-CMD
+WORKDIR /app/_site
+CMD http-server -p 8000 -a 0.0.0.0 -d false
