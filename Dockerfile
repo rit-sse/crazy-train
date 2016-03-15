@@ -17,7 +17,7 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
 RUN ruby build.rb
-RUN bower install
+RUN bower install --allow-root
 RUN bundle exec jekyll build
 EXPOSE 4000
 
