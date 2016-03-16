@@ -96,18 +96,6 @@ In a private repo, you will find our production nginx conf. If you make any chan
 ### WTF
 WTF was our old rails site. Since the event system on WTF is still needed, a stripped down version of it is running that only includes Events. This is on a branch, `only-events`.  It soon will be merged into master.  You can find this portion of the site [here](https://sse.se.rit.edu/admin).  If you are an officer, you can log in using the same credentials you use for email and the file share.
 
-### Pinnochio
-Pinocchio is the link shortener written in sinatra. Use your sse credentials to log in You can access it [here](https://sse.se.rit.edu/go)
-
-### QDB
-The QDB is the SSE Quote Database written in Rails 3. You can access it [here](https://sse.se.rit.edu/qdb). QD
-
-### Scoreboard
-Scoreboard is the membership tracker written in Padrino. It is deployed. Use your sse credentials to log in if you are an officers.
-
-## Questions?
-Kristen is pretty much in charge of the website these days. Ask her.
-
 [1]: https://github.com/rit-sse/crazy-train
 [2]: https://github.com/rit-sse/crazy-train-pages
 [3]: https://github.com/rit-sse/crazy-train-posts
