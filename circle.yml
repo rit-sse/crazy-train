@@ -8,13 +8,14 @@ checkout:
 
 dependencies:
   override:
+    - docker login --help
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS
     - docker build -t ritsse/crazy-train:$CIRCLE_BRANCH .
 
 deployment:
   development:
     branch: devlop
     commands:
-      - docker login -u $DOCKER_USER -p $DOCKER_PASS
       - docker push ritsse/crazy-train:$CIRCLE_BRANCH
   master:
     branch: master
