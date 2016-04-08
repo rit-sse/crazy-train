@@ -8,7 +8,7 @@ checkout:
 
 dependencies:
   override:
-    - docker login --help
+    - echo $DOCKER_USER
     - docker login -u $DOCKER_USER -p $DOCKER_PASS
     - docker build -t ritsse/crazy-train:$CIRCLE_BRANCH .
 
