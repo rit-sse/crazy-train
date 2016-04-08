@@ -12,6 +12,10 @@ dependencies:
     - docker login -u $DOCKER_USER -p $DOCKER_PASS -e tech@sse.rit.edu
     - docker build -t ritsse/crazy-train:$CIRCLE_BRANCH .
 
+test:
+  override:
+    - echo "Container is built"
+
 deployment:
   development:
     branch: devlop
