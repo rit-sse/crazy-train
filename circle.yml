@@ -2,6 +2,10 @@ machine:
   services:
     - docker
 
+dependencies:
+  override:
+    - docker build -t ritsse/crazy-train:$CIRCLE_BRANCH .
+
 deployment:
   development:
     branch: devlop
