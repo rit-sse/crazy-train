@@ -1,9 +1,6 @@
 machine:
-  ruby:
-    version: 2.2.2
-  node:
-    version: 0.12.0
-
+  services:
+    - docker
 checkout:
   post:
     - git submodule init
@@ -11,20 +8,22 @@ checkout:
 
 dependencies:
   override:
-    - bundle
-    - npm install
-    - npm install -g bower
-    - bower install
+    - echo $DOCKER_USER
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS -e tech@sse.rit.edu
+    - docker build -t ritsse/crazy-train:$CIRCLE_BRANCH .
 
 test:
-  pre:
-    - rake pre_build
   override:
-    - jekyll build
+    - echo "Container is built"
 
 deployment:
+  development:
+    branch: devlop
+    commands:
+      - docker push ritsse/crazy-train:$CIRCLE_BRANCH
   master:
     branch: master
     owner: rit-sse
     commands:
-      - ssh deploy@$SSE_HOST 'cd /docker && docker-compose start web'
+      - docker tag ritsse/crazy-train:$CIRCLE_BRANCH ritsse/crazy-train
+      - docker push ritsse/crazy-train

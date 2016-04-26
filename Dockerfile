@@ -10,16 +10,16 @@ COPY ./package.json /app/package.json
 
 RUN npm install
 RUN bundle install
-RUN npm install http-server -g
+RUN npm install -g http-server bower
 
 COPY ./ /app
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
 RUN ruby build.rb
-
+RUN bower install --allow-root
 RUN bundle exec jekyll build
-EXPOSE 4000
+EXPOSE 8000
 
 WORKDIR /app/_site
 CMD http-server -p 8000 -a 0.0.0.0 -d false
