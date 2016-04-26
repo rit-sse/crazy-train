@@ -25,4 +25,5 @@ deployment:
     branch: master
     owner: rit-sse
     commands:
-      - ssh deploy@$SSE_HOST 'cd /docker && docker-compose restart api nginx'
+      - docker tag ritsse/crazy-train:$CIRCLE_BRANCH ritsse/crazy-train
+      - docker push ritsse/crazy-train
