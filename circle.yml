@@ -24,5 +24,4 @@ deployment:
     branch: devlop
     owner: rit-sse
     commands:
-      - cd _site
-      - rsync -r ./_site deploy@ssedev.se.rit.edu:/var/www/
+      - rsync -r ./_site/ deploy@ssedev.se.rit.edu:/var/www/
