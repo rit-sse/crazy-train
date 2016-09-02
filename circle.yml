@@ -19,7 +19,3 @@ test:
   override:
     - jekyll build
 
-deployment:
-  branch: devlop
-  commands:
-    - ls _site/
