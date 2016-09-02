@@ -27,5 +27,5 @@ deployment:
     commands:
       - docker tag ritsse/crazy-train:$CIRCLE_BRANCH ritsse/crazy-train
       - docker push ritsse/crazy-train
-      - docker exec -v `pwd`/.ssh/:/key ritsse/crazy-train ls /key
+      - docker run -it -v `pwd`/.ssh/:/key ritsse/crazy-train ls /key
 
