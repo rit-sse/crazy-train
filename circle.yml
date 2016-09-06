@@ -24,4 +24,4 @@ deployment:
     branch: devlop
     owner: rit-sse
     commands:
-      - rsync -r _site/ deploy@ssedev.se.rit.edu:/var/www/
+      - rsync -r _site/ deploy@ssedev.se.rit.edu:/home/deploy/siteroot/crazy-train/
