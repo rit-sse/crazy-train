@@ -36,7 +36,7 @@ Now visit [localhost:4000](http://localhost:4000/).
 
 ### Things that won't work
 If you are running this locally, parts of it won't work. Thanks to the cross origin policy,
-events won't be populated. Also any of the governing docs pages (primary officers policy, constitution) won't work because those pages are created properly deployment.
+events won't be populated. Also any of the governing docs pages (primary officers policy, constitution) won't work because those pages are created properly during deployment.
 
 Other than that, you should be fine.
 
