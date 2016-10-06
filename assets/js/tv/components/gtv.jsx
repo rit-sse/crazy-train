@@ -52,7 +52,7 @@ var GTV = React.createClass({
 
   renderRealSlides(){
     return (
-      <TorqueSlides duration={30}>
+      <TorqueSlides duration={30} keyboardInteractive={true}>
         <TorqueSlide>
           <EventPanels events={this.state.events.events} />
         </TorqueSlide>
