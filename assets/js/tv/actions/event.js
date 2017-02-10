@@ -5,14 +5,10 @@ var Events = new API('/api/v1/').Events
 
 module.exports = {
   updateEvents() {
-    Events.all({ after: new Date(),  sort: 'ASC'}).then(resp => {
-      return {
-        data: resp.data.filter(event => {
-          return moment(event.startDate).diff(moment().add(moment.duration({weeks: 3})), 'seconds') < 0;
-        }),
-      };
-    }).then(response => {
-      this.dispatch(constants.UPDATE_EVENTS, { events: response.data });
+    Events.all({ after: new Date(),  sort: 'ASC'}).then(response => {
+      this.dispatch(constants.UPDATE_EVENTS, { events: response.data.filter(event => {
+        return moment(event.startDate).diff(moment().add(moment.duration({weeks: 3})), 'seconds') < 0;
+      })});
     });
   },
 
