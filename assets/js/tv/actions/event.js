@@ -5,7 +5,7 @@ var Events = new API('/api/v1/').Events
 
 module.exports = {
   updateEvents() {
-    Events.all({ after: new Date(), sort: 'ASC'})
+    Events.all({ after: new Date(), before: moment().add(moment.duration({weeks: 3})).toDate(), sort: 'ASC'})
       .then(response => {
         this.dispatch(constants.UPDATE_EVENTS, { events: response.data });
       });
