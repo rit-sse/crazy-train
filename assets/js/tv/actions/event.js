@@ -6,9 +6,9 @@ var Events = new API('/api/v1/').Events
 module.exports = {
   updateEvents() {
     Events.all({ after: new Date(),  sort: 'ASC'}).then(resp => {
-      return moment(event.startDate).diff(moment().add(moment.duration({weeks: 3})), 'seconds') < 0;
+      return resp.data.filter(event => moment(event.startDate).diff(moment().add(moment.duration({weeks: 3})), 'seconds') < 0),
     }).then(events => {
-      this.dispatch(constants.UPDATE_EVENTS, { events });
+      this.dispatch(constants.UPDATE_EVENTS, { events: events });
     });
   },
 
