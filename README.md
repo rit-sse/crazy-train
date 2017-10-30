@@ -1,4 +1,7 @@
-#Crazy Train
+# [DEPRECATED] [Our Current Website](https://github.com/rit-sse/OneRepoToRuleThemAll)
+
+
+# Crazy Train
 [![Dependency Status](https://gemnasium.com/rit-sse/crazy-train.svg)](https://gemnasium.com/rit-sse/crazy-train)
 [![Gitter chat](https://badges.gitter.im/rit-sse/crazy-train.png)](https://gitter.im/rit-sse/crazy-train)
 
